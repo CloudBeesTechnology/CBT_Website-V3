@@ -7,15 +7,10 @@ import {
   FaInstagram,
   FaTwitter,
   FaLinkedinIn,
-  FaChevronDown,
 } from "react-icons/fa";
-import { IoIosArrowUp } from "react-icons/io";
 import logo from "../assets/logo/cloudbeestech_logo.svg";
 
 export const Footer = () => {
-  const scrollUp = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <section className="center bg-gradient relative">

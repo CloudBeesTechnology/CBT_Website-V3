@@ -13,10 +13,11 @@ export const Banner = () => {
                     alt="CBT Banner Image"
                     width={600}
                     height={100}
-                    className="animate-spin-custom"
+                    className="animate-spin-custom shadow-lg blur-[60px]"
                     // className="animate-ping"
                 />
             </div>
+            <div className="absolute inset-0 bg-gray-400/10 w-full"></div>
 
         </div>
     );
