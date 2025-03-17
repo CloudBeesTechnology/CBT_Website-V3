@@ -73,7 +73,7 @@
   }
   
   .animate-move {
-    animation: move 12s infinite alternate;
+    animation: move 60s infinite alternate;
   }
   
 
@@ -84,7 +84,7 @@
   }
   
   .animate-spin-custom {
-    animation: spin 10s linear infinite;
+    animation: spin 30s linear infinite;
   }
   
 }
