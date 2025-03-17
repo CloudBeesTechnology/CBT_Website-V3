@@ -31,11 +31,9 @@
   .screen-size {
     @apply max-w-screen-2xl w-[95%] mx-auto;
   }
- 
-  .bg-gradient-1 {
-    @apply bg-gradient-to-t from-[#070F12] to-gray-800;
+  .bg-gradient {
+    @apply bg-gradient-to-t from-[#0D1A1F] to-[#47555F];
   }
-  
   .center {
     @apply flex justify-center items-center;
   }
@@ -48,6 +46,10 @@
   .text_size_2 {
     @apply text-2xl font-medium;
   }
+  .para {
+    @apply text-[18px];
+  }
+
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Banner.jpg);
     @apply bg-cover bg-no-repeat bg-center h-screen
