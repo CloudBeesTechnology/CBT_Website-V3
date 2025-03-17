@@ -53,8 +53,8 @@
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Banner.jpg);
     @apply bg-cover bg-no-repeat bg-center h-screen
-
   }
+  
   @keyframes move {
     0% {
       left: 0px;
