@@ -5,6 +5,7 @@ export default function OurServices() {
         <h1 className="text-4xl font-bold mb-4">Our Services</h1>
         <p className="text-lg">Explore the variety of services we offer to help you succeed.</p>
       </div>
+      
     );
   }
   
