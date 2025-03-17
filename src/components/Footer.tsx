@@ -18,7 +18,7 @@ export const Footer = () => {
   };
 
   return (
-    <section className="center bg-gradient-1 relative">
+    <section className="center bg-gradient relative">
       <div className="screen-size center text-white flex-col flex-wrap gap-14 mt-16 mb-5">
         <section className="flex justify-center lg:justify-between flex-wrap">
           <div className="w-full lg:w-[30%] flex flex-col max-lg:items-center gap-5 font-light text-sm">
@@ -36,12 +36,12 @@ export const Footer = () => {
               </p>
               <article className="flex-1 my-5">
                 <p className="para">
-                  <strong className="text-sm font-medium">Email:</strong> hr@cloudbeestech.com
+                  <strong className="para text-yellow">Email:</strong> hr@cloudbeestech.com
                 </p>
                 <div className="flex gap-1 my-1 max-lg:justify-center">
-                  <p className="text-sm font-medium">Phone:</p>
+                  <p className="para text-yellow">Phone:</p>
                   <div className="para">
-                    <p>India - +91-7200533357</p>
+                    <p>India - +91 - 7200533357</p>
                     <p>USA - +1 (614) 632-9349</p>
                   </div>
                 </div>
@@ -49,41 +49,41 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-10">
+          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-14">
             {[
               {
                 location: "Pondicherry",
                 address: [
-                  "#1, III Main road",
-                  "Kavery Nagar",
-                  "Reddiyarpalayam",
-                  "Puducherry - 605010",
+                  "#1, III Main road,",
+                  "Kavery Nagar,",
+                  "Reddiyarpalayam,",
+                  "Puducherry - 605010.",
                 ],
                 link: "http://tinyurl.com/bp6ptfb2",
               },
               {
                 location: "Chennai",
                 address: [
-                  "#68, R K shanmugam salai",
-                  "Opposite to double tank",
-                  "KK Nagar",
-                  "Chennai - 600078",
+                  "#68, R K shanmugam salai,",
+                  "Opposite to double tank,",
+                  "KK Nagar,",
+                  "Chennai - 600078.",
                 ],
                 link: "http://tinyurl.com/2z7huru4",
               },
               {
                 location: "USA",
                 address: [
-                  "#8999, Ellrod way",
-                  "Lewis center",
-                  "Ohio - 43035",
+                  "#8999, Ellrod way,",
+                  "Lewis center,",
+                  "Ohio - 43035.",
                 ],
                 link: "https://tinyurl.com/5a9c4sx4",
               },
             ].map(({ location, address, link }) => (
               <article key={location} className="flex flex-col gap-5">
-                <h6 className="text-sm font-medium">{location}</h6>
-                <p className="para sm:h-20">
+                <h6 className="para font-semibold text-yellow underline underline-offset-6">{location}</h6>
+                <p className="para sm:h-20 ">
                   {address.map((line, index) => (
                     <span key={index}>
                       {line}
@@ -105,10 +105,10 @@ export const Footer = () => {
         </section>
 
         <section className="flex flex-col max-sm:text-center gap-5">
-          <p className="para">
-            © 2019 - 2024 CloudBees Tech Private Limited. All rights reserved.
+          <p className="text-[20px] font-medium">
+            © 2019 - 2029 CloudBees Tech Private Limited. All rights reserved.
           </p>
-          <div className="center gap-5 sub-title">
+          <div className="center gap-5">
             {[
               {
                 icon: <FaFacebookF />,
@@ -127,20 +127,12 @@ export const Footer = () => {
                 href: "https://twitter.com/CBeesTechnology",
               },
             ].map(({ icon, href }, index) => (
-              <Link key={index} href={href} target="_blank" rel="noopener noreferrer">
+              <Link key={index} href={href} className="text-[24px] font-semibold" target="_blank" rel="noopener noreferrer">
                 {icon}
               </Link>
             ))}
           </div>
         </section>
-      </div>
-
-      <div
-        className="group h-10 w-10 rounded-full bg-secondary center absolute sm:right-16 right-3 bottom-5 sm:bottom-8 animate-bounce"
-        onClick={scrollUp}
-      >
-        <FaChevronDown className="text-yellow text-xl group-hover:hidden" />
-        <IoIosArrowUp className="text-yellow text-2xl font-extrabold group-hover:block hidden" />
       </div>
     </section>
   );
