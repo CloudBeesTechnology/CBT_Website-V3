@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+:root {
+  /* 'Poppins' */
+  font-family: 'Poppins', system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme{
+  --color-gray:#202020;
+  --color-dark_gray:#404040;
+  --color-blue_gray:#313F48;
+  --color-yellow:#FABA0B;
+  --color-white:white;
+
+}
+
+@layer utilities {
+  .screen-size {
+    @apply max-w-screen-2xl w-[95%] mx-auto;
+  }
+ 
+  .bg-gradient-1 {
+    @apply bg-gradient-to-t from-[#070F12] to-gray-800;
+  }
+  
+  .center {
+    @apply flex justify-center items-center;
+  }
+  .title{
+    @apply text-4xl font-semibold
+  }
+  .text_size_1 {
+    @apply text-4xl font-medium;
+  }
+  .text_size_2 {
+    @apply text-2xl font-medium;
+  }
+}

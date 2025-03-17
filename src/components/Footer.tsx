@@ -1,0 +1,147 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedinIn,
+  FaChevronDown,
+} from "react-icons/fa";
+import { IoIosArrowUp } from "react-icons/io";
+import logo from "../assets/logo/cloudbeestech_logo.svg";
+
+export const Footer = () => {
+  const scrollUp = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <section className="center bg-gradient-1 relative">
+      <div className="screen-size center text-white flex-col flex-wrap gap-14 mt-16 mb-5">
+        <section className="flex justify-center lg:justify-between flex-wrap">
+          <div className="w-full lg:w-[30%] flex flex-col max-lg:items-center gap-5 font-light text-sm">
+            <div>
+              <Image
+                className="object-cover max-w-72 w-full"
+                src={logo}
+                alt="CloudBees Tech Logo"
+              />
+            </div>
+            <div className="max-lg:center gap-3 max-lg:text-center flex-wrap max-[500px]:flex-col">
+              <p className="para flex-1 max-sm:text-center">
+                We are a team of young developers developing digital products and
+                services that have a positive impact on people.
+              </p>
+              <article className="flex-1 my-5">
+                <p className="para">
+                  <strong className="text-sm font-medium">Email:</strong> hr@cloudbeestech.com
+                </p>
+                <div className="flex gap-1 my-1 max-lg:justify-center">
+                  <p className="text-sm font-medium">Phone:</p>
+                  <div className="para">
+                    <p>India - +91-7200533357</p>
+                    <p>USA - +1 (614) 632-9349</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-10">
+            {[
+              {
+                location: "Pondicherry",
+                address: [
+                  "#1, III Main road",
+                  "Kavery Nagar",
+                  "Reddiyarpalayam",
+                  "Puducherry - 605010",
+                ],
+                link: "http://tinyurl.com/bp6ptfb2",
+              },
+              {
+                location: "Chennai",
+                address: [
+                  "#68, R K shanmugam salai",
+                  "Opposite to double tank",
+                  "KK Nagar",
+                  "Chennai - 600078",
+                ],
+                link: "http://tinyurl.com/2z7huru4",
+              },
+              {
+                location: "USA",
+                address: [
+                  "#8999, Ellrod way",
+                  "Lewis center",
+                  "Ohio - 43035",
+                ],
+                link: "https://tinyurl.com/5a9c4sx4",
+              },
+            ].map(({ location, address, link }) => (
+              <article key={location} className="flex flex-col gap-5">
+                <h6 className="text-sm font-medium">{location}</h6>
+                <p className="para sm:h-20">
+                  {address.map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </p>
+                <a
+                  className="footer-direction"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Direction
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="flex flex-col max-sm:text-center gap-5">
+          <p className="para">
+            © 2019 - 2024 CloudBees Tech Private Limited. All rights reserved.
+          </p>
+          <div className="center gap-5 sub-title">
+            {[
+              {
+                icon: <FaFacebookF />,
+                href: "https://www.facebook.com/people/CloudBees-Tech/61556253873919/?sk=friends_likes",
+              },
+              {
+                icon: <FaInstagram />,
+                href: "https://www.instagram.com/cloudbeestechnology/?hl=en",
+              },
+              {
+                icon: <FaLinkedinIn />,
+                href: "https://www.linkedin.com/in/cloudbees-tech/",
+              },
+              {
+                icon: <FaTwitter />,
+                href: "https://twitter.com/CBeesTechnology",
+              },
+            ].map(({ icon, href }, index) => (
+              <Link key={index} href={href} target="_blank" rel="noopener noreferrer">
+                {icon}
+              </Link>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <div
+        className="group h-10 w-10 rounded-full bg-secondary center absolute sm:right-16 right-3 bottom-5 sm:bottom-8 animate-bounce"
+        onClick={scrollUp}
+      >
+        <FaChevronDown className="text-yellow text-xl group-hover:hidden" />
+        <IoIosArrowUp className="text-yellow text-2xl font-extrabold group-hover:block hidden" />
+      </div>
+    </section>
+  );
+};
