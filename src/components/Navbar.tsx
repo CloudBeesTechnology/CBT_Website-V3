@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 import Link from 'next/link';
 import Image from 'next/image';  
 import CbtLogo from "../assets/HomeSection/CbtLogo/cbtLogo.png"; 
@@ -23,19 +22,15 @@ export const Navbar = () => {
             Home
           </Link>
         </li>
-        <li>
-          <Link href="/about" className="hover:text-yellow">
-            About
-          </Link>
-        </li>
+       
         <li>
           <Link href="/ourServices" className="hover:text-yellow">
-            Our Services
+            Service
           </Link>
         </li>
         <li>
           <Link href="/ourProjects" className="hover:text-yellow">
-            Our Projects
+            Project
           </Link>
         </li>
         <li>
@@ -46,6 +41,11 @@ export const Navbar = () => {
         <li>
           <Link href="/products" className="hover:text-yellow">
             Products
+          </Link>
+        </li>
+        <li>
+          <Link href="/about" className="hover:text-yellow">
+            Who we are
           </Link>
         </li>
         <li>
@@ -60,7 +60,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link href="/blogs" className="hover:text-yellow">
-            Blogs
+            Blog
           </Link>
         </li>
         <li>
@@ -70,7 +70,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link href="/contact" className="hover:text-yellow">
-            Contact
+            Contact Us
           </Link>
         </li>
       </ul>
