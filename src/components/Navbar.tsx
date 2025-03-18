@@ -19,57 +19,57 @@ export const Navbar = () => {
       {/* Navigation links */}
       <ul className="flex space-x-8 text-white">
         <li>
-          <Link href="/" className="hover:text-yellow">
+          <Link href="/" className="hover:text-primary">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-yellow">
+          <Link href="/about" className="hover:text-primary">
             About
           </Link>
         </li>
         <li>
-          <Link href="/ourServices" className="hover:text-yellow">
+          <Link href="/ourServices" className="hover:text-primary">
             Our Services
           </Link>
         </li>
         <li>
-          <Link href="/ourProjects" className="hover:text-yellow">
+          <Link href="/ourProjects" className="hover:text-primary">
             Our Projects
           </Link>
         </li>
         <li>
-          <Link href="/careers" className="hover:text-yellow">
+          <Link href="/careers" className="hover:text-primary">
             Careers
           </Link>
         </li>
         <li>
-          <Link href="/products" className="hover:text-yellow">
+          <Link href="/products" className="hover:text-primary">
             Products
           </Link>
         </li>
         <li>
-          <Link href="/gallery" className="hover:text-yellow">
+          <Link href="/gallery" className="hover:text-primary">
             Gallery
           </Link>
         </li>
         <li>
-          <Link href="/courses" className="hover:text-yellow">
+          <Link href="/courses" className="hover:text-primary">
             Courses
           </Link>
         </li>
         <li>
-          <Link href="/blogs" className="hover:text-yellow">
+          <Link href="/blogs" className="hover:text-primary">
             Blogs
           </Link>
         </li>
         <li>
-          <Link href="/solutions" className="hover:text-yellow">
+          <Link href="/solutions" className="hover:text-primary">
             Solutions
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="hover:text-yellow">
+          <Link href="/contact" className="hover:text-primary">
             Contact
           </Link>
         </li>
