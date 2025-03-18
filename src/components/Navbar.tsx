@@ -5,7 +5,7 @@ import CbtLogo from "../assets/HomeSection/CbtLogo/cbtLogo.png";
 
 export const Navbar = () => {
   return (
-    <nav className="bg-[#313F48] text-red p-10 min-h-[100px] max-h-[100px] flex items-center justify-between fixed z-40 top-0 w-full">
+    <nav className="bg-blue_gray text-red p-10 min-h-[100px] max-h-[100px] flex items-center justify-between fixed z-40 top-0 w-full shadow-md shadow-blue-gray/50">
       {/* Logo */}
       <div className="flex items-center">
         <Image 

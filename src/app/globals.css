@@ -86,30 +86,30 @@
 
   @keyframes bounceCustom {
     0%, 100% {
-      transform: translateY(0);
+      transform: translateY(0); 
     }
     50% {
-      transform: translateY(-50px); 
+      transform: translateY(-20px);
     }
   }
   
   .animate-bounce-custom {
-    animation: bounceCustom 10s ease-in-out infinite;
+    animation: bounceCustom 20s ease-in-out infinite;
   }
   
   @keyframes bounceCustomShadow {
     0%, 100% {
-      transform: translateY(20px); /* Start with the shadow slightly below */
+      transform: translateY(-20px); 
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     }
     50% {
-      transform: translateY(0px); /* Shadow goes up while logo goes down */
+      transform: translateY(10px); 
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); 
     }
   }
   
   .animate-bounce-custom-shadow {
-    animation: bounceCustomShadow 10s ease-in-out infinite;
+    animation: bounceCustomShadow 20s ease-in-out infinite;
   }
   
 /* 

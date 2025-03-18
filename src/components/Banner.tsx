@@ -70,10 +70,10 @@ export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText }) => {
             </div>
             {/* Home */}
             <div className="flex items-center justify-center min-h-screen text-white">
-                <div className="flex justify-between gap-88">
+                <div className="flex justify-evenly w-full">
                     <div className="flex items-center justify-center">
                         {/* Logo Wrapper */}
-                        <div className="relative py-12">
+                        <div className="relative pb-12">
                             <Image
                                 src={homeLogo}
                                 alt="Home Logo"
@@ -81,7 +81,7 @@ export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText }) => {
                                 height={50}
                                 className="animate-bounce-custom "
                             />
-                            <div className="animate-bounce-custom-shadow absolute bottom-0 left-0 right-0 h-[6px] bg-transparent shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div>
+                            <div className="animate-bounce-custom-shadow absolute bottom-0 left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div>
                         </div>
                     </div>
 
