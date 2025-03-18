@@ -1,4 +1,5 @@
 import { Banner } from "@/components/Banner";
+import ServiceLogo from "../../assets/ServiceSection/images/ServiceLogo.png"
 
 // src/app/ourServices/page.tsx
 const OurServices: React.FC = () => {
@@ -14,7 +15,11 @@ const OurServices: React.FC = () => {
   )
   return (
     <div className="container mx-auto text-center mt-10">
-      <Banner serviceBannerText={serviceBannerText} />
+      <Banner
+        serviceLogo={ServiceLogo}
+        serviceBannerText={serviceBannerText}
+
+      />
     </div>
   );
 }
