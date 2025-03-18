@@ -29,7 +29,7 @@ export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText }) => {
                             height={50}
                          
                         />
-                        <div className="mt-6 border-b-4 border-gray-600"></div>
+                        <div className="animate-bounce-custom-shadow border"></div>
                     </div>
                     <div className="flex items-center justify-center">
                         <h2 className="text-3xl font-bold">{homeBannerText}</h2>

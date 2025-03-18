@@ -97,6 +97,22 @@
     .animate-bounce-custom {
       animation: bounceCustom 10s ease-in-out infinite;
     }
+
+    @keyframes bounceCustomShadow {
+      0%, 100% {
+        transform: translateY(0);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+      }
+      50% {
+        transform: translateY(-50px); 
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); 
+      }
+    }
+
+    .animate-bounce-custom-shadow {
+      animation: bounceCustom 10s ease-in-out infinite;
+    }
+    
   
 }
 
