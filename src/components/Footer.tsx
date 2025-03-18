@@ -92,7 +92,7 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Direction
+                  {/* Direction */}
                 </a>
               </article>
             ))}
