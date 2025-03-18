@@ -23,57 +23,57 @@ export const Navbar = () => {
       {/* Navigation links */}
       <ul className="flex space-x-8 text-white">
         <li>
-          <Link href="/" className={`${pathname === '/' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/" className={`${pathname === '/' ? 'text-primary' : 'hover:text-primary'}`}>
             Home
           </Link>
         </li>
         <li>
-          <Link href="/ourServices" className={`${pathname === '/ourServices' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/ourServices" className={`${pathname === '/ourServices' ? 'text-primary' : 'hover:text-primary'}`}>
             Service
           </Link>
         </li>
         <li>
-          <Link href="/ourProjects" className={`${pathname === '/ourProjects' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/ourProjects" className={`${pathname === '/ourProjects' ? 'text-primary' : 'hover:text-primary'}`}>
             Project
           </Link>
         </li>
         <li>
-          <Link href="/careers" className={`${pathname === '/careers' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/careers" className={`${pathname === '/careers' ? 'text-primary' : 'hover:text-primary'}`}>
             Careers
           </Link>
         </li>
         <li>
-          <Link href="/products" className={`${pathname === '/products' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/products" className={`${pathname === '/products' ? 'text-primary' : 'hover:text-primary'}`}>
             Products
           </Link>
         </li>
         <li>
-          <Link href="/about" className={`${pathname === '/about' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/about" className={`${pathname === '/about' ? 'text-primary' : 'hover:text-primary'}`}>
             Who we are
           </Link>
         </li>
         <li>
-          <Link href="/gallery" className={`${pathname === '/gallery' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/gallery" className={`${pathname === '/gallery' ? 'text-primary' : 'hover:text-primary'}`}>
             Gallery
           </Link>
         </li>
         <li>
-          <Link href="/courses" className={`${pathname === '/courses' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/courses" className={`${pathname === '/courses' ? 'text-primary' : 'hover:text-primary'}`}>
             Courses
           </Link>
         </li>
         <li>
-          <Link href="/blogs" className={`${pathname === '/blogs' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/blogs" className={`${pathname === '/blogs' ? 'text-primary' : 'hover:text-primary'}`}>
             Blog
           </Link>
         </li>
         <li>
-          <Link href="/solutions" className={`${pathname === '/solutions' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/solutions" className={`${pathname === '/solutions' ? 'text-primary' : 'hover:text-primary'}`}>
             Solutions
           </Link>
         </li>
         <li>
-          <Link href="/contact" className={`${pathname === '/contact' ? 'text-yellow' : 'hover:text-yellow'}`}>
+          <Link href="/contact" className={`${pathname === '/contact' ? 'text-primary' : 'hover:text-primary'}`}>
             Contact Us
           </Link>
         </li>
