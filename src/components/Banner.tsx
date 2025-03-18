@@ -1,25 +1,39 @@
-import Image from "next/image";
-import BannerImg from "../assets/HomeSection/Banner/Banner.jpg"
-import BubbleImg from "../assets/HomeSection/Banner/Bubble.png"
+// import Image from "next/image";
+// import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
 
-export const Banner = () => {
-    return (
-        <div className="relative bg_image overflow-hidden">
+// interface BannerProps {
+//     homeLogo: string;
+//     homeBannerText: React.ReactNode;
+// }
 
+// export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText }) => {
+//     return (
+//         <div className="relative bg_image overflow-hidden">
+//             <div className="absolute bg-blend-overlay animate-move bottom-0">
+//                 <Image
+//                     src={BubbleImg}
+//                     alt="CBT Banner Image"
+//                     width={500}
+//                     height={100}
+//                     className="animate-spin-custom shadow-lg blur-[60px]"
+//                 />
+//             </div>
 
-            <div className="absolute bg-blend-overlay animate-move bottom-0">
-                <Image
-                    src={BubbleImg}
-                    alt="CBT Banner Image"
-                    width={600}
-                    height={100}
-                    className="animate-spin-custom shadow-lg blur-[60px]"
-                    // className="animate-ping"
-                />
-            </div>
-            <div className="absolute inset-0 bg-gray-400/10 w-full"></div>
-
-        </div>
-    );
-}
-
+//             <div className="flex items-center justify-center min-h-screen px-16 text-white">
+//                 <div className="flex justify-between">
+//                     <div className="">
+//                         <Image
+//                             src={homeLogo}
+//                             alt="Home Logo"
+//                             width={150}
+//                             height={50}
+//                         />
+//                     </div>
+//                     <div className="">
+//                         <h2 className="text-3xl font-bold">{homeBannerText}</h2>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
