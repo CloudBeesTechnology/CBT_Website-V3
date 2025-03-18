@@ -19,17 +19,16 @@ export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText }) => {
                 />
             </div>
              {/* Home */}
-            <div className="flex items-center justify-center min-h-screen text-white">
-                <div className="flex justify-between gap-88">
+            <div className="flex items-center w-full justify-center min-h-screen text-white">
+                <div className="flex justify-evenly  w-full">
                     <div className="animate-bounce-custom">
                         <Image
                             src={homeLogo}
                             alt="Home Logo"
                             width={150}
                             height={50}
-                         
                         />
-                        <div className="animate-bounce-custom-shadow border"></div>
+                        <div className="animate-bounce-custom-shadow "></div>
                     </div>
                     <div className="flex items-center justify-center">
                         <h2 className="text-3xl font-bold">{homeBannerText}</h2>

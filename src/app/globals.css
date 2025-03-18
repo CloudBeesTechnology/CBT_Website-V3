@@ -28,7 +28,8 @@
 
 @layer utilities {
   .screen-size {
-    @apply max-w-screen-2xl w-[95%] mx-auto;
+    @apply max-w-screen-2xl w-full mx-auto;
+
   }
   .bg-gradient{
     @apply bg-gradient-to-t from-[#0D1A1F] to-[#47555F];
@@ -43,7 +44,7 @@
     @apply text-4xl font-medium;
   }
   .text_size_2 {
-    @apply text-2xl font-medium;
+    @apply text-[22px] font-medium ;
   }
   .para {
     @apply text-[18px];

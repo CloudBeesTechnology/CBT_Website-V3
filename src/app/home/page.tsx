@@ -1,17 +1,49 @@
-
 import { Banner } from "@/components/Banner";
+import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
 import Count from "./count";
-export default function Home() {
+
+
+const Home: React.FC = () => {
+
+  const homeBannerText = (
+    <>
+      <div className="flex justify-center items-start space-x-10">
+        {/* Empowering */}
+        <div className="flex items-center space-y-1">
+          <span className="text-yellow text_size_1 animate-bounce">E</span>
+          <span className="text-white text_size_1">mpowering</span>
+        </div>
+
+        {/* Digital */}
+        <div className="flex items-center space-y-1">
+          <span className="text-yellow text_size_1 animate-bounce">D</span>
+          <span className="text-white text_size_1">igital</span>
+        </div>
+
+        {/* Transformation */}
+        <div className="flex items-center space-y-1">
+          <span className="text-yellow text_size_1 animate-bounce">T</span>
+          <span className="text-white text_size_1">ransformation</span>
+        </div>
+
+      </div>
+      <div className="text-center mt-6">
+        <p className="text_size_2 text-white italic leading-relaxed">
+          CloudBees Tech providing smart digital solutions solving <br/> complex challenges and delivering innovative solutions that <br/> help our customers ahead
+        </p>
+      </div>
+    </>
+  );
+
   return (
     <>
-   <Banner 
-      topic={true}
-      firstTitle="elcome to"
-      desc="Discover new opportunities and elevate your experience."
-    />
-    <Count/>
-   
+      <Banner
+        homeLogo={CBTPolygonLogo}
+        homeBannerText={homeBannerText}
+      />
+      <Count/>
     </>
-
   );
-}
+};
+
+export default Home;
