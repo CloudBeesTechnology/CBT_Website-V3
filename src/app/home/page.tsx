@@ -1,6 +1,7 @@
 import { Banner } from "@/components/Banner";
 import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
-import Count from "./count";
+import Count from "./Count";
+import Progress from "./Progress";
 
 
 const Home: React.FC = () => {
@@ -42,6 +43,7 @@ const Home: React.FC = () => {
         homeBannerText={homeBannerText}
       />
       <Count/>
+      <Progress/>
     </>
   );
 };

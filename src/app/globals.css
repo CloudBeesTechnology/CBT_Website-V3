@@ -40,6 +40,9 @@
   .title{
     @apply text-4xl font-semibold
   }
+  .title_2{
+    @apply text-2xl font-semibold
+  }
   .text_size_1 {
     @apply text-4xl font-medium;
   }
