@@ -1,7 +1,7 @@
 // src/components/Navbar.tsx
 import Link from 'next/link';
-import Image from 'next/image';  // Import Image component from Next.js
-import CbtLogo from "../assets/HomeSection/CbtLogo/cbtLogo.png"; // Your logo file
+import Image from 'next/image';  
+import CbtLogo from "../assets/HomeSection/CbtLogo/cbtLogo.png"; 
 
 export const Navbar = () => {
   return (

@@ -50,7 +50,7 @@
   }
 
   .bg_image{
-    background-image: url(../assets/HomeSection/Banner/Banner.jpg);
+    background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
     @apply bg-cover bg-no-repeat bg-center h-screen
   }
   
@@ -61,7 +61,7 @@
       transform: translateY(-50%);
     }
     50% {
-      left: 80vw; /* Move to the right */
+      left: 80vw; 
       top: 50%;
       transform: translateY(-50%);
     }
@@ -71,21 +71,32 @@
       transform: translateY(-50%);
     }
   }
-  
+
   .animate-move {
     animation: move 60s infinite alternate;
   }
   
-
  @keyframes spin {
     to {
       transform: rotate(180deg);
     }
   }
-  
   .animate-spin-custom {
     animation: spin 30s linear infinite;
   }
+
+    @keyframes bounceCustom {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px); 
+      }
+    }
+  
+    .animate-bounce-custom {
+      animation: bounceCustom 10s ease-in-out infinite;
+    }
   
 }
 
