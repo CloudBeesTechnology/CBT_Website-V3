@@ -23,7 +23,6 @@
   --color-blue_gray:#313F48;
   --color-primary:#FABA0B;
   --color-white:white;
-
 }
 
 @layer utilities {
@@ -49,7 +48,7 @@
     @apply text-4xl font-medium;
   }
   .text_size_2 {
-    @apply text-[22px] font-medium ;
+    @apply text-2xl font-medium;
   }
   .para {
     @apply text-[18px];
@@ -91,6 +90,35 @@
     animation: spin 30s linear infinite;
   }
 
+  @keyframes bounceCustom {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-bounce-custom {
+    animation: bounceCustom 20s ease-in-out infinite;
+  }
+  
+  @keyframes bounceCustomShadow {
+    0%, 100% {
+      transform: translateY(-20px); 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+    50% {
+      transform: translateY(10px); 
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); 
+    }
+  }
+  
+  .animate-bounce-custom-shadow {
+    animation: bounceCustomShadow 20s ease-in-out infinite;
+  }
+  
+/* 
     @keyframes bounceCustom {
       0%, 100% {
         transform: translateY(0);
@@ -106,18 +134,18 @@
 
     @keyframes bounceCustomShadow {
       0%, 100% {
-        transform: translateY(0);
+        transform: translateY(-20);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
       }
       50% {
-        transform: translateY(-50px); 
+        transform: translateY(-20px); 
         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); 
       }
     }
 
     .animate-bounce-custom-shadow {
       animation: bounceCustom 10s ease-in-out infinite;
-    }
+    } */
     
   
 }

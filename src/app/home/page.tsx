@@ -1,6 +1,6 @@
 import { Banner } from "@/components/Banner";
 import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
-import Count from "./Count";
+import Count from "./count";
 import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
 import { OurClient } from "./OurClient";
