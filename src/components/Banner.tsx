@@ -4,7 +4,7 @@ import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
 interface BannerProps {
   homeLogo?: string;
   homeBannerText?: React.ReactNode;
-  serviceGIF?: string;
+  serviceLogo?: StaticImageData | string;
   serviceBannerText?: React.ReactNode;
   aboutBannerText?: React.ReactNode;
   rotate?: boolean;
@@ -13,7 +13,7 @@ interface BannerProps {
 export const Banner: React.FC<BannerProps> = ({
   homeLogo,
   homeBannerText,
-  serviceGIF,
+  serviceLogo,
   serviceBannerText,
   aboutBannerText,
   rotate,
@@ -55,7 +55,28 @@ export const Banner: React.FC<BannerProps> = ({
       )}
 
       {/* Service */}
-      <div></div>
+      {serviceLogo && serviceBannerText && (
+            <div className="flex items-center justify-center min-h-screen text-white">
+                <div className="flex justify-evenly w-full">
+                    <div className="flex items-center justify-center">
+                        {/* Logo Wrapper */}
+                        <div className="pb-12 z-0">
+                            <Image
+                                src={serviceLogo}
+                                alt="Service Logo"
+                                width={300}
+                                height={150}
+                            />
+                            {/* <div className="animate-bounce-custom-shadow absolute bottom-0 left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div> */}
+                        </div>
+                    </div>
+
+                    <div className="flex items-center justify-center">
+                        <h2 className="text-3xl font-bold">{serviceBannerText}</h2>
+                    </div>
+                </div>
+            </div>
+            )}
 
       {/* Who we are */}
       {aboutBannerText && (
