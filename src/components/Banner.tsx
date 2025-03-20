@@ -34,7 +34,8 @@ export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText, servic
                                 height={50}
                                 className="animate-bounce-custom"
                             />
-                            <div className="animate-bounce-custom-shadow absolute bottom-0 left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div>
+                            <div className="animate-bounce-custom-shadow absolute bottom-0 
+                            left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div>
                         </div>
                     </div>
 
@@ -51,15 +52,14 @@ export const Banner: React.FC<BannerProps> = ({ homeLogo, homeBannerText, servic
                 <div className="flex justify-evenly w-full">
                     <div className="flex items-center justify-center">
                         {/* Logo Wrapper */}
-                        <div className="relative pb-12">
+                        <div className="pb-12 z-0">
                             <Image
                                 src={serviceLogo}
-                                alt="Home Logo"
-                                width={150}
-                                height={50}
-                                className="animate-bounce-custom"
+                                alt="Service Logo"
+                                width={300}
+                                height={150}
                             />
-                            <div className="animate-bounce-custom-shadow absolute bottom-0 left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div>
+                            {/* <div className="animate-bounce-custom-shadow absolute bottom-0 left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div> */}
                         </div>
                     </div>
 

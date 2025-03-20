@@ -1,5 +1,5 @@
 import { Banner } from "@/components/Banner";
-import ServiceLogo from "../../assets/ServiceSection/images/ServiceLogo.png"
+import ServiceLogo from "../../assets/ServiceSection/animation/Service.gif"
 
 // src/app/ourServices/page.tsx
 const OurServices: React.FC = () => {
