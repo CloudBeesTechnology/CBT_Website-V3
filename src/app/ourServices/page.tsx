@@ -1,5 +1,5 @@
 import { Banner } from "@/components/Banner";
-import ServiceLogo from "../../assets/ServiceSection/images/ServiceLogo.png"
+import ServiceLogo from "../../assets/ServiceSection/animation/Service.gif"
 
 // src/app/ourServices/page.tsx
 const OurServices: React.FC = () => {
@@ -8,7 +8,7 @@ const OurServices: React.FC = () => {
       <div>
         <div className="flex justify-center items-start space-x-10"></div>
         <div className="flex items-center space-y-1">
-          <span className="text-white text_size_1">Comprehensive modernization of an Application</span>
+          <span className="text-white text_size_1">Comprehensive modernization of an application</span>
         </div>
       </div>
     </>
@@ -16,8 +16,8 @@ const OurServices: React.FC = () => {
   return (
     <div>
       <Banner
-        serviceLogo={ServiceLogo}
-        serviceBannerText={serviceBannerText}
+        // serviceLogo={ServiceLogo}
+        // serviceBannerText={serviceBannerText}
 
       />
     </div>
