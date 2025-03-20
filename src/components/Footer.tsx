@@ -13,7 +13,7 @@ import logo from "../assets/logo/cloudbeestech_logo.svg";
 export const Footer = () => {
 
   return (
-    <section className="center bg-gradient relative">
+    <section className="center bg-gradient relative ">
       <div className="screen-size center text-white flex-col flex-wrap gap-14 mt-16 mb-5">
         <section className="flex justify-center lg:justify-between flex-wrap">
           <div className="w-full lg:w-[30%] flex flex-col max-lg:items-center gap-5 font-light text-sm">

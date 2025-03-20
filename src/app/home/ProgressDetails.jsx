@@ -2,11 +2,11 @@
 
 export const ProgressDetails = [
     {
-        count:"12+",
+        count:"14+",
         topic:"Happy Client"
     },
     {
-        count:"30+",
+        count:"35+",
         topic:"Project Completed"   
     },
     {

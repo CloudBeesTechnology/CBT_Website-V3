@@ -4,6 +4,9 @@ import Count from "./count";
 import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
 import { OurClient } from "./OurClient";
+import { Technologies } from "./Technologies";
+import { LetTalk } from "./LetTalk";
+import Products from "./Products";
 
 
 const Home: React.FC = () => {
@@ -44,10 +47,12 @@ const Home: React.FC = () => {
         homeLogo={CBTPolygonLogo}
         homeBannerText={homeBannerText}
       />
-      <Count/>
+      <Products/>
       <Progress/>
       <LifeCBT/>
       <OurClient/>
+      <Technologies/>
+      <LetTalk/>
     </>
   );
 };

@@ -1,14 +1,14 @@
 import Image from "next/image";
-import client1 from "../../assets/HomeSection/ClientLogos/clLogo-1.png";
-import client2 from "../../assets/HomeSection/ClientLogos/clLogo-2.png";
-import client3 from "../../assets/HomeSection/ClientLogos/clLogo-3.png";
+import client1 from "../../assets/HomeSection/ClientLogos/le.png";
+import client2 from "../../assets/HomeSection/ClientLogos/clLogo-10.png";
+import client3 from "../../assets/HomeSection/ClientLogos/e_fishing.png";
 import client4 from "../../assets/HomeSection/ClientLogos/clLogo-4.png";
-import client5 from "../../assets/HomeSection/ClientLogos/clLogo-5.png";
-import client6 from "../../assets/HomeSection/ClientLogos/clLogo-6.png";
+import client5 from "../../assets/HomeSection/ClientLogos/niche.png";
+import client6 from "../../assets/HomeSection/ClientLogos/clLogo-3.png";
 import client7 from "../../assets/HomeSection/ClientLogos/clLogo-7.png";
-import client8 from "../../assets/HomeSection/ClientLogos/clLogo-8.png";
-import client9 from "../../assets/HomeSection/ClientLogos/clLogo-9.png";
-import client10 from "../../assets/HomeSection/ClientLogos/clLogo-10.png";
+import client8 from "../../assets/HomeSection/ClientLogos/clLogo-5.png";
+import client9 from "../../assets/HomeSection/ClientLogos/clLogo-6.png";
+import client10 from "../../assets/HomeSection/ClientLogos/clLogo-8.png";
 
 const clientsImg =[
     {id:1 , src: client1, alt:"Client 1"},
@@ -28,10 +28,11 @@ export const OurClient = () => {
       <h2 className="text_size_1 text-center mb-10">
         <span className="text-primary">Our </span> Clients
       </h2>
-      <section className="center bg-gradient-to-r from-[#F2F299] via-[#5F665B] via-80% to-[#0B151A] my-10">
-      <div className="screen-size my-10  grid grid-cols-2 md:grid-cols-3 max-sm:grid-cols-1 gap-10 sm:gap-5">
+      {/* bg-gradient-to-r from-[#F2F299] via-[#5F665B] via-80% to-[#0B151A] */}
+      <section className="center relative bg-[#8c8c8cc2] my-10">
+      <div className="m-5 sm:m-10  grid grid-cols-2 w-full md:grid-cols-3 py-5 sm:py-10 max-sm:grid-cols-1 gap-10 sm:gap-20">
                  {clientsImg.map((client)=>(
-            <div key={client.id} className="flex justify-center">
+            <div key={client.id} className="flex justify-center items-center">
                 <Image
                 src={client.src}
                 alt={client.alt}
@@ -42,6 +43,7 @@ export const OurClient = () => {
             </div>
          ))}
         </div>
+        <div className="absolute w-full h-full bg-[#0000003d]  "></div>
       </section>
     </section>
   );
