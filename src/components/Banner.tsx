@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { StaticImageData }  from "next/image";
 import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
 
 interface BannerProps {

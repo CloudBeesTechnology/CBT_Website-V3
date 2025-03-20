@@ -21,7 +21,7 @@
   --color-gray:#202020;
   --color-dark_gray:#404040;
   --color-blue_gray:#313F48;
-  --color-yellow:#FABA0B;
+  --color-primary:#FABA0B;
   --color-white:white;
 }
 
@@ -29,7 +29,7 @@
   .screen-size {
     @apply max-w-screen-2xl w-[95%] mx-auto;
   }
-  .bg-gradient{
+  .bg-gradient {
     @apply bg-gradient-to-t from-[#0D1A1F] to-[#47555F];
   }
   .center {
@@ -40,6 +40,9 @@
   }
   .title_2{
     @apply text-2xl font-semibold
+  }
+  .title_1{
+    @apply text-[40px] font-semibold
   }
   .text_size_1 {
     @apply text-4xl font-medium;
@@ -63,7 +66,7 @@
       transform: translateY(-50%);
     }
     50% {
-      left: 80vw; 
+      left: 70%; 
       top: 50%;
       transform: translateY(-50%);
     }

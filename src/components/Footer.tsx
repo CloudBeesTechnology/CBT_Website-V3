@@ -31,10 +31,10 @@ export const Footer = () => {
               </p>
               <article className="flex-1 my-5">
                 <p className="para">
-                  <strong className="para text-yellow">Email:</strong> hr@cloudbeestech.com
+                  <strong className="para text-primary">Email:</strong> hr@cloudbeestech.com
                 </p>
                 <div className="flex gap-1 my-1 max-lg:justify-center">
-                  <p className="para text-yellow">Phone:</p>
+                  <p className="para text-primary">Phone:</p>
                   <div className="para">
                     <p>India - +91 - 7200533357</p>
                     <p>USA - +1 (614) 632-9349</p>
@@ -77,7 +77,7 @@ export const Footer = () => {
               },
             ].map(({ location, address, link }) => (
               <article key={location} className="flex flex-col gap-5">
-                <h6 className="para font-semibold text-yellow underline underline-offset-6">{location}</h6>
+                <h6 className="para font-semibold text-primary underline underline-offset-6">{location}</h6>
                 <p className="para sm:h-20 ">
                   {address.map((line, index) => (
                     <span key={index}>
