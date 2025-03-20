@@ -7,7 +7,7 @@ interface BannerProps {
   serviceGIF?: string;
   serviceBannerText?: React.ReactNode;
   aboutBannerText?: React.ReactNode;
-  rotate: boolean;
+  rotate?: boolean;
 }
 
 export const Banner: React.FC<BannerProps> = ({
