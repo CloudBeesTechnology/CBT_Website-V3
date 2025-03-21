@@ -29,7 +29,7 @@ export const OurClient = () => {
         <span className="text-primary">Our </span> Clients
       </h2>
       {/* bg-gradient-to-r from-[#F2F299] via-[#5F665B] via-80% to-[#0B151A] */}
-      <section className="center relative bg-[#8c8c8cc2] my-10">
+      <section className="center relative bg-[#8c8c8c9c] my-10">
       <div className="m-5 sm:m-10  grid grid-cols-2 w-full md:grid-cols-3 py-5 sm:py-10 max-sm:grid-cols-1 gap-10 sm:gap-20">
                  {clientsImg.map((client)=>(
             <div key={client.id} className="flex justify-center items-center">
@@ -43,7 +43,7 @@ export const OurClient = () => {
             </div>
          ))}
         </div>
-        <div className="absolute w-full h-full bg-[#0000003d]  "></div>
+        <div className="absolute w-full h-full bg-[#00000028]  "></div>
       </section>
     </section>
   );
