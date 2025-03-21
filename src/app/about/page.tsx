@@ -1,4 +1,4 @@
- "use client"
+"use client";
 import Image from "next/image";
 import aboutUs from "../../assets/AboutSection/HeaderImages/aboutUs.png";
 import ourMission from "../../assets/AboutSection/HeaderImages/ourMission.png";
@@ -6,7 +6,7 @@ import { Banner } from "@/components/Banner";
 import Frontiers from "./frontiers";
 import { employees } from "./employeesData";
 import { useEffect, useState } from "react";
-
+import CeoQuotesCard from "./CeoQuotesCard";
 
 const About: React.FC = () => {
   const [rotate, setRotate] = useState<boolean>(false);
@@ -14,9 +14,9 @@ const About: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setRotate(true);
-    }, 200); 
+    }, 200);
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
   const aboutBannerText = (
     <>
@@ -33,7 +33,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Banner aboutBannerText={aboutBannerText} rotate={rotate}/>
+      <Banner aboutBannerText={aboutBannerText} rotate={rotate} />
 
       <div className="flex flex-col lg:flex-row justify-around items-center p-6 rounded-lg screen-size">
         <div className="w-full lg:w-1/2 flex lg:justify-start sm:justify-center">
@@ -48,7 +48,7 @@ const About: React.FC = () => {
 
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center ">
           <h2 className="title mb-6 p-4">
-            <span className="text-yellow">About </span>
+            <span className="text-primary">About </span>
             <span className="text-dark_gray">Us</span>
           </h2>
 
@@ -68,7 +68,7 @@ const About: React.FC = () => {
       <div className="flex flex-col items-center  p-6 rounded-lg  screen-size">
         <h2 className="title mb-4 text-center">
           <span className="text-gray">Our </span>
-          <span className="text-yellow">Mission</span>
+          <span className="text-primary">Mission</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row w-full justify-between items-center space-y-6 lg:space-y-0">
@@ -96,6 +96,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
+      <CeoQuotesCard />
       <Frontiers employees={employees} />
     </>
   );

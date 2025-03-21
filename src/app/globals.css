@@ -23,6 +23,7 @@
   --color-blue_gray:#313F48;
   --color-primary:#FABA0B;
   --color-white:white;
+  --color-blogYellow:#FFD258;
 }
 
 @layer utilities {
@@ -53,7 +54,10 @@
   .para {
     @apply text-[18px];
   }
-
+  .blog_title_1 {
+    @apply text-[18px] font-medium;
+  }
+  
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
     @apply bg-cover bg-no-repeat bg-center h-screen
