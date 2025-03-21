@@ -127,7 +127,7 @@ export default function Project() {
   return (
     <div className="screen-size flex flex-col space-y-12 sm:space-y-14 my-14 p-2 w-full">
         <h2 className="text_size_1 text-center ">
-        <span className="text-primary">Explore Our </span> Products
+        <span className="text-primary">Our </span> Projects
       </h2>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} isEven={feature.id % 2 === 0} />

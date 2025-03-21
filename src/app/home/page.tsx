@@ -8,6 +8,7 @@ import Products from "../products/Products";
 import { Banner } from "@/components/Banner";
 import { LetTalk } from "./LetTalk";
 import ProdLink from "./ProdLink";
+import OurServices from "./OurServices";
 
 
 const Home: React.FC = () => {
@@ -50,6 +51,7 @@ const Home: React.FC = () => {
       />
       <Products/>
       <ProdLink/>
+      <OurServices/>
       <Progress/>
       <LifeCBT/>
       <OurClient/>
