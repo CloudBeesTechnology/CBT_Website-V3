@@ -20,7 +20,7 @@ export default function ProductPage() {
   const featuresPoints = [
     {
       id: 2,
-      title: "AWE HR PORTAL",
+      title: " POS Products",
       points: [
         "Orders sent directly to the kitchen display",
         "Contactless payment support (Apple Pay, Google Pay, NFC)",
@@ -31,7 +31,7 @@ export default function ProductPage() {
     },
     {
       id: 3,
-      title: "AWE Payroll System",
+      title: "FLEET Management  Products  ",
       points: [
         "Real-time vehicle location updates",
         "Integrated Google Maps for easy routing",
@@ -82,3 +82,5 @@ export default function ProductPage() {
     </section>
   );
 }
+
+

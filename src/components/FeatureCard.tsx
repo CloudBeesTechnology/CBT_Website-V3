@@ -10,14 +10,14 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, imageSrc, clientLogo, isEven }) => {
   return (
-    <div className={`center flex-col md:flex-row md:text-left sm:p-2 w-full  ${isEven ? "md:flex-row-reverse" : ""}`}>
+    <div className={`center flex-col my-10 md:flex-row md:text-left sm:p-2 w-full  ${isEven ? "md:flex-row-reverse" : ""}`}>
       <div className="w-full md:w-1/2 center ">
         <Image src={imageSrc} alt="Image not found" width={400} height={250}  />
       </div>
       <div className="w-full md:w-1/2 sm:px-2 flex  flex-col items-center text-center max-sm:mt-7 sm:mx-2">
       <div className="gap-2 sm:gap-5 center max-sm:flex-col mb-5">
   {clientLogo && <Image src={clientLogo} alt="Image not found" className=" w-full max-w-[150px] h-[50px]" />}
-  {title && <h3 className="title text-dark_gray">
+  {title && <h3 className="title text-dark_gray ">
     <span className="text-primary">{title.split(" ")[0]}</span> {title.split(" ").slice(1).join(" ")}
   </h3>}
 </div>    
@@ -28,3 +28,36 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, imageSrc,
 };
 
 export default FeatureCard;
+
+
+
+// import Image, { StaticImageData } from "next/image";
+
+// interface FeatureCardProps {
+//   title?: string;
+//   description: string;
+//   imageSrc: StaticImageData;
+//   clientLogo?:StaticImageData,
+//   isEven: boolean;
+// }
+
+// const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, imageSrc, clientLogo, isEven }) => {
+//   return (
+//     <div className={`center flex-col md:flex-row md:text-left sm:p-2 w-full  ${isEven ? "md:flex-row-reverse" : ""}`}>
+//       <div className="w-full md:w-1/2 center ">
+//         <Image src={imageSrc} alt="Image not found" width={400} height={250}  />
+//       </div>
+//       <div className="w-full md:w-1/2 sm:px-2 flex  flex-col items-center text-center max-sm:mt-7 sm:mx-2">
+//       <div className="gap-2 sm:gap-5 center flex-col max-sm:flex-col mb-5">
+//   {clientLogo && <Image src={clientLogo} alt="Image not found" className=" w-full max-w-[150px] h-[50px]" />}
+//   {title && <h3 className="title w-[500px] text-dark_gray text-left">
+//     <span className="text-primary">{title.split(" ")[0]}</span> {title.split(" ").slice(1).join(" ")}
+//   </h3>}
+//         <p className="text-gray max-w-lg text-left para">{description}</p>
+// </div>    
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default FeatureCard;

@@ -1,5 +1,6 @@
 import { Banner } from "@/components/Banner";
 import ServiceLogo from "../../assets/ServiceSection/animation/Service.gif"
+import Service from "./Service";
 
 // src/app/ourServices/page.tsx
 const OurServices: React.FC = () => {
@@ -15,11 +16,8 @@ const OurServices: React.FC = () => {
   )
   return (
     <div className="">
-      <Banner
-        // serviceLogo={ServiceLogo}
-        // serviceBannerText={serviceBannerText}
-
-      />
+      <Banner />
+      <Service/>
     </div>
   );
 }

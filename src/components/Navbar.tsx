@@ -55,12 +55,12 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/ourServices" className={`${pathname === '/ourServices' ? 'text-primary' : 'hover:text-primary'}`}>
+          <Link href="/services" className={`${pathname === '/services' ? 'text-primary' : 'hover:text-primary'}`}>
             Service
           </Link>
         </li>
         <li>
-          <Link href="/ourProjects" className={`${pathname === '/ourProjects' ? 'text-primary' : 'hover:text-primary'}`}>
+          <Link href="/projects" className={`${pathname === '/projects' ? 'text-primary' : 'hover:text-primary'}`}>
             Project
           </Link>
         </li>
@@ -119,12 +119,12 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/ourServices" onClick={closeSidebar} className={`${pathname === '/ourServices' ? 'text-primary' : 'hover:text-primary'}`}>
+              <Link href="/services" onClick={closeSidebar} className={`${pathname === '/services' ? 'text-primary' : 'hover:text-primary'}`}>
                 Service
               </Link>
             </li>
             <li>
-              <Link href="/ourProjects" onClick={closeSidebar} className={`${pathname === '/ourProjects' ? 'text-primary' : 'hover:text-primary'}`}>
+              <Link href="/projects" onClick={closeSidebar} className={`${pathname === '/projects' ? 'text-primary' : 'hover:text-primary'}`}>
                 Project
               </Link>
             </li>
