@@ -1,93 +1,54 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { BsArrowRight } from "react-icons/bs";
-import jira from "../../assets/blog/blogImg/Jira.png";
+import { FaArrowRight } from "react-icons/fa6";
 
-const BlogCard: React.FC = () => {
+type BlogCardDetails = {
+  imageUrl: string | StaticImageData;
+  title: string;
+  content: string;
+};
+
+type BlogCardProps = {
+  cards: BlogCardDetails[];
+};
+const BlogCard: React.FC<BlogCardProps> = ({ cards }) => {
+  console.log(cards);
   return (
-    <div className="flex justify-center gap-14">
-      <div className="max-w-sm rounded-2xl overflow-hidden ">
-        <Image
-          src={jira}
-          alt="jira"
-          width={310}
-          height={540}
-          className="rounded-lg max-w-full object-cover"
-        />
-        <div className="p-4 border border-blogYellow">
-          <h2 className="text-dark_gray mb-2 blog_title_1">{"AI support in Jira"}</h2>
-          <p className="text-gray-600 line-clamp-3 mb-4">{"description"}</p>
-          <a
-            href="#"
-            className="text-blue-600 font-medium flex items-center hover:underline"
+    <section className="center">
+      <div className="center flex-wrap gap-20 py-24 place-items-center">
+        {cards.map((val, index) => (
+          <article
+            key={index}
+            className="max-w-[360px] rounded-2xl overflow-hidden text-center"
           >
-            Read More <BsArrowRight className="ml-1 w-5 h-5" />
-          </a>
-        </div>
+            <div className="group">
+              <figure className="overflow-hidden rounded-t-2xl">
+                <Image
+                  src={val.imageUrl}
+                  alt={val.title}
+                  className="w-full h-auto object-cover rounded-t-2xl transform transition-transform duration-500 group-hover:scale-105"
+                />
+              </figure>
+
+              <div className="p-4 border border-blogYellow bg-blogWhite min-h-[280px] rounded-b-2xl  group-hover:bg-lite_gray flex flex-col">
+                <h2 className="text-dark_gray mb-2 text_size_3 group-hover:text-primary transition-colors duration-300">
+                  {val.title}
+                </h2>
+
+                <p className="text-dark_gray mb-4">{val.content}</p>
+
+                <p className="center gap-1 text-dark_gray mt-auto transition-colors duration-300 group-hover:text-primary">
+                  <span className="border-b-1 border-transparent group-hover:border-primary">
+                    Read More
+                  </span>
+                  <BsArrowRight className="ml-1" />
+                </p>
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
-      {/* 2 */}
-      <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border">
-        {/* <img src={imageSrc} alt={title} className="w-full h-64 object-cover" /> */}
-        <Image
-          src={jira}
-          alt="jira"
-          width={310}
-          height={540}
-          className="rounded-lg max-w-full object-cover"
-        />
-        <div className="p-4 ">
-          <h2 className="text-xl font-semibold mb-2">{"Jira"}</h2>
-          <p className="text-gray-600 line-clamp-3 mb-4">{"description"}</p>
-          <a
-            href="#"
-            className="text-blue-600 font-medium flex items-center hover:underline"
-          >
-            Read More <BsArrowRight className="ml-1 w-5 h-5" />
-          </a>
-        </div>
-      </div>
-      {/* 3 */}
-      <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border">
-        {/* <img src={imageSrc} alt={title} className="w-full h-64 object-cover" /> */}
-        <Image
-          src={jira}
-          alt="jira"
-          width={310}
-          height={540}
-          className="rounded-lg max-w-full object-cover"
-        />
-        <div className="p-4 ">
-          <h2 className="text-xl font-semibold mb-2">{"Jira"}</h2>
-          <p className="text-gray-600 line-clamp-3 mb-4">{"description"}</p>
-          <a
-            href="#"
-            className="text-blue-600 font-medium flex items-center hover:underline"
-          >
-            Read More <BsArrowRight className="ml-1 w-5 h-5" />
-          </a>
-        </div>
-      </div>
-      {/* 4 */}
-      <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border">
-        {/* <img src={imageSrc} alt={title} className="w-full h-64 object-cover" /> */}
-        <Image
-          src={jira}
-          alt="jira"
-          width={310}
-          height={540}
-          className="rounded-lg max-w-full object-cover"
-        />
-        <div className="p-4 ">
-          <h2 className="text-xl font-semibold mb-2">{"Jira"}</h2>
-          <p className="text-gray-600 line-clamp-3 mb-4">{"description"}</p>
-          <a
-            href="#"
-            className="text-blue-600 font-medium flex items-center hover:underline"
-          >
-            Read More <BsArrowRight className="ml-1 w-5 h-5" />
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
 export default BlogCard;

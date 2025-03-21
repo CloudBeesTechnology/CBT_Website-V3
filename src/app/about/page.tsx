@@ -47,7 +47,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center ">
-          <h2 className="title mb-6 p-4">
+          <h2 className="title_1 mb-6 p-4">
             <span className="text-primary">About </span>
             <span className="text-dark_gray">Us</span>
           </h2>
@@ -66,7 +66,7 @@ const About: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center  p-6 rounded-lg  screen-size">
-        <h2 className="title mb-4 text-center">
+        <h2 className="title_1 mb-4 text-center">
           <span className="text-gray">Our </span>
           <span className="text-primary">Mission</span>
         </h2>

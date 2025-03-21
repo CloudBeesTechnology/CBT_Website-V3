@@ -2,6 +2,7 @@
 import { Banner } from "@/components/Banner";
 import React, { useEffect, useState } from "react";
 import BlogCard from "./blogCard";
+import { BlogCardDetails } from "./blogCardDetails";
 
 const Blogs: React.FC = () => {
   const [rotate, setRotate] = useState<boolean>(false);
@@ -13,7 +14,7 @@ const Blogs: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
   const BlogsBannerText: React.ReactNode = (
-    <div className="flex justify-center items-start space-x-10">
+    <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
         <span className="text-white text_size_1">
           Don&apos;t Just Scroll, Learn
@@ -28,14 +29,20 @@ const Blogs: React.FC = () => {
   return (
     <div>
       <Banner BlogsBannerText={BlogsBannerText} rotate={rotate} />
-      <section className="flex flex-col items-center p-8">
-        <h3 className="title">
+
+      <section className="flex flex-col items-center text-center gap-4 px-4 md:px-10 md:gap-6 mt-14">
+        <h3 className="title_1">
           <span className="text-primary">Our </span>
-          <span className="text-dark_gray">Blog</span>
+          <span className="text-dark_gray ">Blog</span>
         </h3>
-        <p className="text-[20px] text-gray">How to choose your Programming Language / Tech Stack</p>
+        <p className="text-gray md:text-lg lg:text-xl">
+          How to choose your Programming Language / Tech Stack
+        </p>
       </section>
-      <BlogCard />
+
+      <div className="w-full px-4 md:px-12 lg:px-16">
+        <BlogCard cards={BlogCardDetails} />
+      </div>
     </div>
   );
 };

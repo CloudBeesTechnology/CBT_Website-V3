@@ -2,7 +2,7 @@ const CeoQuotesCard: React.FC = () => {
   return (
     <div className="text-center p-6 my-8 rounded-2xl screen-size bg-gradient-to-r from-dark_gray to-primary">
       <div className=" p-10 rounded-2xl sm:p-6">
-        <h2 className="title mb-4 text-2xl sm:text-xl">
+        <h2 className="title_1 mb-4 text-2xl sm:text-xl">
           <span className="text-primary">CEO </span>
           <span className="text-dark_gray">Quotes</span>
         </h2>
