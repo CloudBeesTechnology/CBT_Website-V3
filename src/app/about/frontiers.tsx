@@ -18,7 +18,7 @@ const Frontiers: React.FC<FrontiersProps> = ({ employees }) => {
   return (
     <div className="flex flex-col items-center w-full mx-auto p-6 mb-20">
       <div className="text-center mb-10 ">
-        <h2 className="title">Frontiers</h2>
+        <h2 className="title_1">Frontiers</h2>
         <Image
           src={underline}
           alt="underline"
