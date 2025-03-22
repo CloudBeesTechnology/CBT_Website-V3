@@ -64,7 +64,7 @@
   }
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
-    @apply bg-cover bg-no-repeat bg-center h-screen
+    @apply bg-cover bg-no-repeat 
   }
   
   
