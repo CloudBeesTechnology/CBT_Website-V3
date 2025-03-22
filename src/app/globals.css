@@ -22,10 +22,13 @@
   --color-dark_gray:#404040;
   --color-blue_gray:#313F48;
   --color-lite_gray:#F1F1F1;
+  --color-ash_gray:#909090;
   --color-primary:#FABA0B;
   --color-white:white;
+  --color-sandal:#FFE7A4;
   --color-blogYellow:#FFD258;
   --color-blogWhite:#FBFBFB;
+  
 }
 
 @layer utilities {
@@ -37,6 +40,9 @@
   }
   .center {
     @apply flex justify-center items-center;
+  }
+  .vertical {
+    @apply flex flex-col items-center justify-center;
   }
   .between {
     @apply flex justify-between items-center;
@@ -50,6 +56,11 @@
   .title_1{
     @apply text-4xl sm:text-[40px] font-semibold
   }
+
+  .title_3{
+    @apply text-xl font-semibold
+  }
+
   .text_size_1 {
     @apply text-2xl sm:text-4xl font-medium;
   }
@@ -59,8 +70,12 @@
   .text_size_3 {
     @apply text-lg font-medium;
   }
+
   .para {
     @apply text-base sm:text-lg;
+  }
+  .para_1 {
+    @apply text-base sm:text-lg font-medium;
   }
   .btn {
     @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
