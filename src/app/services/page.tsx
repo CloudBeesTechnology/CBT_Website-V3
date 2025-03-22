@@ -16,7 +16,10 @@ const OurServices: React.FC = () => {
   )
   return (
     <div className="">
-      <Banner />
+      <Banner
+        serviceLogo={ServiceLogo}
+        serviceBannerText={serviceBannerText}
+      />
       <Service/>
     </div>
   );

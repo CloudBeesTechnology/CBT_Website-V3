@@ -1,4 +1,3 @@
-
 import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
 import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
@@ -10,34 +9,33 @@ import { LetTalk } from "./LetTalk";
 import ProdLink from "./ProdLink";
 import OurServices from "./OurServices";
 
-
 const Home: React.FC = () => {
 
   const homeBannerText = (
     <>
-      <div className="flex justify-center items-start space-x-10">
+      <div className="flex flex-wrap justify-center items-start space-y-6 sm:space-y-0 space-x-4 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-10">
         {/* Empowering */}
-        <div className="flex items-center space-y-1">
-          <span className="text-primary text_size_1 animate-bounce">E</span>
-          <span className="text-white text_size_1">mpowering</span>
+        <div className="flex items-center justify-center space-y-1">
+          <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl animate-bounce">E</span>
+          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">mpowering</span>
         </div>
 
         {/* Digital */}
-        <div className="flex items-center space-y-1">
-          <span className="text-primary text_size_1 animate-bounce">D</span>
-          <span className="text-white text_size_1">igital</span>
+        <div className="flex items-center justify-center space-y-1">
+          <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl animate-bounce">D</span>
+          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">igital</span>
         </div>
 
         {/* Transformation */}
-        <div className="flex items-center space-y-1">
-          <span className="text-primary text_size_1 animate-bounce">T</span>
-          <span className="text-white text_size_1">ransformation</span>
+        <div className="flex items-center justify-center space-y-1">
+          <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl animate-bounce">T</span>
+          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">ransformation</span>
         </div>
-
       </div>
+
       <div className="text-center mt-6">
-        <p className="text_size_2 text-white italic leading-relaxed">
-          CloudBees Tech providing smart digital solutions solving <br/> complex challenges and delivering innovative solutions that <br/> help our customers ahead
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white italic leading-relaxed">
+          CloudBees Tech providing smart digital solutions solving <br /> complex challenges and delivering innovative solutions that <br /> help our customers ahead
         </p>
       </div>
     </>
@@ -49,14 +47,14 @@ const Home: React.FC = () => {
         homeLogo={CBTPolygonLogo}
         homeBannerText={homeBannerText}
       />
-      <Products/>
-      <ProdLink/>
-      <OurServices/>
-      <Progress/>
-      <LifeCBT/>
-      <OurClient/>
-      <Technologies/>
-      <LetTalk/>
+      <Products />
+      <ProdLink />
+      <OurServices />
+      <Progress />
+      <LifeCBT />
+      <OurClient />
+      <Technologies />
+      <LetTalk />
     </>
   );
 };
