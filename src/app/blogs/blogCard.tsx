@@ -30,7 +30,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards }) => {
                 />
               </figure>
 
-              <div className="p-4 border-x-1 border-b-1 py-5 border-blogYellow bg-blogWhite min-h-[280px] rounded-b-2xl  group-hover:bg-lite_gray flex flex-col">
+              <div className="p-4 border-x-1 border-b-1 py-5 border-blogYellow bg-blogWhite min-h-[280px] rounded-b-2xl group-hover:border-ash_gray group-hover:bg-lite_gray flex flex-col">
                 <h2 className="text-dark_gray mb-2 text_size_3 group-hover:text-primary transition-colors duration-300">
                   {val.title}
                 </h2>
