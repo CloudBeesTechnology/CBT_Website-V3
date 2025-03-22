@@ -3,6 +3,7 @@ import FeatureCard from "@/components/FeatureCard";
 import logo1 from "../../assets/HomeSection/ContentImages/home-1.png";
 import logo2 from "../../assets/HomeSection/ContentImages/home-2.png";
 import logo3 from "../../assets/HomeSection/ContentImages/home-3.png";
+import logo4 from "../../assets/HomeSection/ClientLogos/Hr_360e_logo.png";
 import { AiFillCaretRight } from "react-icons/ai";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ export default function ProductPage() {
   const features = [
     {
       id: 1,
-      title: "HRMS Products",
+      clientLogo: logo4,
       description:
         "The HRMS Portal and Employee Login System is a robust, secure, and highly customizable solution designed to automate and optimize various HR processes, making them more efficient and accessible.",
       imageSrc: logo1,
@@ -20,7 +21,7 @@ export default function ProductPage() {
   const featuresPoints = [
     {
       id: 2,
-      title: " POS Products",
+      title: "POS Products",
       points: [
         "Orders sent directly to the kitchen display",
         "Contactless payment support (Apple Pay, Google Pay, NFC)",
@@ -45,7 +46,7 @@ export default function ProductPage() {
   return (
     <section className="screen-size flex flex-col space-y-12 md:space-y-4 p-2 w-full">
         <h2 className="text_size_1 text-center mb-10">
-        <span className="text-primary">Explore Our </span> Products
+        <span className="text-primary">HR360E </span> Products
       </h2>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} isEven={feature.id % 2 === 0} />
@@ -59,7 +60,8 @@ export default function ProductPage() {
             className={`center flex-col md:flex-row md:text-left sm:p-2 ${
               isEven ? "md:flex-row-reverse" : ""
             }`}
-          >
+          >  
+          
             <div className="w-full md:w-1/2 center">
               <Image src={feature.imageSrc} alt={feature.title} width={400} height={250} />
             </div>
