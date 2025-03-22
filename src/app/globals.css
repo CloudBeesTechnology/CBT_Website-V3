@@ -28,7 +28,6 @@
   --color-sandal:#FFE7A4;
   --color-blogYellow:#FFD258;
   --color-blogWhite:#FBFBFB;
-  
 }
 
 @layer utilities {
@@ -67,10 +66,6 @@
   .text_size_2 {
     @apply text-xl sm:text-2xl font-medium;
   }
-  .text_size_3 {
-    @apply text-lg font-medium;
-  }
-
   .para {
     @apply text-base sm:text-lg;
   }
@@ -85,7 +80,7 @@
   }
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
-    @apply bg-cover bg-no-repeat bg-center h-screen
+    @apply bg-cover bg-no-repeat 
   }
   
   
@@ -119,6 +114,14 @@
   .animate-spin-custom {
     animation: spin 30s linear infinite;
   }
+ @keyframes spins {
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  .animate-spin {
+    animation: spin 10s linear infinite;
+  }
 
   @keyframes bounceCustom {
     0%, 100% {
@@ -149,4 +152,3 @@
   }
   
 }
-
