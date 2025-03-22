@@ -31,7 +31,7 @@ const Blogs: React.FC = () => {
       <Banner BlogsBannerText={BlogsBannerText} rotate={rotate} />
 
       <section className="flex flex-col items-center text-center gap-4 px-4 md:px-10 md:gap-6 mt-14">
-        <h3 className="title_1">
+        <h3 className="title_4">
           <span className="text-primary">Our </span>
           <span className="text-dark_gray ">Blog</span>
         </h3>

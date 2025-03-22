@@ -55,10 +55,17 @@
   .title_1{
     @apply text-4xl sm:text-[40px] font-semibold
   }
-
   .title_3{
     @apply text-xl font-semibold
   }
+  .title_4 {
+    @apply text-4xl font-semibold
+  }
+  .title_5 {
+   @apply text-2xl font-semibold
+  }
+ 
+
 
   .text_size_1 {
     @apply text-2xl sm:text-4xl font-medium;
@@ -66,6 +73,15 @@
   .text_size_2 {
     @apply text-xl sm:text-2xl font-medium;
   }
+  .text_size_3 {
+    @apply text-[28px] font-semibold
+   } 
+   .text_size_4 {
+    @apply text-[22px] font-medium
+   } 
+   .text_size_5 {
+    @apply text-lg font-medium
+   } 
   .para {
     @apply text-base sm:text-lg;
   }

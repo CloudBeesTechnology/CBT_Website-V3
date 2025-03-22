@@ -1,4 +1,3 @@
-
 import Image, { StaticImageData } from "next/image";
 import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
 
@@ -9,6 +8,7 @@ interface BannerProps {
   serviceBannerText?: React.ReactNode;
   aboutBannerText?: React.ReactNode;
   rotate?: boolean;
+  BlogsBannerText?: React.ReactNode;
 }
 
 export const Banner: React.FC<BannerProps> = ({
@@ -18,6 +18,7 @@ export const Banner: React.FC<BannerProps> = ({
   serviceBannerText,
   aboutBannerText,
   rotate,
+  BlogsBannerText
 }) => {
   return (
     <div className="relative bg_image h-[700px] min-[890px]:h-screen pb-14 min-[890px]:p-1 center w-full">
@@ -53,7 +54,6 @@ export const Banner: React.FC<BannerProps> = ({
             </div>
           </div>
         </div>
-
       )}
 
       {/* Service */}
@@ -76,8 +76,12 @@ export const Banner: React.FC<BannerProps> = ({
 
             <div className="center flex-col text-center sm:w-2xl ">
               <h2 className="text-3xl font-bold">{serviceBannerText}</h2>
-              <p className="mt-5">Our end-to-end approach enhances operations, accelerates effectiveness, eliminates of technical issues, reduction in cost and updates apps for the future</p>
-              </div>
+              <p className="mt-5">
+                Our end-to-end approach enhances operations, accelerates
+                effectiveness, eliminates of technical issues, reduction in cost
+                and updates apps for the future
+              </p>
+            </div>
           </div>
         </div>
       )}
@@ -89,13 +93,47 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{aboutBannerText}</h2>
               <h3
-                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out ${rotate
+                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out ${
+                  rotate
                     ? "rotate-0 scale-100 opacity-100"
                     : "rotate-[18deg] scale-50 opacity-0"
-                  }`}
+                }`}
               >
                 <i> Weaving Words Bridging Worlds </i>
               </h3>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Blog */}
+      {BlogsBannerText && (
+        <div className="flex items-center justify-center min-h-screen text-white">
+          <div className="flex justify-evenly w-full ">
+            <div className="flex flex-col items-center justify-center space-y-20">
+              <h2 className="title">{BlogsBannerText}</h2>
+              <div
+                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out flex flex-col items-center ${
+                  rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                }`}
+              >
+                {[
+                  "Delve into captivating narratives, thought-provoking insights, and expertly curated",
+                  "content that ignites curiosity and fosters meaningful conversations.",
+                ].map((text, index) => (
+                  <h3 key={index}>
+                    <i
+                      className={`block transition-all duration-[1000ms] ease-out ${
+                        rotate
+                          ? "scale-100 opacity-100 delay-300"
+                          : "scale-50 opacity-0"
+                      }`}
+                    >
+                      {text}
+                    </i>
+                  </h3>
+                ))}
+              </div>
             </div>
           </div>
         </div>
