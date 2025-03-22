@@ -26,7 +26,7 @@ export const Banner: React.FC<BannerProps> = ({
           alt="CBT Banner Image"
           width={500}
           height={100}
-          className="animate-spin-custom shadow-lg blur-[60px]"
+          className="animate-spin-custom shadow-lg blur-[60px] bg-image-responsiveness"
         />
       </div>
       {/* Home */}
