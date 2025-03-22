@@ -21,8 +21,11 @@
   --color-gray:#202020;
   --color-dark_gray:#404040;
   --color-blue_gray:#313F48;
+  --color-lite_gray:#F1F1F1;
   --color-primary:#FABA0B;
   --color-white:white;
+  --color-blogYellow:#FFD258;
+  --color-blogWhite:#FBFBFB;
 }
 
 @layer utilities {
@@ -35,23 +38,32 @@
   .center {
     @apply flex justify-center items-center;
   }
+  .between {
+    @apply flex justify-between items-center;
+  }
   .title{
-    @apply text-4xl font-semibold
+    @apply  text-xl sm:text-2xl font-semibold
   }
   .title_2{
-    @apply text-2xl font-semibold
+    @apply text-xl sm:text-2xl font-semibold
   }
   .title_1{
-    @apply text-[40px] font-semibold
+    @apply text-4xl sm:text-[40px] font-semibold
   }
   .text_size_1 {
-    @apply text-4xl font-medium;
+    @apply text-2xl sm:text-4xl font-medium;
   }
   .text_size_2 {
-    @apply text-2xl font-medium;
+    @apply text-xl sm:text-2xl font-medium;
+  }
+  .text_size_3 {
+    @apply text-lg font-medium;
   }
   .para {
-    @apply text-[18px];
+    @apply text-base sm:text-lg;
+  }
+  .btn {
+    @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
   }
 
   @layer utilities {
@@ -101,7 +113,6 @@
       }
     }
   }
-  
   
   @keyframes move {
     0% {

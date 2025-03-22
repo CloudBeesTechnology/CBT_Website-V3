@@ -1,10 +1,14 @@
 
 import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
-import Count from "./count";
 import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
 import { OurClient } from "./OurClient";
+import { Technologies } from "./Technologies";
+import Products from "../products/Products";
 import { Banner } from "@/components/Banner";
+import { LetTalk } from "./LetTalk";
+import ProdLink from "./ProdLink";
+import OurServices from "./OurServices";
 
 
 const Home: React.FC = () => {
@@ -45,10 +49,14 @@ const Home: React.FC = () => {
         homeLogo={CBTPolygonLogo}
         homeBannerText={homeBannerText}
       />
-      <Count/>
+      <Products/>
+      <ProdLink/>
+      <OurServices/>
       <Progress/>
       <LifeCBT/>
       <OurClient/>
+      <Technologies/>
+      <LetTalk/>
     </>
   );
 };

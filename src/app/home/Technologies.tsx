@@ -1,0 +1,171 @@
+
+// export const Technologies = () => {
+//     return (
+//       <section className="screen-size my-10 md:my-20 center flex-col">
+//         <h2 className="title max-[360px]:text-3xl text-darkgrey">
+//           <span className="text-primary">Our</span> Technologies
+//         </h2>
+//         <div className="center sm:justify-evenly flex-wrap gap-10 sm:my-16 my-10">
+           
+//               <div  className="flex flex-col border border-primary shadow-xl rounded-lg hover:shadow-primary hover:shadow-lg hover:scale-110 hover:transition-all hover:duration-500" >
+//                 <div className="h-60 px-5 w-full center flex-wrap ">
+//                   <img className={`object-cover w-full max-w-[200px] `} } />
+//                 </div>
+//               </div>
+           
+//         </div>
+//       </section>
+//     );
+//   };
+
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import client1 from "../../assets/HomeSection/AppIcons/shiftbl.svg";
+import client1Hover from "../../assets/HomeSection/AppIcons/shiftcl.svg";
+import client2 from "../../assets/HomeSection/AppIcons/javabl.svg";
+import client2Hover from "../../assets/HomeSection/AppIcons/javacl.svg";
+import client3 from "../../assets/HomeSection/AppIcons/kotlinbl.svg";
+import client3Hover from "../../assets/HomeSection/AppIcons/kotlincl.svg";
+import client4 from "../../assets/HomeSection/AppIcons/awsbl.svg";
+import client4Hover from "../../assets/HomeSection/AppIcons/awscl.svg";
+import client5 from "../../assets/HomeSection/AppIcons/flutterbl.svg";
+import client5Hover from "../../assets/HomeSection/AppIcons/fluttercl.svg";
+import client6 from "../../assets/HomeSection/AppIcons/reactbl.svg";
+import client6Hover from "../../assets/HomeSection/AppIcons/reactcl.svg";
+import client7 from "../../assets/HomeSection/AppIcons/angularbl.svg";
+import client7Hover from "../../assets/HomeSection/AppIcons/angularcl.svg";
+import client8 from "../../assets/HomeSection/AppIcons/amazonbl.svg";
+import client8Hover from "../../assets/HomeSection/AppIcons/amazoncl.svg";
+import client9 from "../../assets/HomeSection/AppIcons/firebasebl.svg";
+import client9Hover from "../../assets/HomeSection/AppIcons/firebasecl.svg";
+import client10 from "../../assets/HomeSection/AppIcons/githubbl.svg";
+import client10Hover from "../../assets/HomeSection/AppIcons/githubcl.svg";
+import client11 from "../../assets/HomeSection/AppIcons/jsbl.svg";
+import client11Hover from "../../assets/HomeSection/AppIcons/jscl.svg";
+import client12 from "../../assets/HomeSection/AppIcons/larabl.svg";
+import client12Hover from "../../assets/HomeSection/AppIcons/laracl.svg";
+import client13 from "../../assets/HomeSection/AppIcons/kotlinbl.svg";
+import client13Hover from "../../assets/HomeSection/AppIcons/kotlincl.svg";
+import client14 from "../../assets/HomeSection/AppIcons/dbbl.svg";
+import client14Hover from "../../assets/HomeSection/AppIcons/dbcl.svg";
+import client15 from "../../assets/HomeSection/AppIcons/bootstrapbl.svg";
+import client15Hover from "../../assets/HomeSection/AppIcons/bootstrapcl.svg";
+import client16 from "../../assets/HomeSection/AppIcons/mysqlbl.svg";
+import client16Hover from "../../assets/HomeSection/AppIcons/mysqlcl.svg";
+import client17 from "../../assets/HomeSection/AppIcons/nodejsbl.svg";
+import client17Hover from "../../assets/HomeSection/AppIcons/nodejscl.svg";
+import client18 from "../../assets/HomeSection/AppIcons/objbl.svg";
+import client18Hover from "../../assets/HomeSection/AppIcons/objcl.svg";
+import client19 from "../../assets/HomeSection/AppIcons/phpbl.svg";
+import client19Hover from "../../assets/HomeSection/AppIcons/phpcl.svg";
+import client20 from "../../assets/HomeSection/AppIcons/postsqlbl.svg";
+import client20Hover from "../../assets/HomeSection/AppIcons/postsqlcl.svg";
+import client21 from "../../assets/HomeSection/AppIcons/saasbl.svg";
+import client21Hover from "../../assets/HomeSection/AppIcons/saascl.svg";
+import client22 from "../../assets/HomeSection/AppIcons/tailwindbl.svg";
+import client22Hover from "../../assets/HomeSection/AppIcons/tailwindcl.svg";
+import client23 from "../../assets/HomeSection/AppIcons/tsbl.svg";
+import client23Hover from "../../assets/HomeSection/AppIcons/tscl.svg";
+import client24 from "../../assets/HomeSection/AppIcons/unitybl.svg";
+import client24Hover from "../../assets/HomeSection/AppIcons/unitycl.svg";
+import client25 from "../../assets/HomeSection/AppIcons/xamarinbl.svg";
+import client25Hover from "../../assets/HomeSection/AppIcons/xamarincl.svg";
+
+const clientsImg = [
+  { id: 1, defaultSrc: client1, hoverSrc: client1Hover, alt: "Client 1", title:"Swift" },
+  { id: 2, defaultSrc: client2, hoverSrc: client2Hover, alt: "Client 2", title:"Java"},
+  { id: 3, defaultSrc: client3, hoverSrc: client3Hover, alt: "Client 3", title:"Kotlin"},
+  { id: 4, defaultSrc: client4, hoverSrc: client4Hover, alt: "Client 4", title:"Aws/Azure Cloud"},
+  { id: 5, defaultSrc: client5, hoverSrc: client5Hover, alt: "Client 5", title:"Flutter"},
+  { id: 6, defaultSrc: client6, hoverSrc: client6Hover, alt: "Client 6", title:"React"},
+  { id: 7, defaultSrc: client7, hoverSrc: client7Hover, alt: "Client 7", title:"Angular"},
+  { id: 8, defaultSrc: client8, hoverSrc: client8Hover, alt: "Client 8", title:"Amazonweb Service"},
+  { id: 9, defaultSrc: client9, hoverSrc: client9Hover, alt: "Client 9", title:"Firebase"},
+  { id: 10, defaultSrc: client10, hoverSrc: client10Hover, alt: "Client 10", title:"Github"},
+  { id: 11, defaultSrc: client11, hoverSrc: client11Hover, alt: "Client 11", title:"Javascript"},
+  { id: 12, defaultSrc: client12, hoverSrc: client12Hover, alt: "Client 12", title:"Laravel"},
+  { id: 13, defaultSrc: client13, hoverSrc: client13Hover, alt: "Client 13", title:"Kotlin"},
+  { id: 14, defaultSrc: client14, hoverSrc: client14Hover, alt: "Client 14", title:"MangoDB"},
+  { id: 15, defaultSrc: client15, hoverSrc: client15Hover, alt: "Client 15", title:"Bootstrap"},
+  { id: 16, defaultSrc: client16, hoverSrc: client16Hover, alt: "Client 16", title:"MySQL"},
+  { id: 17, defaultSrc: client17, hoverSrc: client17Hover, alt: "Client 17", title:"Node JS"},
+  { id: 18, defaultSrc: client18, hoverSrc: client18Hover, alt: "Client 18", title:"Objective-C"},
+  { id: 19, defaultSrc: client19, hoverSrc: client19Hover, alt: "Client 19", title:"PHP"},
+  { id: 20, defaultSrc: client20, hoverSrc: client20Hover, alt: "Client 20", title:"PostgreSQL"},
+  { id: 21, defaultSrc: client21, hoverSrc: client21Hover, alt: "Client 21", title:"Saas"},
+  { id: 22, defaultSrc: client22, hoverSrc: client22Hover, alt: "Client 22", title:"Tailwind"},
+  { id: 23, defaultSrc: client23, hoverSrc: client23Hover, alt: "Client 23", title:"Typescript"},
+  { id: 24, defaultSrc: client24, hoverSrc: client24Hover, alt: "Client 24", title:"Unity"},
+  { id: 25, defaultSrc: client25, hoverSrc: client25Hover, alt: "Client 25", title:"Xamarin"},
+];
+
+// export const Technologies = () => {
+//   const [hoveredId, setHoveredId] = useState<number | null>(null);
+
+//   return (
+//     <section>
+//       <section className="center  my-10">
+//         <div className="screen-size my-10 center grid grid-cols-2 md:grid-cols-3 gap-6 border">
+//           {clientsImg.map((client) => (
+//             <div
+//               key={client.id}
+//               className="flex flex-col  justify-center "
+//               onMouseEnter={() => setHoveredId(client.id)}
+//               onMouseLeave={() => setHoveredId(null)}
+//             >
+//               <Image
+//                 src={hoveredId === client.id ? client.hoverSrc : client.defaultSrc}
+//                 alt={client.alt}
+//                 width={150}
+//                 height={100}
+//                 className="object-cover w-full  max-w-[150px] border border-primary rounded-full "
+//               />
+//               <h2 className="text-center text_size_2 p-3">{client.title}</h2>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+//     </section>
+//   );
+// };
+{/* <div className="screen-size my-10  grid grid-cols-2 min-w-[575px];grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-10"> */}
+export const Technologies = () => {
+  return (
+    <section className="center my-10">
+      <div className="screen-size my-10 flex flex-wrap justify-center gap-10">
+        {clientsImg.map((client) => (
+          <div
+            key={client.id}
+            className="group flex flex-col items-center w-[18%] min-w-[200px] sm:min-w-[250px] max-w-[200px] "
+          >
+            {/* Image Wrapper */}
+            <div className="relative w-[200px] h-[180px] flex items-center justify-center">
+              {/* Default Image */}
+              <Image
+                src={client.defaultSrc}
+                alt={client.alt}
+                width={150}
+                height={100}
+                className="absolute opacity-100 group-hover:opacity-0 transition-opacity duration-300 border border-primary rounded-full"
+              />
+              {/* Hover Image */}
+              <Image
+                src={client.hoverSrc}
+                alt={client.alt}
+                width={150}
+                height={100}
+                className="object-contain rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-xl"
+                style={{ boxShadow: "3px 0px 2px 3px #DCDCDC" }}
+              />
+            </div>
+
+            {/* Title */}
+            <h2 className="text-center text_size_2 px-3 ">{client.title}</h2>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+  
