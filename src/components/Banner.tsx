@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData }  from "next/image";
 import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
 
 interface BannerProps {
@@ -8,7 +8,6 @@ interface BannerProps {
   serviceBannerText?: React.ReactNode;
   aboutBannerText?: React.ReactNode;
   rotate?: boolean;
-  BlogsBannerText?: React.ReactNode;
 }
 
 export const Banner: React.FC<BannerProps> = ({
@@ -18,7 +17,6 @@ export const Banner: React.FC<BannerProps> = ({
   serviceBannerText,
   aboutBannerText,
   rotate,
-  BlogsBannerText,
 }) => {
   return (
     <div className="relative bg_image overflow-hidden">
@@ -28,7 +26,7 @@ export const Banner: React.FC<BannerProps> = ({
           alt="CBT Banner Image"
           width={500}
           height={100}
-          className="animate-spin-custom shadow-lg blur-[60px] bg-image-responsiveness"
+          className="animate-spin-custom shadow-lg blur-[60px]"
         />
       </div>
       {/* Home */}
@@ -95,39 +93,6 @@ export const Banner: React.FC<BannerProps> = ({
               >
                 <i> Weaving Words Bridging Worlds </i>
               </h3>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Blog */}
-      {BlogsBannerText && (
-        <div className="flex items-center justify-center min-h-screen text-white">
-          <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
-              <h2 className="title">{BlogsBannerText}</h2>
-              <div
-                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out flex flex-col items-center ${
-                  rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
-                }`}
-              >
-                {[
-                  "Delve into captivating narratives, thought-provoking insights, and expertly curated",
-                  "content that ignites curiosity and fosters meaningful conversations.",
-                ].map((text, index) => (
-                  <h3 key={index}>
-                    <i
-                      className={`block transition-all duration-[1000ms] ease-out ${
-                        rotate
-                          ? "scale-100 opacity-100 delay-300"
-                          : "scale-50 opacity-0"
-                      }`}
-                    >
-                      {text}
-                    </i>
-                  </h3>
-                ))}
-              </div>
             </div>
           </div>
         </div>

@@ -21,11 +21,8 @@
   --color-gray:#202020;
   --color-dark_gray:#404040;
   --color-blue_gray:#313F48;
-  --color-lite_gray:#F1F1F1;
   --color-primary:#FABA0B;
   --color-white:white;
-  --color-blogYellow:#FFD258;
-  --color-blogWhite:#FBFBFB;
 }
 
 @layer utilities {
@@ -56,63 +53,20 @@
   .text_size_2 {
     @apply text-xl sm:text-2xl font-medium;
   }
-  .text_size_3 {
-    @apply text-lg font-medium;
-  }
   .para {
     @apply text-base sm:text-lg;
   }
   .btn {
     @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
   }
-
-  @layer utilities {
-    .bg_image {
-      background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
-      background-size: contain; 
-      background-repeat: no-repeat;
-      height: 100vh; 
-    }
-  
-    /* Extra Small Screens (Very small mobiles, up to 300px) */
-    @media (max-width: 300px) {
-      .bg_image {
-        background-size: contain;
-      
-      }
-    }
-  
-    /* Small Screens (Mobile, up to 480px) */
-    @media (max-width: 480px) {
-      .bg_image {
-        background-size: contain; 
-  
-      }
-    }
-  
-    /* Medium Screens (Tablets, up to 768px) */
-    @media (max-width: 768px) {
-      .bg_image {
-        background-size: contain; 
-     
-      }
-    }
-  
-    /* Larger Screens (Desktops, 768px to 1024px) */
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .bg_image {
-        background-size: contain;
-      
-      }
-    }
-  
-    /* Extra Large Screens (Large desktops, 1025px and above) */
-    @media (min-width: 1025px) {
-      .bg_image {
-        background-size: contain; 
-      }
-    }
+  .btn-1 {
+    @apply px-6 py-2 text-center rounded-full font-semibold text-base text-gray bg-primary;
   }
+  .bg_image{
+    background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
+    @apply bg-cover bg-no-repeat bg-center h-screen
+  }
+  
   
   @keyframes move {
     0% {
@@ -172,80 +126,5 @@
   .animate-bounce-custom-shadow {
     animation: bounceCustomShadow 20s ease-in-out infinite;
   }
-
-  @layer utilities {
-    /* Responsive widths for the image */
-    .bg-image-responsiveness {
-      @apply w-[60%];
-    }
-  
-    @media (max-width: 640px) {
-      .bg-image-responsiveness {
-        @apply w-[20%];
-      }
-    }
-  
-    @media (min-width: 640px) and (max-width: 768px) {
-      .bg-image-responsiveness {
-        @apply w-[30%]; 
-      }
-    }
-  
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .bg-image-responsiveness {
-        @apply w-[30%]; 
-      }
-    }
-    
-  
-    @media (min-width: 1024px) and (max-width: 1280px) {
-      .bg-image-responsiveness {
-        @apply w-[50%]; 
-      }
-    }
-  
-    @media (min-width: 1280px) {
-      .bg-image-responsiveness {
-        @apply w-[60%]; 
-      }
-    }
-  
-    /* Animation class to avoid inline style for spinning */
-    .animate-spin-custom {
-      animation: spin 30s linear infinite;
-    }
-  }
-  
-  
-/* 
-    @keyframes bounceCustom {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-50px); 
-      }
-    }
-  
-    .animate-bounce-custom {
-      animation: bounceCustom 10s ease-in-out infinite;
-    }
-
-    @keyframes bounceCustomShadow {
-      0%, 100% {
-        transform: translateY(-20);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-      }
-      50% {
-        transform: translateY(-20px); 
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); 
-      }
-    }
-
-    .animate-bounce-custom-shadow {
-      animation: bounceCustom 10s ease-in-out infinite;
-    } */
-    
   
 }
-
