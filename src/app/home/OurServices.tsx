@@ -22,7 +22,7 @@ export default function OurServices() {
 
   return (
     <div className=" bg-[#d8af692a] center flex-col text-center sm:px-6 py-12">
-      <h2 className="text_size_1 text-center mb-6">
+      <h2 className="title text-center mb-6">
         <span className="text-primary">Our </span> Services
       </h2>
       <p className="lg:max-w-8/12 text-gray mb-10 para px-2 ">

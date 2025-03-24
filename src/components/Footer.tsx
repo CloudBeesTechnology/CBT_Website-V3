@@ -101,7 +101,7 @@ export const Footer = () => {
 
         <section className="flex flex-col max-sm:text-center gap-5">
           <p className="text-[20px] font-medium">
-            © 2019 - 2029 CloudBees Tech Private Limited. All rights reserved.
+            © 2019 - 2025 CloudBees Tech Private Limited. All rights reserved.
           </p>
           <div className="center gap-5">
             {[
@@ -132,6 +132,7 @@ export const Footer = () => {
     </section>
   );
 };
+
 // {CarrerBannerText && (
 //   <div className="flex items-center justify-center min-h-screen text-white">
 //     <div className="flex justify-evenly w-full ">

@@ -26,7 +26,7 @@ const clientsImg =[
 export const OurClient = () => {
   return (
     <section>
-      <h2 className="text_size_1 text-center mb-10">
+      <h2 className="title text-center mb-10">
         <span className="text-primary">Our </span> Clients
       </h2>
       {/* bg-gradient-to-r from-[#F2F299] via-[#5F665B] via-80% to-[#0B151A] */}
