@@ -14,28 +14,28 @@ const Home: React.FC = () => {
 
   const homeBannerText = (
     <>
-      <div className="flex flex-wrap justify-center items-start space-y-2 md:space-y-2 lg:space-y-4 xl:space-y-6 space-x-4 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-4">
+      <div className="flex flex-wrap max-sm:p-2 justify-center items-start space-y-2 md:space-y-2 lg:space-y-4 xl:space-y-6 space-x-4 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-4">
         {/* Empowering */}
-        <div className="flex items-center justify-center space-y-1">
-          <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium animate-bounce">E</span>
-          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-medium">mpowering</span>
+        <div className="flex items-center banner_title justify-center space-y-1">
+          <span className="text-primary animate-bounce">E</span>
+          <span className="text-white ">mpowering</span>
         </div>
 
         {/* Digital */}
-        <div className="flex items-center justify-center space-y-1">
-          <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium animate-bounce">D</span>
-          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-medium">igital</span>
+        <div className="flex items-center banner_title justify-center space-y-1">
+          <span className="text-primary  animate-bounce">D</span>
+          <span className="text-white ">igital</span>
         </div>
 
         {/* Transformation */}
-        <div className="flex items-center justify-center space-y-1">
-          <span className="text-primary sm:text_size_1 animate-bounce">T</span>
+        <div className="flex items-center banner_title justify-center space-y-1">
+          <span className="text-primary  animate-bounce">T</span>
           <span className="">ransformation</span>
         </div>
       </div>
 
-      <div className="text-center mt-0 lg:mt-4 xl:mt-6">
-        <p className="sm:text_size_1 text-white italic leading-relaxed">
+      <div className="text-center mt-0 p-2 lg:mt-4 xl:mt-6">
+        <p className="para_head p-2 text-white italic leading-relaxed">
           CloudBees Tech providing smart digital solutions solving complex challenges and delivering innovative solutions that help our customers ahead
         </p>
       </div>

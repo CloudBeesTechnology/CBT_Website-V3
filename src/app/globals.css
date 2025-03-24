@@ -48,7 +48,7 @@
   }
 
   .banner_title{
-    @apply text-[40px] font-semibold
+    @apply text-[36px] sm:text-[40px] font-semibold
   }
   .title{
     @apply text-[34px] sm:text-[38px] font-semibold
@@ -62,15 +62,9 @@
   .para{
     @apply sm:text-xl text-lg 
   }
-  .para{
+  .sub_para{
     @apply sm:text-lg text-base 
   } 
-  }
-  .para {
-    @apply text-base sm:text-lg;
-  }
-  .para_1 {
-    @apply text-base sm:text-lg font-medium;
   }
   .btn {
     @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
