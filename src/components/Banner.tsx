@@ -11,7 +11,9 @@ interface BannerProps {
   aboutBannerText?: React.ReactNode;
   rotate?: boolean;
   BlogsBannerText?: React.ReactNode;
-  CarrerBannerText?: React.ReactNode;
+  carrerBannerText?: React.ReactNode;
+  projectBannerText?: React.ReactNode;
+
 }
 
 export const Banner: React.FC<BannerProps> = ({
@@ -22,7 +24,8 @@ export const Banner: React.FC<BannerProps> = ({
   aboutBannerText,
   rotate,
   BlogsBannerText,
-  CarrerBannerText
+  carrerBannerText,
+  projectBannerText,
 }) => {
   return (
     <div className="relative bg_image h-[700px] min-[890px]:h-screen pb-14 min-[890px]:p-1 center w-full">
@@ -74,21 +77,49 @@ export const Banner: React.FC<BannerProps> = ({
                   // height={150}
                   className="max-[890px]:w-[300px]"
                 />
-                {/* <div className="animate-bounce-custom-shadow absolute bottom-0 left-10 right-0 h-[6px] max-w-2/4 bg-black blur-[10px] shadow-[0_4px_10px_rgba(0,0,0,0.3)]"></div> */}
               </div>
             </div>
 
             <div className="center flex-col text-center sm:w-2xl">
               <h2 className="text-3xl font-bold">{serviceBannerText}</h2>
-              <p className="mt-5">
+              {/* <p className="mt-5">
                 Our end-to-end approach enhances operations, accelerates
                 effectiveness, eliminates of technical issues, reduction in cost
                 and updates apps for the future
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       )}
+
+      {/* carrer */}
+      {projectBannerText && (
+        <div className="flex items-center justify-center min-h-screen text-white">
+          <div className="flex justify-evenly w-full ">
+            <div className="flex flex-col items-center justify-center space-y-20">
+              <h2 className="title">{projectBannerText}</h2>
+              <div
+                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
+              >
+                {["At CloudBees Tech, we take pride in our diverse portfolio of projects spanning various industries and sectors. Our team's expertise and dedication have led to successful outcomes and satisfied clients"].map((text, index) => (
+                  <h3 key={index}>
+                    <i
+                      className={`block transition-all duration-[1000ms] ease-out ${rotate
+                        ? "scale-100 opacity-100 delay-300"
+                        : "scale-50 opacity-0"
+                        }`}
+                    >
+                      {text}
+                    </i>
+                  </h3>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
 
       {/* Who we are */}
       {aboutBannerText && (
@@ -97,11 +128,10 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{aboutBannerText}</h2>
               <h3
-                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out ${
-                  rotate
-                    ? "rotate-0 scale-100 opacity-100"
-                    : "rotate-[18deg] scale-50 opacity-0"
-                }`}
+                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out ${rotate
+                  ? "rotate-0 scale-100 opacity-100"
+                  : "rotate-[18deg] scale-50 opacity-0"
+                  }`}
               >
                 <i> Weaving Words Bridging Worlds </i>
               </h3>
@@ -117,9 +147,8 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{BlogsBannerText}</h2>
               <div
-                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out flex flex-col items-center ${
-                  rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
-                }`}
+                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
               >
                 {[
                   "Delve into captivating narratives, thought-provoking insights, and expertly curated",
@@ -127,11 +156,10 @@ export const Banner: React.FC<BannerProps> = ({
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i
-                      className={`block transition-all duration-[1000ms] ease-out ${
-                        rotate
-                          ? "scale-100 opacity-100 delay-300"
-                          : "scale-50 opacity-0"
-                      }`}
+                      className={`block transition-all duration-[1000ms] ease-out ${rotate
+                        ? "scale-100 opacity-100 delay-300"
+                        : "scale-50 opacity-0"
+                        }`}
                     >
                       {text}
                     </i>
@@ -144,14 +172,13 @@ export const Banner: React.FC<BannerProps> = ({
       )}
 
       {/* carrer */}
-
-      {CarrerBannerText && (
+      {carrerBannerText && (
         <div className="flex items-center justify-center min-h-screen text-white">
           <div className="flex justify-evenly w-full ">
             <div className="flex flex-col items-center justify-center space-y-20">
-              <h2 className="title">{CarrerBannerText}</h2>
+              <h2 className="title">{carrerBannerText}</h2>
               <div
-                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
                   }`}
               >
                 {["Make yourself a member of our team and strive ahead in your career.",
