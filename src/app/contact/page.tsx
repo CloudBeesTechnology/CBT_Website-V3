@@ -1,47 +1,28 @@
 import Image from "next/image";
-import study from "../../assets/ContactUs/ContactUsImg/study.png";
-import cloudMessage from "../../assets/ContactUs/ContactIcons/cloudMessage.svg";
+// import study from "../../assets/ContactUs/ContactUsImg/study.png";
+import cloudMessage from "../../assets/ContactUs/ContactIcons/contact.png";
 import avatar from "../../assets/ContactUs/ContactIcons/avatar.svg";
 import email from "../../assets/ContactUs/ContactIcons/email.svg";
 
 const Contact: React.FC = () => {
   return (
-    <section className=" screen-size m-7 ">
-      <header className="center title_4 m-9">
-        <h1>
+    <section className=" center flex-col screen-size sm:m-7 ">
+        <h1 className="text-center title_4 m-9">
           <span className="text-primary">Get </span>
           <span className="text-dark_gray">in touch</span>
         </h1>
-      </header>
-      <main className="screen-size center">
-        <div className="flex flex-wrap md:flex-nowrap w-full min-w-[300px] max-w-full overflow-hidden">
-          <aside className="w-2/3 hidden relative md:flex flex-col h-[700px] ml-10 items-end ">
-            <figure className="relative  inset-0 z-10 flex items-end px-5 justify-end w-fit ">
+      <div className="center  w-full">
+        <div className="flex center flex-wrap md:flex-nowrap w-full max-w-full overflow-hidden">
+          <aside className="sm:w-2/3 center p-2 sm:h-[700px] ">
               <Image
                 src={cloudMessage}
                 alt="cloudMessage"
-                className="w-40 h-40 md:w-80 md:h-80 object-cover"
+                className="w-full sm:max-w-md object-cover"
               />
-
-              <figcaption className="md:text_size_3 title_2 absolute bottom-23 inset-0 flex flex-col items-center justify-center space-y-2">
-                <h2 className="flex">
-                  <span className="text-dark_gray">Level </span>
-                  <span className="ml-1 text-primary">up</span>
-                </h2>
-                <h2 className="flex">
-                  <span className="text-dark_gray">Your brand </span>
-                  <span className="ml-1 text-primary">!</span>
-                </h2>
-              </figcaption>
-            </figure>
-
-            <div className="absolute inset-0 top-64  bottom-20 flex items-center justify-center ">
-              <Image src={study} alt="gif" className="w-96 h-96 rounded-full" />
-            </div>
           </aside>
 
-          <article className="md:w-3/5 p-8 vertical w-full">
-            <form className="space-y-6 w-full  shadow-lg px-10 py-10  rounded-2xl bg-blogWhite ">
+          <article className="md:w-3/5  p-2  w-full ">
+            <form className="space-y-6 w-full px-5 sm:px-10 py-10 shadow-[1.0px_2.0px_8.0px_1.0px_rgba(84,101,255,0.5)] rounded-2xl ">
               <div className="center border border-sandal rounded">
                 <input
                   type="text"
@@ -94,7 +75,7 @@ const Contact: React.FC = () => {
             </form>
           </article>
         </div>
-      </main>
+      </div>
     </section>
   );
 };

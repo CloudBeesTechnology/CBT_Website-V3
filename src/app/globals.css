@@ -47,13 +47,10 @@
     @apply flex justify-between items-center;
   }
   .title{
-    @apply  text-xl sm:text-2xl font-semibold
-  }
-  .title_2{
-    @apply text-xl sm:text-2xl font-semibold
+    @apply text-2xl font-semibold
   }
   .title_1{
-    @apply text-4xl sm:text-[40px] font-semibold
+    @apply text-[40px] font-semibold
   }
   .title_3{
     @apply text-xl font-semibold
@@ -61,15 +58,11 @@
   .title_4 {
     @apply text-4xl font-semibold
   }
-  .title_5 {
-   @apply text-2xl font-semibold
-  }
- 
   .text_size_1 {
-    @apply text-2xl sm:text-4xl font-medium;
+    @apply text-4xl font-medium;
   }
   .text_size_2 {
-    @apply text-xl sm:text-2xl font-medium;
+    @apply text-2xl font-medium;
   }
   .text_size_3 {
     @apply text-[28px] font-semibold
@@ -81,17 +74,6 @@
     @apply text-lg font-medium
    } 
   }
-
-  .carrer_head {
-    @apply text-4xl font-semibold
-  }
-  .carrer_text {
-    @apply text-xl font-normal
-  }
-  .carrer_link_text {
-    @apply text-xl font-medium
-  }
-
   .para {
     @apply text-base sm:text-lg;
   }
@@ -110,8 +92,8 @@
   }
 
   .carrer_bg{
-    background-image: url(../assets/CarrersSection/carrerBg.png);
-    @apply bg-cover bg-no-repeat bg-center min-w-[100px] min-h-[400px] w-[516px] h-[517px] 
+    background-image: url(../assets/CarrersSection/hexagon-lines-QguI1dQX0c\ 1.png);
+    @apply bg-cover bg-no-repeat bg-center  
   }
   
   
