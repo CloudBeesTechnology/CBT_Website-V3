@@ -1,6 +1,6 @@
 "use client";
 import { Banner } from "@/components/Banner";
-import Carrers from "./Carrers"
+import Careers from "./Careers"
 import React, { useEffect, useState } from "react";
 
 // src/app/careers/page.tsx
@@ -28,7 +28,7 @@ export default function CarrerMain() {
   return (
     <div>
       <Banner CarrerBannerText={CarrerBannerText} rotate={rotate}/>
-      <Carrers />
+      <Careers />
     </div>
   );
 } 

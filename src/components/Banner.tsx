@@ -1,3 +1,4 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
 import React from "react";
@@ -10,6 +11,7 @@ interface BannerProps {
   aboutBannerText?: React.ReactNode;
   rotate?: boolean;
   BlogsBannerText?: React.ReactNode;
+  CarrerBannerText?: React.ReactNode;
 }
 
 export const Banner: React.FC<BannerProps> = ({
@@ -19,7 +21,8 @@ export const Banner: React.FC<BannerProps> = ({
   serviceBannerText,
   aboutBannerText,
   rotate,
-  BlogsBannerText
+  BlogsBannerText,
+  CarrerBannerText
 }) => {
   return (
     <div className="relative bg_image h-[700px] min-[890px]:h-screen pb-14 min-[890px]:p-1 center w-full">
@@ -34,9 +37,9 @@ export const Banner: React.FC<BannerProps> = ({
       </div>
       {/* Home */}
       {homeLogo && homeBannerText && (
-        <div className="flex items-center justify-center text-white">
-          <div className="flex flex-col md:flex-row justify-evenly w-full">
-            <div className="flex items-center justify-center md:flex-row sm:gap-12 sm:flex-row flex-col">
+        <div className="flex items-center justify-center w-full text-white">
+          <div className="flex justify-evenly items-center max-[890px]:flex-col md:justify-evenly w-full">
+            <div className="">
               {/* Logo Wrapper */}
               <div className="relative pb-12">
                 <Image
@@ -50,7 +53,7 @@ export const Banner: React.FC<BannerProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center justify-center md:ml-10">
+            <div className="center flex-col text-center sm:w-2xl">
               <h2 className="text-3xl font-bold">{homeBannerText}</h2>
             </div>
           </div>
@@ -75,7 +78,7 @@ export const Banner: React.FC<BannerProps> = ({
               </div>
             </div>
 
-            <div className="center flex-col text-center sm:w-2xl ">
+            <div className="center flex-col text-center sm:w-2xl">
               <h2 className="text-3xl font-bold">{serviceBannerText}</h2>
               <p className="mt-5">
                 Our end-to-end approach enhances operations, accelerates
@@ -139,6 +142,38 @@ export const Banner: React.FC<BannerProps> = ({
           </div>
         </div>
       )}
+
+      {/* carrer */}
+
+      {CarrerBannerText && (
+        <div className="flex items-center justify-center min-h-screen text-white">
+          <div className="flex justify-evenly w-full ">
+            <div className="flex flex-col items-center justify-center space-y-20">
+              <h2 className="title">{CarrerBannerText}</h2>
+              <div
+                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
+              >
+                {["Make yourself a member of our team and strive ahead in your career.",
+                  "Where Careers Align Perfectly"
+                ].map((text, index) => (
+                  <h3 key={index}>
+                    <i
+                      className={`block transition-all duration-[1000ms] ease-out ${rotate
+                        ? "scale-100 opacity-100 delay-300"
+                        : "scale-50 opacity-0"
+                        }`}
+                    >
+                      {text}
+                    </i>
+                  </h3>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

@@ -39,7 +39,7 @@ export const Navbar = () => {
 
       {/* Hamburger Icon for smaller screens */}
       {!isSidebarOpen && (
-        <div className={`xl:hidden flex items-center`}>
+        <div className={`xl:hidden flex `}>
           <button onClick={toggleMenu} className="text-white">
             {/* Using react-icons for Hamburger icon */}
             <FaBars className="w-6 h-6 " />
@@ -108,11 +108,11 @@ export const Navbar = () => {
 
       {/* Sidebar (for mobile view) */}
       {isSidebarOpen && (
-        <div className="fixed top-0 right-0 w-[200px] h-full bg-blue_gray text-white p-8 shadow-lg z-50">
-          <button onClick={closeSidebar} className="absolute top-8 right-4 text-2xl text-white border-2 border-white rounded-full">
+        <div className="fixed top-0 right-0  h-screen bg-blue_gray text-white p-10 shadow-lg z-50">
+          <button onClick={closeSidebar} className="absolute top-8 left-3 text-3xl text-white border-2 border-white rounded-full">
             <MdClose className="w-4 h-4" />
           </button>
-          <ul className="space-y-6">
+          <ul className="flex justify-center flex-col gap-7 text-white  font-medium my-10">
             <li>
               <Link href="/" onClick={closeSidebar} className={`${pathname === '/' ? 'text-primary' : 'hover:text-primary'}`}>
                 Home
