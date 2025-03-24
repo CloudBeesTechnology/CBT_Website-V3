@@ -22,7 +22,7 @@ export default function ProductPage() {
   const featuresPoints = [
     {
       id: 2,
-      title: "POS Products",
+      title: "POS",
       points: [
         "Orders sent directly to the kitchen display",
         "Contactless payment support (Apple Pay, Google Pay, NFC)",
@@ -33,7 +33,7 @@ export default function ProductPage() {
     },
     {
       id: 3,
-      title: "FLEET Management  Products  ",
+      title: "FLEET Management",
       points: [
         "Real-time vehicle location updates",
         "Integrated Google Maps for easy routing",
@@ -46,8 +46,7 @@ export default function ProductPage() {
 
   return (
     <section className="screen-size flex flex-col space-y-12 my-14 md:space-y-4 p-2 w-full">
-        <h2 className="text_size_1 text-center ">
-        <span className="text-primary">HR360E</span> Products
+        <h2 className="text_size_1 text-center text-primary">HR360E
       </h2>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} isEven={feature.id % 2 === 0} />
@@ -68,9 +67,8 @@ export default function ProductPage() {
             </div>
             <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2">
              <div className="w-[1000px]:w-[450px]">
-                 <h3 className="title leading-snug text-dark_gray  mb-3 sm:mb-5">
-                <span className="text-primary">{feature.title.split(" ")[0]}</span>{" "}
-                {feature.title.split(" ").slice(1).join(" ")}
+                 <h3 className="title leading-snug text-primary  mb-3 sm:mb-5">
+                {feature.title}
               </h3>
               <div className="text-gray max-w-md list-disc list-inside para ">
                 {feature.points.map((point, index) => (

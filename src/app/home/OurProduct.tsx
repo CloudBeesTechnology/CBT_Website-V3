@@ -10,7 +10,7 @@ export default function OurProduct() {
   const features = [
     {
       id: 1,
-      title: "HRMS Products",
+      title: "HRMS",
       description:
         "The HRMS Portal and Employee Login System is a robust, secure, and highly customizable solution designed to automate and optimize various HR processes, making them more efficient and accessible.",
       imageSrc: logo1,
@@ -20,7 +20,7 @@ export default function OurProduct() {
   const featuresPoints = [
     {
       id: 2,
-      title: "POS Products",
+      title: "POS",
       points: [
         "Orders sent directly to the kitchen display",
         "Contactless payment support (Apple Pay, Google Pay, NFC)",
@@ -31,7 +31,7 @@ export default function OurProduct() {
     },
     {
       id: 3,
-      title: "FLEET Management  Products  ",
+      title: "FLEET Management",
       points: [
         "Real-time vehicle location updates",
         "Integrated Google Maps for easy routing",
@@ -66,9 +66,8 @@ export default function OurProduct() {
             </div>
             <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2 ">
              <div className="w-[1000px]:w-[450px]">
-                 <h3 className="title leading-snug text-dark_gray  mb-3 sm:mb-5">
-                <span className="text-primary">{feature.title.split(" ")[0]}</span>{" "}
-                {feature.title.split(" ").slice(1).join(" ")}
+                 <h3 className="title leading-snug text-primary mb-3 sm:mb-5">
+                {feature.title}
               </h3>
               <div className="text-gray max-w-md list-disc list-inside para ">
                 {feature.points.map((point, index) => (
