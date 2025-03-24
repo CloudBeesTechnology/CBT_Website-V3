@@ -1,4 +1,5 @@
 // pages/service.tsx
+"use client";
 import InfoCard from "@/components/InfoCard";
 import Image from "next/image";
 import icon1 from "../../assets/ServiceSection/digital-marketing.png";

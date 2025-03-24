@@ -1,4 +1,4 @@
-// src/app/gallery/page.tsx
+"use client";
 export default function Gallery() {
     return (
       <div className="container mx-auto text-center mt-10">

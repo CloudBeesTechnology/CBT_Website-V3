@@ -85,7 +85,7 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/courses" className={`${pathname === '/courses' ? 'text-primary' : 'hover:text-primary'}`}>
+          <Link href="https://b2vtech.com" target="_blank" >
             Courses
           </Link>
         </li>
@@ -149,8 +149,8 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/courses" onClick={closeSidebar} className={`${pathname === '/courses' ? 'text-primary' : 'hover:text-primary'}`}>
-                Courses
+            <Link href="https://b2vtech.com" target="_blank" >
+            Courses
               </Link>
             </li>
             <li>

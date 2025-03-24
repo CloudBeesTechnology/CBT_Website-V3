@@ -55,10 +55,17 @@
   .title_1{
     @apply text-4xl sm:text-[40px] font-semibold
   }
-
   .title_3{
     @apply text-xl font-semibold
   }
+  .title_4 {
+    @apply text-4xl font-semibold
+  }
+  .title_5 {
+   @apply text-2xl font-semibold
+  }
+ 
+
 
   .text_size_1 {
     @apply text-2xl sm:text-4xl font-medium;
@@ -66,6 +73,28 @@
   .text_size_2 {
     @apply text-xl sm:text-2xl font-medium;
   }
+  .text_size_3 {
+    @apply text-[28px] font-semibold
+   } 
+   .text_size_4 {
+    @apply text-[22px] font-medium
+   } 
+   .text_size_5 {
+    @apply text-lg font-medium
+   } 
+  }
+
+  .carrer_head {
+    @apply text-[36px] font-semibold
+  }
+  .carrer_text {
+    @apply text-[24px] font-normal
+  }
+
+  .carrer_link_text {
+    @apply text-[22px] font-medium
+  }
+
   .para {
     @apply text-base sm:text-lg;
   }
@@ -81,6 +110,11 @@
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
     @apply bg-cover bg-no-repeat 
+  }
+
+  .carrer_bg{
+    background-image: url(../assets/CarrersSection/carrerBg.png);
+    @apply bg-cover bg-no-repeat bg-center min-w-[100px] min-h-[400px] w-[516px] h-[517px] 
   }
   
   
@@ -151,4 +185,3 @@
     animation: bounceCustomShadow 20s ease-in-out infinite;
   }
   
-}
