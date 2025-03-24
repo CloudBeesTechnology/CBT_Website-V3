@@ -13,6 +13,8 @@ interface BannerProps {
   BlogsBannerText?: React.ReactNode;
   carrerBannerText?: React.ReactNode;
   projectBannerText?: React.ReactNode;
+  projectLogo?: StaticImageData;
+  productBannerText?: React.ReactNode;
 
 }
 
@@ -26,6 +28,8 @@ export const Banner: React.FC<BannerProps> = ({
   BlogsBannerText,
   carrerBannerText,
   projectBannerText,
+  projectLogo,
+  productBannerText,
 }) => {
   return (
     <div className="relative bg_image h-[700px] min-[890px]:h-screen pb-14 min-[890px]:p-1 center w-full">
@@ -92,34 +96,37 @@ export const Banner: React.FC<BannerProps> = ({
         </div>
       )}
 
-      {/* carrer */}
-      {projectBannerText && (
-        <div className="flex items-center justify-center min-h-screen text-white">
-          <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
+      {/* project */}
+      {projectBannerText && projectLogo && (
+        <div className="flex items-center justify-center min-w-full min-h-screen text-white">
+          <div className="flex flex-col lg:flex-row justify-evenly items-center w-full px-4 md:px-8 min-w-full min-h-full gap-4">
+            {/* Text Section */}
+            <div className="flex flex-col items-center justify-center space-y-8 max-w-4xl md:w-2xl text-center flex-grow">
               <h2 className="title">{projectBannerText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
-                  }`}
+                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"}`}
               >
                 {["At CloudBees Tech, we take pride in our diverse portfolio of projects spanning various industries and sectors. Our team's expertise and dedication have led to successful outcomes and satisfied clients"].map((text, index) => (
-                  <h3 key={index}>
-                    <i
-                      className={`block transition-all duration-[1000ms] ease-out ${rotate
-                        ? "scale-100 opacity-100 delay-300"
-                        : "scale-50 opacity-0"
-                        }`}
-                    >
-                      {text}
-                    </i>
-                  </h3>
+                  <p key={index} className={`block transition-all duration-[1000ms] ease-out ${rotate ? "scale-100 opacity-100 delay-300" : "scale-50 opacity-0"}`}>
+                    {text}
+                  </p>
                 ))}
               </div>
+            </div>
+
+            {/* Image Section */}
+            <div className="flex justify-center lg:justify-start">
+              <Image
+                src={projectLogo}
+                alt="Project Logo"
+
+                height={486}
+                className="max-w-full h-[350px] lg:h-[486px] transition-all md:w-[250px] md:h-[350px]"
+              />
             </div>
           </div>
         </div>
       )}
-
 
       {/* Who we are */}
       {aboutBannerText && (
@@ -128,7 +135,7 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{aboutBannerText}</h2>
               <h3
-                className={`ml-4 title_2 transition-all duration-[1000ms] ease-out ${rotate
+                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out ${rotate
                   ? "rotate-0 scale-100 opacity-100"
                   : "rotate-[18deg] scale-50 opacity-0"
                   }`}
@@ -183,6 +190,35 @@ export const Banner: React.FC<BannerProps> = ({
               >
                 {["Make yourself a member of our team and strive ahead in your career.",
                   "Where Careers Align Perfectly"
+                ].map((text, index) => (
+                  <h3 key={index}>
+                    <i
+                      className={`block transition-all duration-[1000ms] ease-out ${rotate
+                        ? "scale-100 opacity-100 delay-300"
+                        : "scale-50 opacity-0"
+                        }`}
+                    >
+                      {text}
+                    </i>
+                  </h3>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* product */}
+      {productBannerText && (
+        <div className="flex items-center justify-center min-h-screen text-white">
+          <div className="flex justify-evenly w-full ">
+            <div className="flex flex-col items-center justify-center space-y-20">
+              <h2 className="title">{productBannerText}</h2>
+              <div
+                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
+              >
+                {["Make yourself a member of our team and strive ahead in your career. Where Careers Align Perfectly"
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i

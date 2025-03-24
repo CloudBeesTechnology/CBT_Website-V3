@@ -65,8 +65,6 @@
    @apply text-2xl font-semibold
   }
  
-
-
   .text_size_1 {
     @apply text-2xl sm:text-4xl font-medium;
   }
@@ -85,14 +83,13 @@
   }
 
   .carrer_head {
-    @apply text-[36px] font-semibold
+    @apply text-4xl font-semibold
   }
   .carrer_text {
-    @apply text-[24px] font-normal
+    @apply text-xl font-normal
   }
-
   .carrer_link_text {
-    @apply text-[22px] font-medium
+    @apply text-xl font-medium
   }
 
   .para {
