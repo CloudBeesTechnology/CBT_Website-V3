@@ -14,7 +14,7 @@ const Home: React.FC = () => {
 
   const homeBannerText = (
     <>
-      <div className="flex flex-wrap justify-center items-start space-y-2 md:space-y-2 lg:space-y-4 xl:space-y-6 space-x-4 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-10">
+      <div className="flex flex-wrap justify-center items-start space-y-2 md:space-y-2 lg:space-y-4 xl:space-y-6 space-x-4 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-4">
         {/* Empowering */}
         <div className="flex items-center justify-center space-y-1">
           <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl animate-bounce">E</span>

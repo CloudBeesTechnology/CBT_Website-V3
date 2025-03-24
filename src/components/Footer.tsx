@@ -132,3 +132,31 @@ export const Footer = () => {
     </section>
   );
 };
+// {CarrerBannerText && (
+//   <div className="flex items-center justify-center min-h-screen text-white">
+//     <div className="flex justify-evenly w-full ">
+//       <div className="flex flex-col items-center justify-center space-y-20">
+//         <h2 className="title">{CarrerBannerText}</h2>
+//         <div
+//           className={`ml-4 title_2 transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+//             }`}
+//         >
+//           {["Make yourself a member of our team and strive ahead in your career.",
+//             "Where Careers Align Perfectly"
+//           ].map((text, index) => (
+//             <h3 key={index}>
+//               <i
+//                 className={`block transition-all duration-[1000ms] ease-out ${rotate
+//                   ? "scale-100 opacity-100 delay-300"
+//                   : "scale-50 opacity-0"
+//                   }`}
+//               >
+//                 {text}
+//               </i>
+//             </h3>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// )}
