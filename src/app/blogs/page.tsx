@@ -16,10 +16,10 @@ const Blogs: React.FC = () => {
   const BlogsBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white text_size_1">
+        <span className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium">
           Don&apos;t Just Scroll, Learn
         </span>
-        <span className="text-white text_size_1">
+        <span className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium">
           Discover Valuable Content on Our Blog
         </span>
       </div>

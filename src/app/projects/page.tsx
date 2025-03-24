@@ -15,20 +15,20 @@ export default function OurProjects() {
     return () => clearTimeout(timer);
   }, []);
 
-  const CarrerBannerText: React.ReactNode = (
+  const projectBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white text_size_1">
-          Join our tech community
+        <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-medium">
+          We have design experiences for over 30+ projects
         </span>
-       
+
       </div>
     </div>
   );
 
   return (
     <>
-        <Banner CarrerBannerText={CarrerBannerText} rotate={rotate}/>
+      <Banner projectBannerText={projectBannerText} rotate={rotate} />
       <Project />
     </>
   );

@@ -14,10 +14,10 @@ export default function CarrerMain() {
       return () => clearTimeout(timer);
     }, []);
 
-  const CarrerBannerText: React.ReactNode = (
+  const carrerBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white text_size_1">
+        <span className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium">
           Join our tech community
         </span>
        
@@ -27,7 +27,7 @@ export default function CarrerMain() {
 
   return (
     <div>
-      <Banner CarrerBannerText={CarrerBannerText} rotate={rotate}/>
+      <Banner carrerBannerText={carrerBannerText} rotate={rotate}/>
       <Carrers />
     </div>
   );
