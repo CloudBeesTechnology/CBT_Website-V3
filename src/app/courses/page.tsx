@@ -1,4 +1,5 @@
 // src/app/courses/page.tsx
+"use client";
 export default function Courses() {
     return (
       <div className="container mx-auto text-center mt-10">

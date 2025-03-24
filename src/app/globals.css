@@ -53,6 +53,18 @@
   .text_size_2 {
     @apply text-xl sm:text-2xl font-medium;
   }
+
+  .carrer_head {
+    @apply text-[36px] font-semibold
+  }
+  .carrer_text {
+    @apply text-[24px] font-normal
+  }
+
+  .carrer_link_text {
+    @apply text-[22px] font-medium
+  }
+
   .para {
     @apply text-base sm:text-lg;
   }
@@ -65,6 +77,11 @@
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
     @apply bg-cover bg-no-repeat bg-center h-screen
+  }
+
+  .carrer_bg{
+    background-image: url(../assets/CarrersSection/carrerBg.png);
+    @apply bg-cover bg-no-repeat bg-center min-w-[100px] min-h-[400px] w-[516px] h-[517px] 
   }
   
   

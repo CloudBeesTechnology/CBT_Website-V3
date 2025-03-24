@@ -1,3 +1,4 @@
+"use client";
 import { Banner } from "@/components/Banner";
 import Project from "./Project";
 
