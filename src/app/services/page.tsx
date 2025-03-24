@@ -2,6 +2,7 @@
 import { Banner } from "@/components/Banner";
 import ServiceLogo from "../../assets/ServiceSection/animation/Service.gif"
 import Service from "./Service";
+import { LetTalk } from "../home/LetTalk";
 
 // src/app/ourServices/page.tsx
 const OurServices: React.FC = () => {
@@ -26,7 +27,8 @@ const OurServices: React.FC = () => {
         serviceLogo={ServiceLogo}
         serviceBannerText={serviceBannerText}
       />
-      <Service />
+      <Service/>
+      <LetTalk/>
     </div>
   );
 }

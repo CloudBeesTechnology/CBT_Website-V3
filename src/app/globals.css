@@ -21,8 +21,13 @@
   --color-gray:#202020;
   --color-dark_gray:#404040;
   --color-blue_gray:#313F48;
+  --color-lite_gray:#F1F1F1;
+  --color-ash_gray:#909090;
   --color-primary:#FABA0B;
   --color-white:white;
+  --color-sandal:#FFE7A4;
+  --color-blogYellow:#FFD258;
+  --color-blogWhite:#FBFBFB;
 }
 
 @layer utilities {
@@ -34,6 +39,9 @@
   }
   .center {
     @apply flex justify-center items-center;
+  }
+  .vertical {
+    @apply flex flex-col items-center justify-center;
   }
   .between {
     @apply flex justify-between items-center;
@@ -47,11 +55,33 @@
   .title_1{
     @apply text-4xl sm:text-[40px] font-semibold
   }
+  .title_3{
+    @apply text-xl font-semibold
+  }
+  .title_4 {
+    @apply text-4xl font-semibold
+  }
+  .title_5 {
+   @apply text-2xl font-semibold
+  }
+ 
+
+
   .text_size_1 {
     @apply text-2xl sm:text-4xl font-medium;
   }
   .text_size_2 {
     @apply text-xl sm:text-2xl font-medium;
+  }
+  .text_size_3 {
+    @apply text-[28px] font-semibold
+   } 
+   .text_size_4 {
+    @apply text-[22px] font-medium
+   } 
+   .text_size_5 {
+    @apply text-lg font-medium
+   } 
   }
 
   .carrer_head {
@@ -68,6 +98,9 @@
   .para {
     @apply text-base sm:text-lg;
   }
+  .para_1 {
+    @apply text-base sm:text-lg font-medium;
+  }
   .btn {
     @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
   }
@@ -76,7 +109,7 @@
   }
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
-    @apply bg-cover bg-no-repeat bg-center h-screen
+    @apply bg-cover bg-no-repeat 
   }
 
   .carrer_bg{
@@ -115,6 +148,14 @@
   .animate-spin-custom {
     animation: spin 30s linear infinite;
   }
+ @keyframes spins {
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  .animate-spin {
+    animation: spin 10s linear infinite;
+  }
 
   @keyframes bounceCustom {
     0%, 100% {
@@ -144,4 +185,3 @@
     animation: bounceCustomShadow 20s ease-in-out infinite;
   }
   
-}

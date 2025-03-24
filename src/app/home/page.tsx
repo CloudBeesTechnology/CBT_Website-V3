@@ -8,6 +8,7 @@ import { Banner } from "@/components/Banner";
 import { LetTalk } from "./LetTalk";
 import ProdLink from "./ProdLink";
 import OurServices from "./OurServices";
+import OurProduct from "./OurProduct";
 
 const Home: React.FC = () => {    
 
@@ -48,7 +49,7 @@ const Home: React.FC = () => {
         homeBannerText={homeBannerText}
        
       />
-      <Products />
+      <OurProduct/>
       <ProdLink />
       <OurServices />
       <Progress />

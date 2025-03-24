@@ -7,9 +7,9 @@ import client4 from "../../assets/HomeSection/ClientLogos/clLogo-4.png";
 import client5 from "../../assets/HomeSection/ClientLogos/niche.png";
 import client6 from "../../assets/HomeSection/ClientLogos/clLogo-3.png";
 import client7 from "../../assets/HomeSection/ClientLogos/clLogo-7.png";
-import client8 from "../../assets/HomeSection/ClientLogos/clLogo-5.png";
-import client9 from "../../assets/HomeSection/ClientLogos/clLogo-6.png";
-import client10 from "../../assets/HomeSection/ClientLogos/clLogo-8.png";
+import client8 from "../../assets/HomeSection/ClientLogos/clLogo-6.png";
+import client9 from "../../assets/HomeSection/ClientLogos/clLogo-8.png";
+import client10 from "../../assets/HomeSection/ClientLogos/svg.png";
 
 const clientsImg =[
     {id:1 , src: client1, alt:"Client 1"},
