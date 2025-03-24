@@ -4,7 +4,7 @@ import animation from "../../assets/HomeSection/Gif/cube-loader-bcbluzFFSr 1.png
 
 export const LetTalk = () => {
   return (
-    <section className="screen-size flex w-full  h-full flex-col items-center justify-center text-center my-10 sm:my-10 ">
+    <section className="screen-size flex w-full h-full flex-col items-center justify-center text-center mb-10 sm:my-10 ">
         <div className="relative w-full center">
 
     <Image src={animation}
@@ -21,11 +21,9 @@ export const LetTalk = () => {
             <br />
             experiences that excite & inspire
           </h2>
-
           <Link href="/contact" className="btn-1">
               Let's Talk   
           </Link>
-
         </div>
         </div>
     </section>

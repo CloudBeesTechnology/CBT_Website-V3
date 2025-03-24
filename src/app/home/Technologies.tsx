@@ -132,7 +132,7 @@ const clientsImg = [
 {/* <div className="screen-size my-10  grid grid-cols-2 min-w-[575px];grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-10"> */}
 export const Technologies = () => {
   return (
-    <section className="center my-10">
+    <section className="center my-5 sm:my-10">
       <div className="screen-size my-10 flex flex-wrap justify-center gap-10">
         {clientsImg.map((client) => (
           <div
