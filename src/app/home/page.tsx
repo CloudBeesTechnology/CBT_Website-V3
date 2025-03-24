@@ -29,13 +29,13 @@ const Home: React.FC = () => {
 
         {/* Transformation */}
         <div className="flex items-center justify-center space-y-1">
-          <span className="text-primary text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium animate-bounce">T</span>
-          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-medium">ransformation</span>
+          <span className="text-primary sm:text_size_1 animate-bounce">T</span>
+          <span className="">ransformation</span>
         </div>
       </div>
 
       <div className="text-center mt-0 lg:mt-4 xl:mt-6">
-        <p className="text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed">
+        <p className="sm:text_size_1 text-white italic leading-relaxed">
           CloudBees Tech providing smart digital solutions solving complex challenges and delivering innovative solutions that help our customers ahead
         </p>
       </div>

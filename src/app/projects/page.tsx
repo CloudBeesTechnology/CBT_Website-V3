@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Banner } from "@/components/Banner";
+import projectLogo from "../../assets/ProjectSection/images/ProjectImg.png"
 import Project from "./Project";
 
 // src/app/ourProjects/page.tsx
@@ -28,7 +29,7 @@ export default function OurProjects() {
 
   return (
     <>
-      <Banner projectBannerText={projectBannerText} rotate={rotate} />
+      <Banner projectBannerText={projectBannerText} projectLogo={projectLogo} rotate={rotate} />
       <Project />
     </>
   );
