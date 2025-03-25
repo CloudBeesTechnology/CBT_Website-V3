@@ -44,7 +44,7 @@ export default function OurProduct() {
 
   return (
     <section className="screen-size flex flex-col space-y-12 md:space-y-4 mt-14 p-2 w-full ">
-        <h2 className="text_size_1 text-center ">
+        <h2 className="title text-center ">
         <span className="text-primary">Explore Our </span> Products
       </h2>
       {features.map((feature) => (
