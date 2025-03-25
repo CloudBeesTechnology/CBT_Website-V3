@@ -27,10 +27,9 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue_gray text-red py-10 px-4 min-h-[100px] max-h-[100px] flex items-center justify-between sticky z-40 top-0 w-full shadow-md shadow-blue-gray/50 border">
+    <nav className="bg-blue_gray text-red py-10 px-4 min-h-[100px] max-h-[100px] flex items-center justify-between sticky z-40 top-0 w-full shadow-md shadow-blue-gray/50">
 
-     <section className='screen-size flex justify-between items-center'>
-     <div className="flex items-center">
+      <div className="flex items-center">
         <Image
           src={CbtLogo}
           alt="Cbt Logo"
@@ -115,7 +114,7 @@ export const Navbar = () => {
 
       {/* Sidebar (for mobile view) */}
       {isSidebarOpen && (
-        <div className="fixed top-0 right-0  h-screen bg-blue_gray text-white p-10 shadow-lg z-50">
+        <div className="fixed top-0 right-0 h-screen bg-blue_gray text-white p-10 shadow-lg z-50">
           <button onClick={closeSidebar} className="absolute top-8 left-3 text-3xl text-white border-2 border-white rounded-full">
             <MdClose className="w-4 h-4" />
           </button>
@@ -178,7 +177,6 @@ export const Navbar = () => {
           </ul>
         </div>
       )}
-     </section>
     </nav>
   );
 };
