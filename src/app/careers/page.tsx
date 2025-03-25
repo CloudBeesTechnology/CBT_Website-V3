@@ -5,14 +5,14 @@ import Careers from "./Careers"
 
 // src/app/careers/page.tsx
 export default function CarrerMain() {
-    const [rotate, setRotate] = useState<boolean>(false);
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setRotate(true);
-      }, 200);
-  
-      return () => clearTimeout(timer);
-    }, []);
+  const [rotate, setRotate] = useState<boolean>(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setRotate(true);
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const carrerBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
@@ -20,15 +20,14 @@ export default function CarrerMain() {
         <span className="text-white banner_title">
           Join our tech community
         </span>
-       
       </div>
     </div>
   );
 
   return (
     <div>
-      <Banner carrerBannerText={carrerBannerText} rotate={rotate}/>
+      <Banner carrerBannerText={carrerBannerText} rotate={rotate} />
       <Careers />
     </div>
   );
-} 
+}

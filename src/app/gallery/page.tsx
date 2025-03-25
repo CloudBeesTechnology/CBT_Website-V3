@@ -1,10 +1,36 @@
 "use client";
-export default function Gallery() {
-    return (
-      <div className="container mx-auto text-center mt-10">
-        <h1 className="text-4xl font-bold mb-4">Gallery</h1>
-        <p className="text-lg">Explore our gallery to see our work and events.</p>
+import { Banner } from "@/components/Banner";
+import React, { useEffect, useState } from "react";
+import LifeOfCBT from "./lifeOfCBT";
+import DiwaliCeleb from "./diwaliCeleb";
+
+const Gallery: React.FC = () => {
+  const [rotate, setRotate] = useState<boolean>(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setRotate(true);
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const GalleryTitleText: React.ReactNode = (
+    <div className="flex justify-center items-center space-x-10">
+      <div className="flex flex-col items-center space-y-1">
+        <span className="text-white text_size_1">
+          Capturing Moments, Creating Memories
+        </span>
       </div>
-    );
-  }
-  
+    </div>
+  );
+
+  return (
+    <main>
+      <Banner GalleryTitleText={GalleryTitleText} rotate={rotate} />
+      <LifeOfCBT />
+      <DiwaliCeleb />
+    </main>
+  );
+};
+
+export default Gallery;
