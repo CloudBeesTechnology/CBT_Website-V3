@@ -14,6 +14,7 @@ const Gallery: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  
   const GalleryTitleText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
