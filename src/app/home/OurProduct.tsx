@@ -1,8 +1,8 @@
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
-import logo1 from "../../assets/HomeSection/ContentImages/home-1.png";
+import logo1 from "../../assets/HomeSection/ContentImages/HRMS.png";
 import logo2 from "../../assets/HomeSection/ContentImages/home-2.png";
-import logo3 from "../../assets/HomeSection/ContentImages/home-3.png";
+import logo3 from "../../assets/HomeSection/ContentImages/FLEET MANAGEMENT.png";
 import { AiFillCaretRight } from "react-icons/ai";
 import Link from "next/link";
 
@@ -43,8 +43,8 @@ export default function OurProduct() {
   ];
 
   return (
-    <section className="screen-size flex flex-col space-y-12 md:space-y-4 p-2 w-full">
-        <h2 className="text_size_1 text-center mb-10">
+    <section className="screen-size flex flex-col space-y-12 md:space-y-4 mt-14 p-2 w-full ">
+        <h2 className="text_size_1 text-center ">
         <span className="text-primary">Explore Our </span> Products
       </h2>
       {features.map((feature) => (
@@ -61,10 +61,10 @@ export default function OurProduct() {
             }`}
           >  
           
-            <div className="w-full md:w-1/2 center">
+            <div className="w-full md:w-1/2 center ">
               <Image src={feature.imageSrc} alt={feature.title} width={400} height={250} />
             </div>
-            <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2">
+            <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2 ">
              <div className="w-[1000px]:w-[450px]">
                  <h3 className="title leading-snug text-dark_gray  mb-3 sm:mb-5">
                 <span className="text-primary">{feature.title.split(" ")[0]}</span>{" "}

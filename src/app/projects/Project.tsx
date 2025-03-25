@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
 import img1 from "../../assets/project/AWE_WEBSITE.png";

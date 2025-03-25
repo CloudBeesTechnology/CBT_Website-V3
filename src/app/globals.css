@@ -47,13 +47,10 @@
     @apply flex justify-between items-center;
   }
   .title{
-    @apply  text-xl sm:text-2xl font-semibold
-  }
-  .title_2{
-    @apply text-xl sm:text-2xl font-semibold
+    @apply text-2xl font-semibold
   }
   .title_1{
-    @apply text-4xl sm:text-[40px] font-semibold
+    @apply text-[40px] font-semibold
   }
 
   .title_3{
@@ -62,17 +59,11 @@
   .title_4 {
     @apply text-4xl font-semibold
   }
-  .title_5 {
-   @apply text-2xl font-semibold
-  }
- 
-
-
   .text_size_1 {
-    @apply text-2xl sm:text-4xl font-medium;
+    @apply text-4xl font-medium;
   }
   .text_size_2 {
-    @apply text-xl sm:text-2xl font-medium;
+    @apply text-2xl font-medium;
   }
   .text_size_3 {
     @apply text-[28px] font-semibold
@@ -83,6 +74,7 @@
    .text_size_5 {
     @apply text-lg font-medium
    } 
+  }
   .para {
     @apply text-base sm:text-lg;
   }
@@ -98,6 +90,11 @@
   .bg_image{
     background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
     @apply bg-cover bg-no-repeat 
+  }
+
+  .carrer_bg{
+    background-image: url(../assets/CarrersSection/hexagon-lines-QguI1dQX0c\ 1.png);
+    @apply bg-cover bg-no-repeat bg-center  
   }
   
   
@@ -168,22 +165,3 @@
     animation: bounceCustomShadow 20s ease-in-out infinite;
   }
   
-
-  /* Gallery */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-}
