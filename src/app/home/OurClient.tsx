@@ -29,7 +29,6 @@ export const OurClient = () => {
       <h2 className="title text-center mb-10">
         <span className="text-primary">Our </span> Clients
       </h2>
-      {/* bg-gradient-to-r from-[#F2F299] via-[#5F665B] via-80% to-[#0B151A] */}
       <section className="center relative bg-[#8c8c8c9c] my-10">
       <div className="m-5 sm:m-10  grid grid-cols-2 w-full md:grid-cols-3 py-5 sm:py-10 max-sm:grid-cols-1 gap-10 sm:gap-20">
                  {clientsImg.map((client)=>(
