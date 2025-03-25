@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <div className="flex items-center banner_title justify-center space-y-1">
           <span className="text-primary  animate-bounce">D</span>
           <span className="text-white ">igital</span>
-        </div>
+        </div> 
 
         {/* Transformation */}
         <div className="flex items-center banner_title justify-center space-y-1">
