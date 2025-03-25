@@ -46,40 +46,25 @@
   .between {
     @apply flex justify-between items-center;
   }
-  .title{
-    @apply text-2xl font-semibold
-  }
-  .title_1{
-    @apply text-[40px] font-semibold
-  }
 
-  .title_3{
-    @apply text-xl font-semibold
+  .banner_title{
+    @apply text-[36px] sm:text-[40px] font-semibold
   }
-  .title_4 {
-    @apply text-4xl font-semibold
+  .title{
+    @apply text-[34px] sm:text-[38px] font-semibold
   }
-  .text_size_1 {
-    @apply text-4xl font-medium;
+  .sub_title{
+    @apply sm:text-4xl text-[32px] font-semibold
+  } 
+  .para_head{
+    @apply sm:text-2xl text-xl font-medium
   }
-  .text_size_2 {
-    @apply text-2xl font-medium;
+  .para{
+    @apply sm:text-xl text-lg 
   }
-  .text_size_3 {
-    @apply text-[28px] font-semibold
-   } 
-   .text_size_4 {
-    @apply text-[22px] font-medium
-   } 
-   .text_size_5 {
-    @apply text-lg font-medium
-   } 
-  }
-  .para {
-    @apply text-base sm:text-lg;
-  }
-  .para_1 {
-    @apply text-base sm:text-lg font-medium;
+  .sub_para{
+    @apply sm:text-lg text-base 
+  } 
   }
   .btn {
     @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;

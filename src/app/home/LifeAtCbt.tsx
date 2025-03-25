@@ -5,7 +5,7 @@ import group from "../../assets/HomeSection/group/group.png";
 export const LifeCBT = () => {
   return (
     <section className="screen-size my-10 md:my-20 center flex-col ">
-      <h4 className="text_size_1 text-center">
+      <h4 className="title text-center">
         <span className="text-primary">Life</span> at CBT
       </h4>
       <p className="text-xl text-center my-5 max-w-screen-lg px-2">

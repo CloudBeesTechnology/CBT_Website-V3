@@ -23,7 +23,7 @@ const About: React.FC = () => {
       <div className="flex justify-center items-start space-x-10">
         {/* Empowering */}
         <div className="flex items-center space-y-1">
-          <span className="text-white text_size_1 ">
+          <span className="text-white text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-medium ">
             Unveiling CBT a Narrative in Progress
           </span>
         </div>

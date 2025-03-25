@@ -1,7 +1,7 @@
 "use client";
-import { Banner } from "@/components/Banner";
-import Careers from "./Careers";
 import React, { useEffect, useState } from "react";
+import { Banner } from "@/components/Banner";
+import Careers from "./Careers"
 
 // src/app/careers/page.tsx
 export default function CarrerMain() {
