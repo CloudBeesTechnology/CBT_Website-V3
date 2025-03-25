@@ -1,4 +1,5 @@
 // components/InfoCard.tsx
+"use client";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 
