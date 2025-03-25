@@ -9,6 +9,9 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import logo from "../assets/logo/cloudbeestech_logo.svg";
+import img1 from "../assets//footer/cbt map.png";
+import img2 from "../assets/footer/cbt chennai map .png";
+import img3 from "../assets/footer/cbt usa map.png";
 
 export const Footer = () => {
 
@@ -44,7 +47,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-14">
+          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-12 sm:gap-14">
             {[
               {
                 location: "Pondicherry",
@@ -54,7 +57,9 @@ export const Footer = () => {
                   "Reddiyarpalayam,",
                   "Puducherry - 605010.",
                 ],
+                mapImg:img1,
                 link: "http://tinyurl.com/bp6ptfb2",
+
               },
               {
                 location: "Chennai",
@@ -64,6 +69,7 @@ export const Footer = () => {
                   "KK Nagar,",
                   "Chennai - 600078.",
                 ],
+                mapImg:img2,
                 link: "http://tinyurl.com/2z7huru4",
               },
               {
@@ -73,10 +79,12 @@ export const Footer = () => {
                   "Lewis center,",
                   "Ohio - 43035.",
                 ],
+                mapImg:img3,
                 link: "https://tinyurl.com/5a9c4sx4",
+
               },
-            ].map(({ location, address, link }) => (
-              <article key={location} className="flex flex-col gap-5">
+            ].map(({ location, address, mapImg, link }) => (
+              <article key={location} className="flex flex-col gap-5 ">
                 <h6 className="para font-semibold text-primary underline underline-offset-6">{location}</h6>
                 <p className="para sm:h-20 ">
                   {address.map((line, index) => (
@@ -86,20 +94,22 @@ export const Footer = () => {
                     </span>
                   ))}
                 </p>
-                <a
-                  className="footer-direction"
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {/* Direction */}
-                </a>
+                <div className="center">
+                  <a
+                    className="footer-direction border rounded-full sm:mt-7 w-16 h-16 border-primary flex items-center justify-center overflow-hidden"
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image src={mapImg} alt={`${location} Map`} className="object-cover w-full h-full rounded-full" />
+                  </a>
+                </div>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="flex flex-col max-sm:text-center gap-5">
+        <section className="flex flex-col max-sm:text-center gap-5 mb-5">
           <p className="text-[20px] font-medium">
             © 2019 - 2025 CloudBees Tech Private Limited. All rights reserved.
           </p>
@@ -122,7 +132,7 @@ export const Footer = () => {
                 href: "https://twitter.com/CBeesTechnology",
               },
             ].map(({ icon, href }, index) => (
-              <Link key={index} href={href} className="text-[24px] font-semibold" target="_blank" rel="noopener noreferrer">
+              <Link key={index} href={href} className="text-[24px] font-semibold hover:text-primary" target="_blank" rel="noopener noreferrer">
                 {icon}
               </Link>
             ))}

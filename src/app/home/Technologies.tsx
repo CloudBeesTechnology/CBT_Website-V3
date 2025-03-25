@@ -161,7 +161,7 @@ export const Technologies = () => {
             </div>
 
             {/* Title */}
-            <h2 className="text-center text_size_2 px-3 ">{client.title}</h2>
+            <h2 className="text-cente para px-3 ">{client.title}</h2>
           </div>
         ))}
       </div>

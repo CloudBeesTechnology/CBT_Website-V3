@@ -7,7 +7,7 @@ import email from "../../assets/ContactUs/ContactIcons/email.svg";
 const Contact: React.FC = () => {
   return (
     <section className=" center flex-col screen-size sm:m-7 ">
-        <h1 className="text-center title_4 m-9">
+        <h1 className="text-center title m-9">
           <span className="text-primary">Get </span>
           <span className="text-dark_gray">in touch</span>
         </h1>
