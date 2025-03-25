@@ -36,8 +36,8 @@ export const OurClient = () => {
                 <Image
                 src={client.src}
                 alt={client.alt}
-                width={150}
-                height={100}
+                width={200}
+                // height={100}
                 className="object-contain"
               />
             </div>
