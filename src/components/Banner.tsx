@@ -128,7 +128,7 @@ export const Banner: React.FC<BannerProps> = ({
       {aboutBannerText && (
         <div className="flex items-center justify-center  text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
+            <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-10">
               <h2 className="title">{aboutBannerText}</h2>
               <h3
                 className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out ${rotate
@@ -147,7 +147,7 @@ export const Banner: React.FC<BannerProps> = ({
       {BlogsBannerText && (
         <div className="flex items-center justify-center min-h-screen text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
+            <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-10">
               <h2 className="title">{BlogsBannerText}</h2>
               <div
                 className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
@@ -179,7 +179,7 @@ export const Banner: React.FC<BannerProps> = ({
       {GalleryTitleText && (
         <div className="flex items-center justify-center min-h-screen text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
+            <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-10">
               <h2 className="title">{GalleryTitleText}</h2>
               <div
                 className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${
@@ -212,7 +212,7 @@ export const Banner: React.FC<BannerProps> = ({
       {carrerBannerText && (
         <div className="flex items-center justify-center min-h-screen text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
+            <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-10">
               <h2 className="title">{carrerBannerText}</h2>
               <div
                 className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
@@ -243,7 +243,7 @@ export const Banner: React.FC<BannerProps> = ({
       {productBannerText && (
         <div className="flex items-center justify-center min-h-screen text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-20">
+            <div className="flex flex-col items-center justify-center space-y-6 sm:space-y-10">
               <h2 className="title">{productBannerText}</h2>
               <div
                 className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
