@@ -23,7 +23,7 @@ const About: React.FC = () => {
       <div className="flex justify-center items-start space-x-10">
         {/* Empowering */}
         <div className="flex items-center space-y-1">
-          <span className="text-white banner_title">
+          <span className="text-white banner_title text-center">
             Unveiling CBT a Narrative in Progress
           </span>
         </div>
@@ -47,12 +47,12 @@ const About: React.FC = () => {
         </div>
 
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center ">
-          <h2 className="title_4 mb-6 p-4">
+          <h2 className="title mb-6 p-4">
             <span className="text-primary">About </span>
             <span className="text-dark_gray">Us</span>
           </h2>
 
-          <p className="text-lg text-gray">
+          <p className="para text-gray">
             At CloudBees Tech, we don’t just deliver solutions we create
             pathways to your success. We connect your projects with innovative
             solutions, turning your ideas into reality. With a foundation built
@@ -66,17 +66,17 @@ const About: React.FC = () => {
       </div>
 
       <div className="flex flex-col items-center  p-6 rounded-lg  screen-size">
-        <h2 className="title_4 mb-4 text-center">
+        <h2 className="title mb-4 text-center">
           <span className="text-gray">Our </span>
           <span className="text-primary">Mission</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row w-full justify-between items-center space-y-6 lg:space-y-0">
           <div className="w-full lg:w-1/2 flex flex-col justify-center  lg:p-6 text-center space-y-4">
-            <h6 className="title_5 text-gray">
+            <h6 className="para_head text-gray">
               CloudBees Tech brings your ideas to life.
             </h6>
-            <p className="text-lg text-gray">
+            <p className="para text-gray">
               Our mission is to deliver top-notch software solutions that spark
               innovation and drive success. We’re the bridge between your ideas
               and their potential, turning challenges into triumphs with

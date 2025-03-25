@@ -17,7 +17,7 @@ export default function CarrerMain() {
   const carrerBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white banner_title">
+        <span className="text-white banner_title text-center">
           Join our tech community
         </span>
       </div>

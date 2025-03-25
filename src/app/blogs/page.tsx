@@ -15,7 +15,7 @@ const Blogs: React.FC = () => {
   }, []);
   const BlogsBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
-      <div className="flex flex-col items-center space-y-1">
+      <div className="flex flex-col items-center space-y-1 text-center">
         <span className="text-white banner_title">
           Don&apos;t Just Scroll, Learn
         </span>

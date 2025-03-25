@@ -7,7 +7,7 @@ import CareerImg from "../../assets/CarrersSection/hexagon-lines-QguI1dQX0c 1.pn
 export default function Careers() {
   return (
     <div className="screen-size flex flex-col space-y-12 sm:space-y-14 my-14 p-2 w-full">
-      <h2 className="text_size_1 text-center">
+      <h2 className="title text-center">
         <span className="text-primary">Job </span> Openings
       </h2>
 
@@ -18,7 +18,7 @@ export default function Careers() {
           className="max-sm:w-full max-w-lg"
         />
         <div className=" absolute sm:bottom-20 ">
-          <h2 className="sm:text-2xl text-xl text-center">
+          <h2 className="para_head text-center">
             Stay tuned for more updates{" "}<br />
             <span className="text-primary"> Coming your way soon </span>
           </h2>
@@ -32,7 +32,7 @@ export default function Careers() {
           <p>
             <a
               href="hari"
-              className="text-blue-500 text-lg sm:text-xl underline hover:underline center"
+              className="text-blue-500 para underline hover:underline center"
             >
               Connect with us
             </a>
