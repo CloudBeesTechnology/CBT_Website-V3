@@ -16,8 +16,8 @@ export default function OurServices() {
     { iconImg: icon2, title: "UI/UX & Wireframe Design", description: "A wireframe is a simple diagram that represents the skeleton of a website or an application's user interface (UI) and core functionality." },
     { iconImg: icon3, title: "Micro SaaS App Development", description: "Micro SaaS (Software as a Service) App Development involves creating small, focused web applications that solve a specific problem or meet a particular need." },
     { iconImg: icon4, title: "Mobile Native & Cross Platform", description: "Mobile app development for both native and cross-platform solutions, ensuring compatibility across all devices." },
-    { iconImg: icon5, title: "AWS/Azure Cloud", description: "Cloud computing services including data storage, servers, databases, networking, and software." },
-    { iconImg: icon6, title: "DevSecOps", description: "Integrating efficient CI/CD DevOps services into your development pipeline to improve productivity and security." },
+    { iconImg: icon5, title: "AWS/Azure Cloud", description: "Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software." },
+    { iconImg: icon6, title: "DevSecOps", description: "Integrating efficient CI/CD DevOps services into your development pipeline to improve productivity, quality, and speed across the software lifecycle." },
   ];
 
   return (
@@ -29,7 +29,7 @@ export default function OurServices() {
       Delivering top-notch services and ensuring timely project completion, setting the standard for excellence in the industry.
       </p>
             
-            <div className="grid content-center mt-10 p-2 place-items-center w-full space-y-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid content-center mt-10 p-2 place-items-center w-full space-y-10 grid-cols-1 min-[880px]:grid-cols-2 xl:grid-cols-3 gap-10">
         {cardData.map((card, index) => (
           <InfoCard key={index} iconImg={card.iconImg} title={card.title} description={card.description} />
         ))}

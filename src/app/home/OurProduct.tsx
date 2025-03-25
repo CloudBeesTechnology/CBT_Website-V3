@@ -67,12 +67,13 @@ export default function OurProduct() {
             </div>
             <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2 ">
              <div className="w-[1000px]:w-[450px]">
-                 <h3 className="title leading-snug text-primary mb-3 sm:mb-5">
+                 <h3 className="sub_title leading-snug text-primary mb-3 sm:mb-5">
                 {feature.title}
               </h3>
               <div className="text-gray max-w-md list-disc list-inside para ">
                 {feature.points.map((point, index) => (
-                  <p key={index} className="flex gap-5 items-center"><span className="text-primary"><AiFillCaretRight/></span> {point}</p>
+                  <p key={index} className="flex gap-5 ">
+                    <span className="text-primary pt-1"><AiFillCaretRight/></span> {point}</p>
                 ))}
               </div>
               </div>

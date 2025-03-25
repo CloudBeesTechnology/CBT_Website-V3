@@ -55,12 +55,12 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section className="center flex-col screen-size sm:m-7">
-      <h1 className="text-center title_4 m-9">
-        <span className="text-primary">Get </span>
-        <span className="text-dark_gray">in touch</span>
-      </h1>
-      <div className="center w-full">
+    <section className=" center flex-col screen-size sm:m-7 ">
+        <h1 className="text-center title m-9">
+          <span className="text-primary">Get </span>
+          <span className="text-dark_gray">in touch</span>
+        </h1>
+      <div className="center  w-full">
         <div className="flex center flex-wrap md:flex-nowrap w-full max-w-full overflow-hidden">
           <aside className="sm:w-2/3 center p-2 sm:h-[700px]">
             <Image

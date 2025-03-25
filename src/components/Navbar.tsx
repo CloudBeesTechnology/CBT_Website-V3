@@ -27,9 +27,10 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue_gray text-red py-10 px-4 min-h-[100px] max-h-[100px] flex items-center justify-between sticky z-40 top-0 w-full shadow-md shadow-blue-gray/50">
+    <nav className="bg-blue_gray text-red py-10 px-4 min-h-[100px] max-h-[100px] flex items-center justify-between sticky z-40 top-0 w-full shadow-md shadow-blue-gray/50 border">
 
-      <div className="flex items-center">
+     <section className='screen-size flex justify-between items-center'>
+     <div className="flex items-center">
         <Image
           src={CbtLogo}
           alt="Cbt Logo"
@@ -177,6 +178,7 @@ export const Navbar = () => {
           </ul>
         </div>
       )}
+     </section>
     </nav>
   );
 };

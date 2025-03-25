@@ -110,7 +110,7 @@ export const employees = [
     imageUrl: Karthikeyan,
     name: "KARTHIKEYAN",
     position: "Web Developer",
-    skills: ["JavaScript", "Tailwind", "React", "Node", "Firebase."],
+    skills: ["JavaScript", "Tailwind", "React Js", "Vite Js", "Next Js", "Node Js",  "Firebase."],
   },
   {
     imageUrl: Padmapriya,

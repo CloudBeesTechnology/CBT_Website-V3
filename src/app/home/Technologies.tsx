@@ -132,8 +132,11 @@ const clientsImg = [
 {/* <div className="screen-size my-10  grid grid-cols-2 min-w-[575px];grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-10"> */}
 export const Technologies = () => {
   return (
-    <section className="center my-5 sm:my-10">
-      <div className="screen-size my-10 flex flex-wrap justify-center gap-10">
+    <section className="center flex-col mt-14 mb-5 sm:my-20 ">
+       <h2 className="title text-center sm:mb-6">
+        <span className="text-primary">Our </span> Technologies
+      </h2>
+      <div className="screen-size my-10 flex flex-wrap justify-center gap-7 sm:gap-10">
         {clientsImg.map((client) => (
           <div
             key={client.id}
@@ -161,7 +164,7 @@ export const Technologies = () => {
             </div>
 
             {/* Title */}
-            <h2 className="text-center text_size_2 px-3 ">{client.title}</h2>
+            <h2 className="text-cente para px-3 ">{client.title}</h2>
           </div>
         ))}
       </div>

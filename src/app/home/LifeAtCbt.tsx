@@ -8,7 +8,7 @@ export const LifeCBT = () => {
       <h4 className="title text-center">
         <span className="text-primary">Life</span> at CBT
       </h4>
-      <p className="text-xl text-center my-5 max-w-screen-lg px-2">
+      <p className="text-xl text-center para my-5 max-w-screen-lg px-2">
         Experience a thriving community where expertise is recognized and
         innovation flourishes. Come along for a rewarding path of development
         and cooperation in the software industry.
