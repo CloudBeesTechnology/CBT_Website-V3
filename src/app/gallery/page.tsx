@@ -17,7 +17,7 @@ const Gallery: React.FC = () => {
   const GalleryTitleText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white text_size_1">
+        <span className="text-white banner_title text-center">
           Capturing Moments, Creating Memories
         </span>
       </div>

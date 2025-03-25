@@ -17,38 +17,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@theme{
-  --color-gray:#202020;
-  --color-dark_gray:#404040;
-  --color-blue_gray:#313F48;
-  --color-lite_gray:#F1F1F1;
-  --color-ash_gray:#909090;
-  --color-primary:#FABA0B;
-  --color-white:white;
-  --color-sandal:#FFE7A4;
-  --color-blogYellow:#FFD258;
-  --color-blogWhite:#FBFBFB;
+@theme {
+  --color-gray: #202020;
+  --color-dark_gray: #404040;
+  --color-blue_gray: #313F48;
+  --color-lite_gray: #F1F1F1;
+  --color-ash_gray: #909090;
+  --color-primary: #FABA0B;
+  --color-white: white;
+  --color-sandal: #FFE7A4;
+  --color-blogYellow: #FFD258;
+  --color-blogWhite: #FBFBFB;
 }
 
 @layer utilities {
   .screen-size {
     @apply max-w-screen-2xl w-[95%] mx-auto;
   }
+
   .bg-gradient {
     @apply bg-gradient-to-t from-[#0D1A1F] to-[#47555F];
   }
+
   .center {
     @apply flex justify-center items-center;
   }
+
   .vertical {
     @apply flex flex-col items-center justify-center;
   }
+
   .between {
     @apply flex justify-between items-center;
   }
 
   .banner_title{
-    @apply text-[34px] sm:text-[38px] font-semibold
+    @apply text-[34px] sm:text-[38px] font-semibold px-1
   }
   .title{
     @apply text-[32px] sm:text-4xl font-semibold
@@ -57,33 +61,38 @@
     @apply  text-[30px] sm:text-[34px] font-semibold
   } 
   .para_head{
-    @apply sm:text-2xl text-xl font-medium
-  }
-  .para{
-    @apply sm:text-xl text-lg 
-  }
-  .sub_para{
-    @apply sm:text-lg text-base 
-  } 
-  }
-  .btn {
-    @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
-  }
-  .btn-1 {
-    @apply px-6 py-2 text-center rounded-full font-semibold text-base text-gray bg-primary;
-  }
-  .bg_image{
-    background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
-    @apply bg-cover bg-no-repeat 
+    @apply sm:text-2xl text-xl font-medium px-1
   }
 
-  .carrer_bg{
-    background-image: url(../assets/CarrersSection/hexagon-lines-QguI1dQX0c\ 1.png);
-    @apply bg-cover bg-no-repeat bg-center  
+  .para {
+    @apply sm:text-xl text-lg
   }
-  
-  
-  @keyframes move {
+
+  .sub_para {
+    @apply sm:text-lg text-base
+  }
+}
+
+.btn {
+  @apply px-6 py-2 text-center rounded-lg font-semibold text-base text-gray bg-primary;
+}
+
+.btn-1 {
+  @apply px-6 py-2 text-center rounded-full font-semibold text-base text-gray bg-primary;
+}
+
+.bg_image {
+  background-image: url(../assets/HomeSection/Banner/Images/Banner.jpg);
+  @apply bg-cover bg-no-repeat
+}
+
+.carrer_bg {
+  background-image: url(../assets/CarrersSection/hexagon-lines-QguI1dQX0c\ 1.png);
+  @apply bg-cover bg-no-repeat bg-center
+}
+
+
+/* @keyframes move {
     0% {
       left: 0px;
       top: 50%;
@@ -113,40 +122,120 @@
   .animate-spin-custom {
     animation: spin 30s linear infinite;
   }
- @keyframes spins {
-    to {
-      transform: rotate(180deg);
-    }
-  }
-  .animate-spin {
-    animation: spin 10s linear infinite;
+   */
+
+/* Animation for the bubble image */
+@keyframes move {
+  0% {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Keep it vertically centered */
   }
 
-  @keyframes bounceCustom {
-    0%, 100% {
-      transform: translateY(0); 
-    }
-    50% {
-      transform: translateY(-20px);
-    }
+  50% {
+    left: 100vw;
+    /* Move to the right side of the viewport */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Keep it vertically centered */
   }
-  
-  .animate-bounce-custom {
-    animation: bounceCustom 20s ease-in-out infinite;
+
+  100% {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Keep it vertically centered */
   }
-  
-  @keyframes bounceCustomShadow {
-    0%, 100% {
-      transform: translateY(-20px); 
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
-    }
-    50% {
-      transform: translateY(10px); 
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); 
-    }
+}
+
+/* Apply animation to the element */
+.animate-move {
+  position: absolute;
+  animation: move 60s linear infinite alternate;
+  z-index: 10;
+  /* Ensure the element is above other content */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(180deg);
   }
-  
-  .animate-bounce-custom-shadow {
-    animation: bounceCustomShadow 20s ease-in-out infinite;
+}
+
+/* Apply spinning effect */
+.animate-spin-custom {
+  animation: spin 30s linear infinite;
+}
+
+/* Ensure image stays within bounds and prevent overflow */
+.bg_image {
+  position: relative;
+  overflow: hidden;
+  /* Prevent any overflow in the x or y direction */
+  width: 100%;
+  /* Take up full width of the screen */
+  height: 100vh;
+  /* Ensure it takes full height of the viewport */
+}
+
+.bg-blend-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Keep the width of the image to 100% */
+}
+
+/* Apply styling to the image */
+.animate-spin-custom {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  filter: blur(60px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes spins {
+  to {
+    transform: rotate(180deg);
   }
-  
+}
+
+.animate-spin {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes bounceCustom {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-bounce-custom {
+  animation: bounceCustom 20s ease-in-out infinite;
+}
+
+@keyframes bounceCustomShadow {
+
+  0%,
+  100% {
+    transform: translateY(-20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  50% {
+    transform: translateY(10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.animate-bounce-custom-shadow {
+  animation: bounceCustomShadow 20s ease-in-out infinite;
+}
