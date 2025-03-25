@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
 import logo1 from "../../assets/HomeSection/ContentImages/HRMS.png";

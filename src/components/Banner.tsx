@@ -87,11 +87,6 @@ export const Banner: React.FC<BannerProps> = ({
 
             <div className="center flex-col text-center sm:w-2xl">
               <h2 className="text-3xl font-bold">{serviceBannerText}</h2>
-              {/* <p className="mt-5">
-                Our end-to-end approach enhances operations, accelerates
-                effectiveness, eliminates of technical issues, reduction in cost
-                and updates apps for the future
-              </p> */}
             </div>
           </div>
         </div>
@@ -155,9 +150,8 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{BlogsBannerText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${
-                  rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
-                }`}
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
               >
                 {[
                   "Delve into captivating narratives, thought-provoking insights, and expertly curated",
@@ -221,9 +215,8 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{carrerBannerText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${
-                  rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
-                }`}
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
               >
                 {[
                   "Make yourself a member of our team and strive ahead in your career.",
@@ -254,7 +247,7 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{productBannerText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
                   }`}
               >
                 {["Make yourself a member of our team and strive ahead in your career. Where Careers Align Perfectly"

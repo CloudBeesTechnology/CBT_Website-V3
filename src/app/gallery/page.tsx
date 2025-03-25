@@ -3,6 +3,10 @@ import { Banner } from "@/components/Banner";
 import React, { useEffect, useState } from "react";
 import LifeOfCBT from "./lifeOfCBT";
 import DiwaliCeleb from "./diwaliCeleb";
+import Anniversary from "./anniversary";
+import PongalCeleb from "./pongalCeleb";
+import WomensDayCeleb from "./womensDayCeleb";
+import KnowledgeSharing from "./knowledgeSharing";
 
 const Gallery: React.FC = () => {
   const [rotate, setRotate] = useState<boolean>(false);
@@ -14,7 +18,6 @@ const Gallery: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  
   const GalleryTitleText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
@@ -28,8 +31,15 @@ const Gallery: React.FC = () => {
   return (
     <main>
       <Banner GalleryTitleText={GalleryTitleText} rotate={rotate} />
-      <LifeOfCBT />
-      <DiwaliCeleb />
+      <div className="my-10">
+      
+        <LifeOfCBT />
+        <DiwaliCeleb />
+        <Anniversary />
+        <PongalCeleb />
+        <WomensDayCeleb />
+        <KnowledgeSharing />
+      </div>
     </main>
   );
 };
