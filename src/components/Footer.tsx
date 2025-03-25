@@ -34,10 +34,10 @@ export const Footer = () => {
               </p>
               <article className="flex-1 my-5">
                 <p className="para">
-                  <strong className="para text-primary">Email:</strong> hr@cloudbeestech.com
+                  <strong className="para text-primary">Email :</strong> hr@cloudbeestech.com
                 </p>
                 <div className="flex gap-1 my-1 max-lg:justify-center">
-                  <p className="para text-primary">Phone:</p>
+                  <p className="para text-primary"><strong>Phone :</strong></p>
                   <div className="para">
                     <p>India - +91 - 7200533357</p>
                     <p>USA - +1 (614) 632-9349</p>
@@ -47,7 +47,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-12 sm:gap-14">
+          <div className="flex sm:justify-around justify-center max-md:text-center mt-3 sm:mt-10 flex-wrap gap-12 sm:gap-14 font-light text-sm">
             {[
               {
                 location: "Pondicherry",
@@ -85,7 +85,7 @@ export const Footer = () => {
               },
             ].map(({ location, address, mapImg, link }) => (
               <article key={location} className="flex flex-col gap-5 ">
-                <h6 className="para font-semibold text-primary underline underline-offset-6">{location}</h6>
+                <h6 className="para  text-primary underline underline-offset-6">{location}</h6>
                 <p className="para sm:h-20 ">
                   {address.map((line, index) => (
                     <span key={index}>
@@ -109,8 +109,8 @@ export const Footer = () => {
           </div>
         </section>
 
-        <section className="flex flex-col max-sm:text-center gap-5 mb-5">
-          <p className="text-[20px] font-medium">
+        <section className="flex flex-col max-sm:text-center gap-5 mb-5 font-light text-sm">
+          <p className="para font-medium">
             © 2019 - 2025 CloudBees Tech Private Limited. All rights reserved.
           </p>
           <div className="center gap-5">

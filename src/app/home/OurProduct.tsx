@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
 import logo1 from "../../assets/HomeSection/ContentImages/HRMS.png";
@@ -71,7 +72,8 @@ export default function OurProduct() {
               </h3>
               <div className="text-gray max-w-md list-disc list-inside para ">
                 {feature.points.map((point, index) => (
-                  <p key={index} className="flex gap-5 items-center"><span className="text-primary"><AiFillCaretRight/></span> {point}</p>
+                  <p key={index} className="flex gap-5 ">
+                    <span className="text-primary pt-1"><AiFillCaretRight/></span> {point}</p>
                 ))}
               </div>
               </div>

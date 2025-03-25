@@ -16,7 +16,7 @@ export default function Products() {
     const productBannerText: React.ReactNode = (
       <div className="flex justify-center items-center space-x-10">
         <div className="flex flex-col items-center space-y-1">
-          <span className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-[36px] font-medium">
+          <span className="text-white banner_title">
             Join our tech community
           </span>
          
