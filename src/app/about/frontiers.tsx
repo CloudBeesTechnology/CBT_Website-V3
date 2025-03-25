@@ -46,7 +46,7 @@ const Frontiers: React.FC<FrontiersProps> = ({ employees }) => {
                 {employee.position}
               </p>
               <p className="text-dark_gray text-center sub_para w-full sm:w-82 ">
-                {employee.skills.join(", ")}
+                {"Skill : " + employee.skills.join(", ")}
               </p>
             </div>
           </div>
