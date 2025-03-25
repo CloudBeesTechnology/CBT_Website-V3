@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { MdClose } from 'react-icons/md';
+import NavMenu from "../assets/NavSection/images/NavMenu.png"
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -26,13 +27,13 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue_gray text-red p-10 min-h-[100px] max-h-[100px] flex items-center justify-between sticky z-40 top-0 w-full shadow-md shadow-blue-gray/50">
+    <nav className="bg-blue_gray text-red py-10 px-4 min-h-[100px] max-h-[100px] flex items-center justify-between sticky z-40 top-0 w-full shadow-md shadow-blue-gray/50">
 
       <div className="flex items-center">
         <Image
           src={CbtLogo}
           alt="Cbt Logo"
-          width={250}
+          width={200}
           height={51}
         />
       </div>
@@ -42,7 +43,12 @@ export const Navbar = () => {
         <div className={`xl:hidden flex `}>
           <button onClick={toggleMenu} className="text-white">
             {/* Using react-icons for Hamburger icon */}
-            <FaBars className="w-6 h-6 " />
+            {/* <FaBars className="w-6 h-6 " /> */}
+            <Image
+              alt='Navbar Menu Icon'
+              src={NavMenu}
+              className='w-6 h-6'
+            />
           </button>
         </div>
       )}
@@ -149,8 +155,8 @@ export const Navbar = () => {
               </Link>
             </li>
             <li>
-            <Link href="https://b2vtech.com" target="_blank" >
-            Courses
+              <Link href="https://b2vtech.com" target="_blank" >
+                Courses
               </Link>
             </li>
             <li>

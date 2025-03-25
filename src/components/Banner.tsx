@@ -25,7 +25,7 @@ export const Banner: React.FC<BannerProps> = ({
   serviceBannerText,
   aboutBannerText,
   rotate,
-  BlogsBannerText,
+  BlogsBannerText,  
   GalleryTitleText,
   carrerBannerText,
   projectBannerText,
@@ -40,7 +40,7 @@ export const Banner: React.FC<BannerProps> = ({
           alt="CBT Banner Image"
           width={450}
           height={100}
-          className="animate-spin-custom shadow-lg blur-[60px]"
+          className="animate-spin-custom shadow-lg blur-[60px] overflow-hidden"
         />
       </div>
       {/* Home */}
@@ -74,7 +74,7 @@ export const Banner: React.FC<BannerProps> = ({
           <div className="flex justify-evenly items-center max-[890px]:flex-col md:justify-evenly w-full">
             <div className="">
               {/* Logo Wrapper */}
-              <div className="pb-12 z-0">
+              <div className="z-0">
                 <Image
                   src={serviceLogo}
                   alt="Service Logo"
@@ -86,7 +86,7 @@ export const Banner: React.FC<BannerProps> = ({
             </div>
 
             <div className="center flex-col text-center sm:w-2xl">
-              <h2 className="text-3xl font-bold">{serviceBannerText}</h2>
+              <h2 className="">{serviceBannerText}</h2>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{aboutBannerText}</h2>
               <h3
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out ${rotate
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out ${rotate
                   ? "rotate-0 scale-100 opacity-100"
                   : "rotate-[18deg] scale-50 opacity-0"
                   }`}
@@ -182,7 +182,7 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-20">
               <h2 className="title">{GalleryTitleText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${
                   rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
                 }`}
               >
@@ -219,8 +219,7 @@ export const Banner: React.FC<BannerProps> = ({
                   }`}
               >
                 {[
-                  "Make yourself a member of our team and strive ahead in your career.",
-                  "Where Careers Align Perfectly",
+                  "Make yourself a member of our team and strive ahead in your career, Where Careers Align Perfectly.",
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i
@@ -250,7 +249,7 @@ export const Banner: React.FC<BannerProps> = ({
                 className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
                   }`}
               >
-                {["Make yourself a member of our team and strive ahead in your career. Where Careers Align Perfectly"
+                {["Make yourself a member of our team and strive ahead in your career, Where Careers Align Perfectly."
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i
