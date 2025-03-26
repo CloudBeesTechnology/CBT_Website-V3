@@ -33,7 +33,24 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Banner aboutBannerText={aboutBannerText} rotate={rotate} />
+      <Banner>
+        <div className="absolute bg-blend-overlay flex items-center justify-center h-[80vh] lg:h-[60vh]  text-white">
+          <div className="flex justify-evenly w-full ">
+            <div className="flex flex-col items-center justify-center space-y-5">
+              <h2 className="title">{aboutBannerText}</h2>
+              <h3
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out ${rotate
+                  ? "rotate-0 scale-100 opacity-100"
+                  : "rotate-[18deg] scale-50 opacity-0"
+                  }`}
+              >
+                <i> Weaving Words Bridging Worlds </i>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+      </Banner>
 
       <div className="flex flex-col lg:flex-row justify-around items-center p-6 rounded-lg screen-size">
         <div className="w-full lg:w-1/2 flex lg:justify-start sm:justify-center">

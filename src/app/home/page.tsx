@@ -6,12 +6,12 @@ import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
 import { OurClient } from "./OurClient";
 import { Technologies } from "./Technologies";
-import Products from "../products/Products";
 import { Banner } from "@/components/Banner";
 import { LetTalk } from "./LetTalk";
 import ProdLink from "./ProdLink";
 import OurServices from "./OurServices";
 import OurProduct from "./OurProduct";
+import Image from "next/image";
 
 const Home: React.FC = () => {
   const [animationTriggered, setAnimationTriggered] = useState(false);
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center justify-center w-full text-white">
             <div className="relative pb-12">
-              <img
+              <Image
                 src={CBTPolygonLogo}
                 alt="Home Logo"
                 width={150}
@@ -72,8 +72,6 @@ const Home: React.FC = () => {
           {homeBannerText}
         </div>
       </Banner>
-
-      {/* Other components */}
       <OurProduct />
       <ProdLink />
       <OurServices />

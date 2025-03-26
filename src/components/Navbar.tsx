@@ -43,7 +43,6 @@ export const Navbar = () => {
         <li><Link href="/gallery" className={pathname === '/gallery' ? 'text-primary' : 'hover:text-primary'}>Gallery</Link></li>
         <li><Link href="https://b2vtech.com" target="_blank">Courses</Link></li>
         <li><Link href="/blogs" className={pathname === '/blogs' ? 'text-primary' : 'hover:text-primary'}>Blog</Link></li>
-        <li><Link href="/solutions" className={pathname === '/solutions' ? 'text-primary' : 'hover:text-primary'}>Solutions</Link></li>
         <li><Link href="/contact" className={pathname === '/contact' ? 'text-primary' : 'hover:text-primary'}>Contact Us</Link></li>
       </ul>
 

@@ -19,7 +19,7 @@ const Blogs: React.FC = () => {
   }, []);
 
   const openModal = (pdf?: string) => {
-  
+
     if (pdf) {
       setCurrentPdf(pdf);
       setShowModal(true);
@@ -46,7 +46,36 @@ const Blogs: React.FC = () => {
 
   return (
     <div>
-      <Banner BlogsBannerText={BlogsBannerText} rotate={rotate} />
+      <Banner>
+        <div className="absolute bg-blend-overlay flex items-center justify-center h-[80vh] lg:h-[60vh] text-white">
+          <div className="flex justify-evenly w-full ">
+            <div className="flex flex-col items-center justify-center space-y-5">
+              <h2 className="title">{BlogsBannerText}</h2>
+              <div
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                  }`}
+              >
+                {[
+                  "Delve into captivating narratives, thought-provoking insights, and expertly curated",
+                  "content that ignites curiosity and fosters meaningful conversations.",
+                ].map((text, index) => (
+                  <h3 key={index}>
+                    <i
+                      className={`block transition-all duration-[1000ms] ease-out ${rotate
+                          ? "scale-100 opacity-100 delay-300"
+                          : "scale-50 opacity-0"
+                        }`}
+                    >
+                      {text}
+                    </i>
+                  </h3>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </Banner>
 
       <section className="flex flex-col items-center text-center gap-4 px-4 md:px-10 md:gap-6 mt-14">
         <h3 className="title">
