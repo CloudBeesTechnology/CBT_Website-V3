@@ -40,8 +40,8 @@ const About: React.FC = () => {
           <Image
             src={aboutUs}
             alt="logo"
-            width={400}
-            height={450}
+            width={350}
+            // height={450}
             className="max-w-full object-cover"
           />
         </div>
@@ -89,8 +89,8 @@ const About: React.FC = () => {
             <Image
               src={ourMission}
               alt="ourMission"
-              width={400}
-              height={450}
+              width={350}
+              // height={450}
               className="rounded-lg max-w-full"
             />
           </div>

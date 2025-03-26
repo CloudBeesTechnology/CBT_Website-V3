@@ -3,9 +3,13 @@ import { Banner } from "@/components/Banner";
 import React, { useEffect, useState } from "react";
 import BlogCard from "./blogCard";
 import { BlogCardDetails } from "./blogCardDetails";
+import ModelForPDF from "./modelForPDF";
 
 const Blogs: React.FC = () => {
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [currentPdf, setCurrentPdf] = useState<string | undefined>("");
   const [rotate, setRotate] = useState<boolean>(false);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setRotate(true);
@@ -13,6 +17,20 @@ const Blogs: React.FC = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const openModal = (pdf?: string) => {
+  
+    if (pdf) {
+      setCurrentPdf(pdf);
+      setShowModal(true);
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setCurrentPdf("");
+  };
+
   const BlogsBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1 text-center">
@@ -41,7 +59,10 @@ const Blogs: React.FC = () => {
       </section>
 
       <div className="w-full px-4 md:px-12 lg:px-16">
-        <BlogCard cards={BlogCardDetails} />
+        <BlogCard cards={BlogCardDetails} openModal={openModal} />
+        {showModal && (
+          <ModelForPDF currentPdf={currentPdf} closeModal={closeModal} />
+        )}
       </div>
     </div>
   );

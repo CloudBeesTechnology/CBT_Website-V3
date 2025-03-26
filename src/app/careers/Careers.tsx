@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import CareerArrow from "../../assets/CarrersSection/careerArrow.svg";
+import CareerArrow from "../../assets/CarrersSection/mdi_arrow-up-bold.svg";
 import CareerImg from "../../assets/CarrersSection/hexagon-lines-QguI1dQX0c 1.png";
 
 export default function Careers() {
@@ -13,24 +14,26 @@ export default function Careers() {
         <Image
           src={CareerImg}
           alt="Career Image"
-          className="max-sm:w-full max-w-lg"
+          className="max-sm:w-full max-w-sm"
         />
-        <div className=" absolute sm:bottom-20 ">
+        <div className=" absolute sm:bottom ">
           <h2 className="para_head text-center">
             Stay tuned for more updates{" "}<br />
             <span className="text-primary"> Coming your way soon </span>
           </h2>
+          <div className="">
           <Image
             src={CareerArrow}
             alt="Career Image"
-            className="mx-auto max-sm:w-[50px] mb-5"
-            width={94}
-            height={160}
+            className="mx-auto max-sm:w-[50px] my-5"
+            width={50}
+            // height={160}
           />
+          </div>
           <p>
             <a
-              href=""
-              className="text-blue-500 para underline hover:underline center"
+              href="/contact"
+              className="text-blue-500 para underline hover:underline center mb-2"
             >
               Connect with us
             </a>

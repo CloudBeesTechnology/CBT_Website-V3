@@ -20,7 +20,7 @@ import client5 from "../../assets/HomeSection/ClientLogos/niche.png";
 import client6 from "../../assets/HomeSection/ClientLogos/svg.png";
 import client7 from "../../assets/HomeSection/ClientLogos/clLogo-7.png";
 import client8 from "../../assets/HomeSection/ClientLogos/sn-color.png";
-import client9 from "../../assets/HomeSection/ClientLogos/B2v.png";
+import client9 from "../../assets/HomeSection/ClientLogos/B2V 1 1.png";
 import client10 from "../../assets/HomeSection/ClientLogos/do-color.png";
 
 export default function Project() {
@@ -97,16 +97,16 @@ export default function Project() {
       imageSrc: img9,
       clientLogo:client4,
     },
+    // {
+    //   id: 9,
+    // //   title: "HRMS Products",
+    //   description:
+    //     "Springnet Technology is a team of developers and designers devoted to our commitments, providing results, and striving for the highest quality.",
+    //   imageSrc: img10,
+    //   clientLogo:client8,
+    // },
     {
       id: 9,
-    //   title: "HRMS Products",
-      description:
-        "Springnet Technology is a team of developers and designers devoted to our commitments, providing results, and striving for the highest quality.",
-      imageSrc: img10,
-      clientLogo:client8,
-    },
-    {
-      id: 10,
     //   title: "HRMS Products",
       description:
         "Access resources and guides to help you excel in your internship and future career.our platform offers a wealth of knowledge and tools to help you thrive during your internship and chart a course toward a prosperous career.",
@@ -114,7 +114,7 @@ export default function Project() {
       clientLogo:client9,
     },
     {
-      id: 11,
+      id: 10,
     //   title: "HRMS Products",
       description:
         "Senthur Velavan Groups real estate division excels in developing premium residential and commercial properties. They are committed to quality, innovation, and customer satisfaction in every project.",
@@ -124,7 +124,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="screen-size flex flex-col space-y-12 sm:space-y-14 my-14 p-2 w-full">
+    <div className="screen-size flex flex-col space-y-12 sm:space-y-14 my-14 p-3 w-full">
         <h2 className="title text-center ">
         <span className="text-primary">Our </span> Projects
       </h2>

@@ -21,8 +21,9 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue_gray text-white py-4 px-4 min-h-[100px] flex items-center justify-between sticky top-0 w-full shadow-md  z-40">
-      <div className="flex items-center">
+    <nav className="bg-blue_gray text-white py-4 px-4 h-28 flex items-center justify-between sticky top-0 w-full shadow-md  z-40">
+     <div className='screen-size flex justify-between items-center'>
+     <div className="flex items-center">
         <Image src={CbtLogo} alt="Cbt Logo" width={200} height={51} />
       </div>
 
@@ -48,6 +49,7 @@ export const Navbar = () => {
 
       {/* Sidebar Navigation */}
       <SideBar isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar} pathname={pathname} />
+      </div>
     </nav>
   );
 };
