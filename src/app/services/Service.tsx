@@ -1,6 +1,3 @@
-// pages/service.tsx
-"use client";
-
 import InfoCard from "@/components/InfoCard";
 import icon1 from "../../assets/ServiceSection/digital-marketing.png";
 import icon2 from "../../assets/ServiceSection/UI-UX.png";

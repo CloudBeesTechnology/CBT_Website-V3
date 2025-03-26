@@ -6,7 +6,6 @@ import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
 import { OurClient } from "./OurClient";
 import { Technologies } from "./Technologies";
-import Products from "../products/Products";
 import { Banner } from "@/components/Banner";
 import { LetTalk } from "./LetTalk";
 import ProdLink from "./ProdLink";
@@ -75,8 +74,6 @@ const Home: React.FC = () => {
           {homeBannerText}
         </div>
       </Banner>
-
-      {/* Other components */}
       <OurProduct />
       <ProdLink />
       <OurServices />
