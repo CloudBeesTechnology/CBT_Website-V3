@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import CareerArrow from "../../assets/CarrersSection/careerArrow.svg";
 import CareerImg from "../../assets/CarrersSection/hexagon-lines-QguI1dQX0c 1.png";

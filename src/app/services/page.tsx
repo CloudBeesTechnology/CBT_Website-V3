@@ -1,4 +1,3 @@
-"use client";
 import { Banner } from "@/components/Banner";
 import ServiceLogo from "../../assets/ServiceSection/animation/Service.gif"
 import Service from "./Service";

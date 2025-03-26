@@ -1,5 +1,3 @@
-"use client";
-import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
 import img1 from "../../assets/project/AWE_WEBSITE.png";
 import img2 from "../../assets/project/HR_PORTAL.png";

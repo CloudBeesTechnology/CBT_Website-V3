@@ -1,4 +1,3 @@
-"use client";
 import { ProgressDetails } from "./ProgressDetails";
 export default function Progress () {
   return (

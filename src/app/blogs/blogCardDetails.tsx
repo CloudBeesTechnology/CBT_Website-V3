@@ -1,7 +1,7 @@
 import automation from "../../assets/blog/blogImg/automation.png";
 import cloud from "../../assets/blog/blogImg/cloud.png";
 import cybersecurity from "../../assets/blog/blogImg/cybersecurity.png";
-import jira from "../../assets/blog/blogImg/jira.png";
+// import jira from "../../assets/blog/blogImg/jira.png";
 import secOps from "../../assets/blog/blogImg/secOps.png";
 import voiceSearch from "../../assets/blog/blogImg/voiceSearch.png";
 import webExperiances from "../../assets/blog/blogImg/webExperiances.png";
@@ -14,13 +14,13 @@ import webExperiances from "../../assets/blog/blogImg/webExperiances.png";
 // import reactPdf from "../../assets/blog/blogPDF/react.pdf";
 
 export const BlogCardDetails = [
-  {
-    imageUrl: jira,
-    title: "AI support in Jira",
-    content:
-      "AI in Jira revolutionizes project management by enhancing issue tracking, automating workflows, and boosting collaboration.",
-      // pdf: jiraPdf,
-},
+//   {
+//     imageUrl: jira,
+//     title: "AI support in Jira",
+//     content:
+//       "AI in Jira revolutionizes project management by enhancing issue tracking, automating workflows, and boosting collaboration.",
+//       // pdf: jiraPdf,
+// },
   {
     imageUrl: automation,
     title: "AI transforming testing and automation",
