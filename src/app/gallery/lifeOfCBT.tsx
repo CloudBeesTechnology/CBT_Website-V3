@@ -26,6 +26,8 @@ const LifeOfCBT: React.FC = () => {
         </h3>
       </header>
 
+      <div className="center">
+      <div className=" max-w-7xl  overflow-hidden">
       <section className="grid grid-cols-1 md:grid-cols-2  p-2 screen-size">
         {/* Left Column with multiple images stacked */}
         {/* md:border md:border-primary */}
@@ -127,6 +129,8 @@ const LifeOfCBT: React.FC = () => {
           </figure>
         </article>
       </section>
+      </div>
+      </div>
     </main>
   );
 };

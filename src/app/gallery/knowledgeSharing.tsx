@@ -13,17 +13,21 @@ const KnowledgeSharing: React.FC = () => {
           </span>
         </h3>
       </header>
-      <section className="screen-size p-2">
-        <article className="col-span-1 grid ">
-          <figure className="relative">
-            <Image
-              src={womensDay04}
-              alt="womensDay04"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
-      </section>
+      <div className="center">
+        <div className=" max-w-7xl  overflow-hidden">
+          <section className="screen-size p-2">
+            <article className="col-span-1 grid ">
+              <figure className="relative">
+                <Image
+                  src={womensDay04}
+                  alt="womensDay04"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
+        </div>
+      </div>
     </main>
   );
 };

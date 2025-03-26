@@ -187,7 +187,8 @@ export const Banner: React.FC<BannerProps> = ({
                 }`}
               >
                 {[
-                  "Each piece on display tells a unique story, inviting you to immerse yourself in the beauty of life's most precious encounters.",
+                  "Each piece on display tells a unique story, inviting you to immerse yourself in the",
+                   "beauty of life's most precious encounters."
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i

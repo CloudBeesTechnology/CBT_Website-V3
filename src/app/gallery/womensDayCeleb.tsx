@@ -17,6 +17,8 @@ const WomensDayCeleb: React.FC = () => {
         </h3>
       </header>
 
+      <div className="center">
+      <div className=" max-w-7xl  overflow-hidden">
       <section className="grid grid-cols-1 md:grid-cols-2  p-2 screen-size">
         {/* Left Column with multiple images stacked */}
         <article className="col-span-1 grid grid-rows-1 h-full">
@@ -62,6 +64,8 @@ const WomensDayCeleb: React.FC = () => {
           </figure>
         </article>
       </section>
+      </div>
+      </div>
     </main>
   );
 };
