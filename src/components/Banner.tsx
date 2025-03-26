@@ -100,7 +100,7 @@ export const Banner: React.FC<BannerProps> = ({
             <div className="flex flex-col items-center justify-center space-y-8 max-w-4xl md:w-2xl text-center flex-grow">
               <h2 className="title">{projectBannerText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"}`}
+                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"}`}
               >
                 {["At CloudBees Tech, we take pride in our diverse portfolio of projects spanning various industries and sectors. Our team's expertise and dedication have led to successful outcomes and satisfied clients"].map((text, index) => (
                   <p key={index} className={`block transition-all duration-[1000ms] ease-out ${rotate ? "scale-100 opacity-100 delay-300" : "scale-50 opacity-0"}`}>
@@ -115,9 +115,9 @@ export const Banner: React.FC<BannerProps> = ({
               <Image
                 src={projectLogo}
                 alt="Project Logo"
-
-                height={486}
-                className="max-w-full h-[350px] lg:h-[486px] transition-all md:w-[250px] md:h-[350px]"
+                width={475}
+                height={333}
+                className="max-w-full h-[200px] lg:h-[486px] transition-all md:w-[475px] md:h-[200px]"
               />
             </div>
           </div>
@@ -187,8 +187,7 @@ export const Banner: React.FC<BannerProps> = ({
                 }`}
               >
                 {[
-                  "Each piece on display tells a unique story, inviting you to immerse yourself in the",
-                  "beauty of life's most precious encounters.",
+                  "Each piece on display tells a unique story, inviting you to immerse yourself in the beauty of life's most precious encounters.",
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i

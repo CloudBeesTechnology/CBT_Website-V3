@@ -1,3 +1,5 @@
+"use client"
+import React, { useEffect, useState } from "react";
 import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
 import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
@@ -10,26 +12,38 @@ import ProdLink from "./ProdLink";
 import OurServices from "./OurServices";
 import OurProduct from "./OurProduct";
 
-const Home: React.FC = () => {    
+const Home: React.FC = () => {
+  const [animationTriggered, setAnimationTriggered] = useState(false);
+
+  // Trigger the animation when the page is loaded or refreshed
+  useEffect(() => {
+    setAnimationTriggered(true);
+  }, []);
 
   const homeBannerText = (
     <>
       <div className="flex flex-wrap max-sm:p-2 justify-center items-start space-y-2 md:space-y-2 lg:space-y-4 xl:space-y-6 space-x-4 sm:space-x-4 md:space-x-6 lg:space-x-8 xl:space-x-4">
         {/* Empowering */}
-        <div className="flex items-center banner_title justify-center space-y-1">
+        <div
+          className={`flex items-center banner_title justify-center space-y-1 ${animationTriggered ? 'fall-animation' : ''}`}
+        >
           <span className="text-primary animate-bounce">E</span>
           <span className="text-white ">mpowering</span>
         </div>
 
         {/* Digital */}
-        <div className="flex items-center banner_title justify-center space-y-1">
-          <span className="text-primary  animate-bounce">D</span>
+        <div
+          className={`flex items-center banner_title justify-center space-y-1 ${animationTriggered ? 'fall-animation' : ''}`}
+        >
+          <span className="text-primary animate-bounce">D</span>
           <span className="text-white ">igital</span>
-        </div> 
+        </div>
 
         {/* Transformation */}
-        <div className="flex items-center banner_title justify-center space-y-1">
-          <span className="text-primary  animate-bounce">T</span>
+        <div
+          className={`flex items-center banner_title justify-center space-y-1 ${animationTriggered ? 'fall-animation' : ''}`}
+        >
+          <span className="text-primary animate-bounce">T</span>
           <span className="">ransformation</span>
         </div>
       </div>
@@ -44,12 +58,8 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Banner
-        homeLogo={CBTPolygonLogo}
-        homeBannerText={homeBannerText}
-       
-      />
-      <OurProduct/>
+      <Banner homeLogo={CBTPolygonLogo} homeBannerText={homeBannerText} />
+      <OurProduct />
       <ProdLink />
       <OurServices />
       <Progress />
