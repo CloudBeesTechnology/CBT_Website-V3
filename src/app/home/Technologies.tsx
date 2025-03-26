@@ -1,25 +1,3 @@
-
-// export const Technologies = () => {
-//     return (
-//       <section className="screen-size my-10 md:my-20 center flex-col">
-//         <h2 className="title max-[360px]:text-3xl text-darkgrey">
-//           <span className="text-primary">Our</span> Technologies
-//         </h2>
-//         <div className="center sm:justify-evenly flex-wrap gap-10 sm:my-16 my-10">
-           
-//               <div  className="flex flex-col border border-primary shadow-xl rounded-lg hover:shadow-primary hover:shadow-lg hover:scale-110 hover:transition-all hover:duration-500" >
-//                 <div className="h-60 px-5 w-full center flex-wrap ">
-//                   <img className={`object-cover w-full max-w-[200px] `} } />
-//                 </div>
-//               </div>
-           
-//         </div>
-//       </section>
-//     );
-//   };
-
-"use client";
-import { useState } from "react";
 import Image from "next/image";
 import client1 from "../../assets/HomeSection/AppIcons/shiftbl.svg";
 import client1Hover from "../../assets/HomeSection/AppIcons/shiftcl.svg";

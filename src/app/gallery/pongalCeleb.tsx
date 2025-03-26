@@ -17,43 +17,47 @@ const PongalCeleb: React.FC = () => {
         </h3>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 screen-size">
-        {/* Left Column with multiple images stacked */}
-        <article className="col-span-1 grid grid-rows-1 h-full  ">
-          <figure className="relative row-span-1  p-3 md:border-b-1 md:border-r-1 md:border-primary ">
-            <Image
-              src={pongalCeleb01}
-              alt="pongalCeleb01"
-              className="w-full h-full "
-            />
-          </figure>
-          <figure className="relative row-span-1  p-3 md:border-r-1 md:border-primary">
-            <Image
-              src={pongalCeleb02}
-              alt="pongalCeleb02"
-              className="w-full h-full"
-            />
-          </figure>
-        </article>
+      <div className="center">
+        <div className=" max-w-7xl  overflow-hidden">
+          <section className="grid grid-cols-1 md:grid-cols-2 screen-size">
+            {/* Left Column with multiple images stacked */}
+            <article className="col-span-1 grid grid-rows-1 h-full  ">
+              <figure className="relative row-span-1  p-3 md:border-b-1 md:border-r-1 md:border-primary ">
+                <Image
+                  src={pongalCeleb01}
+                  alt="pongalCeleb01"
+                  className="w-full h-full "
+                />
+              </figure>
+              <figure className="relative row-span-1  p-3 md:border-r-1 md:border-primary">
+                <Image
+                  src={pongalCeleb02}
+                  alt="pongalCeleb02"
+                  className="w-full h-full"
+                />
+              </figure>
+            </article>
 
-        {/* Right Column with two stacked images */}
-        <article className="col-span-1 grid grid-rows-1 h-full ">
-          <figure className="relative row-span-1  p-3 md:border-b-1 md:border-primary">
-            <Image
-              src={pongalCeleb03}
-              alt="pongalCeleb03"
-              className="w-full h-full"
-            />
-          </figure>
-          <figure className="relative row-span-1  p-3">
-            <Image
-              src={pongalCeleb04}
-              alt="pongalCeleb04"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
-      </section>
+            {/* Right Column with two stacked images */}
+            <article className="col-span-1 grid grid-rows-1 h-full ">
+              <figure className="relative row-span-1  p-3 md:border-b-1 md:border-primary">
+                <Image
+                  src={pongalCeleb03}
+                  alt="pongalCeleb03"
+                  className="w-full h-full"
+                />
+              </figure>
+              <figure className="relative row-span-1  p-3">
+                <Image
+                  src={pongalCeleb04}
+                  alt="pongalCeleb04"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
+        </div>
+      </div>
     </main>
   );
 };

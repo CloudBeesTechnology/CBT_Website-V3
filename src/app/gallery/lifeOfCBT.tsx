@@ -11,6 +11,9 @@ import lifeOfCBT08 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT08.png";
 import lifeOfCBT09 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT09.png";
 import lifeOfCBT10 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT10.png";
 import lifeOfCBT11 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT11.png";
+import lifeOfCBT12 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT12.png";
+import lifeOfCBT13 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT13.png";
+import lifeOfCBT14 from "../../assets/GallerySection/lifeOfCBT/lifeOfCBT14.png";
 
 const LifeOfCBT: React.FC = () => {
   return (
@@ -26,107 +29,115 @@ const LifeOfCBT: React.FC = () => {
         </h3>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-2  p-2 screen-size">
-        {/* Left Column with multiple images stacked */}
-        {/* md:border md:border-primary */}
-        <article className="col-span-1 grid grid-rows-1 h-full">
-          <figure className="relative row-span-1 md:border-b-1 md:border-r-1 md:border-primary ">
-            <Image
-              src={lifeOfCBT01}
-              alt="lifeOfCBT01"
-              className="w-full h-full"
-            />
-          </figure>
-          <figure className="relative row-span-1 md:border-b-1 md:border-r-1 md:border-primary ">
-            <Image
-              src={lifeOfCBT02}
-              alt="lifeOfCBT02"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
+      <div className="center">
+        <div className=" max-w-7xl  overflow-hidden">
+          <section className="grid grid-cols-1 md:grid-cols-2  p-2 screen-size">
+            {/* Left Column with multiple images stacked */}
+            {/* md:border md:border-primary */}
+            <article className="col-span-1 grid grid-rows-1 h-full">
+              <figure className="relative row-span-1 md:border-b-1 md:border-r-1 md:border-primary ">
+                <Image
+                  src={lifeOfCBT01}
+                  alt="lifeOfCBT01"
+                  className="w-full h-full"
+                />
+              </figure>
+              <figure className="relative row-span-1 md:border-b-1 md:border-r-1 md:border-primary ">
+                <Image
+                  src={lifeOfCBT02}
+                  alt="lifeOfCBT03"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
 
-        {/* Right Column with two stacked images */}
-        <article className="col-span-1 grid grid-rows-1 h-full">
-          <figure className="relative row-span-1 md:border-b-1  md:border-primary ">
-            <Image
-              src={lifeOfCBT03}
-              alt="lifeOfCBT03"
-              className="w-full h-full"
-            />
-          </figure>
-          <figure className="relative row-span-1 md:border-b-1  md:border-primary ">
-            <Image
-              src={lifeOfCBT04}
-              alt="lifeOfCBT04"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
-      </section>
-      <section className="screen-size p-2">
-        <article className="col-span-1 grid ">
-          <figure className="relative">
-            <Image src={lifeOfCBT05} alt="Image 5" className="w-full h-full " />
-          </figure>
-        </article>
-      </section>
+            {/* Right Column with two stacked images */}
+            <article className="col-span-1 grid grid-rows-1 h-full">
+              <figure className="relative row-span-1 md:border-b-1  md:border-primary ">
+                <Image
+                  src={lifeOfCBT03}
+                  alt="lifeOfCBT02"
+                  className="w-full h-full"
+                />
+              </figure>
+              <figure className="relative row-span-1 md:border-b-1  md:border-primary ">
+                <Image
+                  src={lifeOfCBT14}
+                  alt="lifeOfCBT14"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
+          <section className="screen-size py-2 px-5">
+            <article className="col-span-1 grid ">
+              <figure className="relative">
+                <Image
+                  src={lifeOfCBT05}
+                  alt="Image 5"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 screen-size p-2">
-        {/* Left Column with multiple images stacked */}
-        <article className="col-span-1 grid grid-rows-1 h-full ">
-          <figure className="relative row-span-1 md:border-y-1 md:border-r-1 md:border-primary ">
-            <Image
-              src={lifeOfCBT06}
-              alt="lifeOfCBT06"
-              className="w-full h-full "
-            />
-          </figure>
-          <figure className="relative row-span-1  md:border-b-1 md:border-r-1 md:border-primary ">
-            <Image
-              src={lifeOfCBT08}
-              alt="lifeOfCBT08"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
+          <section className="grid grid-cols-1 md:grid-cols-2 screen-size p-2">
+            {/* Left Column with multiple images stacked */}
+            <article className="col-span-1 grid grid-rows-1 h-full ">
+              <figure className="relative row-span-1 md:border-y-1 md:border-r-1 md:border-primary ">
+                <Image
+                  src={lifeOfCBT13}
+                  alt="lifeOfCBT06"
+                  className="w-full h-full "
+                />
+              </figure>
+              <figure className="relative row-span-1  md:border-b-1 md:border-r-1 md:border-primary ">
+                <Image
+                  src={lifeOfCBT08}
+                  alt="lifeOfCBT08"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
 
-        {/* Right Column with two stacked images */}
-        <article className="col-span-1 grid grid-rows-1  h-full ">
-          <figure className="relative row-span-1 md:border-y-1 md:border-primary ">
-            <Image
-              src={lifeOfCBT07}
-              alt="lifeOfCBT07"
-              className="w-full h-full "
-            />
-          </figure>
-          <figure className="relative row-span-1 md:border-b-1 md:border-primary ">
-            <Image
-              src={lifeOfCBT09}
-              alt="lifeOfCBT09"
-              className="w-full h-full "
-            />
-          </figure>
-          <figure className="relative row-span-1 md:border-b-1 md:border-primary">
-            <Image
-              src={lifeOfCBT10}
-              alt="lifeOfCBT10"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
-      </section>
-      <section className="screen-size p-2">
-        <article className="col-span-1 grid ">
-          <figure className="relative">
-            <Image
-              src={lifeOfCBT11}
-              alt="lifeOfCBT11"
-              className="w-full h-full "
-            />
-          </figure>
-        </article>
-      </section>
+            {/* Right Column with two stacked images */}
+            <article className="col-span-1 grid grid-rows-1  h-full ">
+              <figure className="relative row-span-1 md:border-y-1 md:border-primary ">
+                <Image
+                  src={lifeOfCBT07}
+                  alt="lifeOfCBT07"
+                  className="w-full h-full "
+                />
+              </figure>
+              <figure className="relative row-span-1 md:border-b-1 md:border-primary ">
+                <Image
+                  src={lifeOfCBT12}
+                  alt="lifeOfCBT09"
+                  className="w-full h-full "
+                />
+              </figure>
+              <figure className="relative row-span-1 md:border-b-1 md:border-primary">
+                <Image
+                  src={lifeOfCBT10}
+                  alt="lifeOfCBT10"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
+          <section className="screen-size p-2">
+            <article className="col-span-1 grid ">
+              <figure className="relative">
+                <Image
+                  src={lifeOfCBT11}
+                  alt="lifeOfCBT11"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
+        </div>
+      </div>
     </main>
   );
 };

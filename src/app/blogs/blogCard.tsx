@@ -1,17 +1,19 @@
 import Image, { StaticImageData } from "next/image";
+
 import { BsArrowRight } from "react-icons/bs";
-
-
 type BlogCardDetails = {
   imageUrl: string | StaticImageData;
   title: string;
   content: string;
+  pdf?: string;
 };
 
 type BlogCardProps = {
   cards: BlogCardDetails[];
+  openModal: (pdf?: string) => void;
 };
-const BlogCard: React.FC<BlogCardProps> = ({ cards }) => {
+
+const BlogCard: React.FC<BlogCardProps> = ({ cards, openModal }) => {
  
   return (
     <section className="center">
@@ -21,6 +23,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards }) => {
             key={index}
             className="max-w-[360px] rounded-2xl overflow-hidden text-center"
           >
+         
             <div className="group">
               <figure className="overflow-hidden rounded-t-2xl">
                 <Image
@@ -38,7 +41,10 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards }) => {
                 <p className="text-dark_gray mb-4 pt-1">{val.content}</p>
 
                 <p className="center gap-1 text-dark_gray mt-auto transition-colors duration-300 group-hover:text-primary">
-                  <span className="border-b-1 border-transparent group-hover:border-primary">
+                  <span
+                    className="border-b-1 border-transparent group-hover:border-primary cursor-pointer"
+                    onClick={() => openModal(val.pdf)}
+                  >
                     Read More
                   </span>
                   <BsArrowRight className="ml-1" />
@@ -48,6 +54,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards }) => {
           </article>
         ))}
       </div>
+      
     </section>
   );
 };

@@ -1,4 +1,3 @@
-"use client";
 import InfoCard from "@/components/InfoCard";
 import icon4 from "../../assets/ServiceSection/native-cross.png";
 import icon5 from "../../assets/ServiceSection/aws-cloud.png";

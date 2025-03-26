@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
 import logo1 from "../../assets/HomeSection/ContentImages/HRMS.png";
@@ -6,7 +5,6 @@ import logo2 from "../../assets/HomeSection/ContentImages/home-2.png";
 import logo3 from "../../assets/HomeSection/ContentImages/FLEET MANAGEMENT.png";
 import logo4 from "../../assets/HomeSection/ClientLogos/Hr_360e_logo.png";
 import { AiFillCaretRight } from "react-icons/ai";
-import Link from "next/link";
 
 export default function ProductPage() {
   const features = [

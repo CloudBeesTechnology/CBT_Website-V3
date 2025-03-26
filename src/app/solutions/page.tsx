@@ -1,5 +1,3 @@
-// src/app/solutions/page.tsx
-"use client";
 export default function Solutions() {
     return (
       <div className="container mx-auto text-center mt-10">
