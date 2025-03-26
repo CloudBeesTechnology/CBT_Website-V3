@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 // pages/service.tsx
 "use client";
 
-=======
->>>>>>> 1f585f70e9d9caa995d5ff1b1edfac3b21453c82
 import InfoCard from "@/components/InfoCard";
 import icon1 from "../../assets/ServiceSection/digital-marketing.png";
 import icon2 from "../../assets/ServiceSection/UI-UX.png";

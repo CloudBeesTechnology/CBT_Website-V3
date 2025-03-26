@@ -23,8 +23,8 @@ const OurServices: React.FC = () => {
   return (
     <div className="">
       <Banner
-        serviceLogo={ServiceLogo}
-        serviceBannerText={serviceBannerText}
+        // serviceLogo={ServiceLogo}
+        // serviceBannerText={serviceBannerText}
       />
       <Service/>
       <LetTalk/>

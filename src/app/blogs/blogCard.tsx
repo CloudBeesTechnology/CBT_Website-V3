@@ -21,7 +21,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards, openModal }) => {
         {cards.map((val, index) => (
           <article
             key={index}
-            className="max-w-[360px] rounded-2xl overflow-hidden text-center"
+            className="max-w-[320px] rounded-2xl overflow-hidden text-center"
           >
          
             <div className="group">
@@ -29,16 +29,16 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards, openModal }) => {
                 <Image
                   src={val.imageUrl}
                   alt={val.title}
-                  className="w-full h-auto object-cover rounded-t-2xl transform transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-auto sm:h-[280px] object-cover rounded-t-2xl transform transition-transform duration-500 group-hover:scale-105"
                 />
               </figure>
 
-              <div className="p-4 border-x-1 border-b-1 py-5 border-blogYellow bg-blogWhite min-h-[280px] rounded-b-2xl group-hover:border-ash_gray group-hover:bg-lite_gray flex flex-col">
+              <div className="p-4 border-x-1 border-b-1 py-5 border-blogYellow bg-blogWhite sm:min-h-[220px] rounded-b-2xl group-hover:border-ash_gray group-hover:bg-lite_gray flex flex-col">
                 <h2 className="text-dark_gray mb-2 text-lg font-medium group-hover:text-primary transition-colors duration-300">
                   {val.title}
                 </h2>
 
-                <p className="text-dark_gray mb-4 pt-1">{val.content}</p>
+                <p className="text-dark_gray pt-1 line-clamp-3">{val.content}</p>
 
                 <p className="center gap-1 text-dark_gray mt-auto transition-colors duration-300 group-hover:text-primary">
                   <span
