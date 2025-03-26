@@ -29,7 +29,7 @@ export default function Careers() {
           />
           <p>
             <a
-              href="hari"
+              href=""
               className="text-blue-500 para underline hover:underline center"
             >
               Connect with us
