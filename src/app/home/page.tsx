@@ -41,7 +41,7 @@ const Home: React.FC = () => {
         <span className="text-white">ransformation</span>
       </div>
 
-      <div className="text-center mt-4 lg:mt-5">
+      <div className="text-center">
         <p className="para_head p-2 text-white italic font-light">
           CloudBees Tech providing smart digital solutions solving complex challenges and delivering innovative solutions that help our customers ahead.
         </p>
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
     <>
       {/* Passing Banner content to the Banner component */}
       <Banner>
-        <div className="absolute bg-blend-overlay">
+        <div className="absolute bg-blend-overlay flex justify-evenly items-center h-[80vh] lg:h-[60vh] max-[890px]:flex-col md:justify-evenly w-full">
           {/* Logo */}
           <div className="flex items-center justify-center w-full text-white">
             <div className="relative pb-12">
