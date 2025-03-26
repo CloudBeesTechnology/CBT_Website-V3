@@ -35,8 +35,8 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center mt-0 p-2 lg:mt-4 xl:mt-6">
-        <p className="para_head p-2 text-white italic leading-relaxed">
+      <div className="text-center mt-0 p-2 lg:mt-4 xl:mt-5">
+        <p className="para_head p-2 text-white italic font-light">
           CloudBees Tech providing smart digital solutions solving complex challenges and delivering innovative solutions that help our customers ahead
         </p>
       </div>

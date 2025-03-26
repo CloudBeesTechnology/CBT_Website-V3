@@ -1,22 +1,20 @@
 "use client";
 import InfoCard from "@/components/InfoCard";
-import Image from "next/image";
-import icon1 from "../../assets/ServiceSection/digital-marketing.png";
-import icon2 from "../../assets/ServiceSection/UI-UX.png";
-import icon3 from "../../assets/ServiceSection/micro-saas.png";
 import icon4 from "../../assets/ServiceSection/native-cross.png";
 import icon5 from "../../assets/ServiceSection/aws-cloud.png";
 import icon6 from "../../assets/ServiceSection/devSecOps.png";
+import icon11 from "../../assets/ServiceSection/blockChain.png";
+import icon12 from "../../assets/ServiceSection/web-develop.jpg";
+import icon13 from "../../assets/ServiceSection/MachineLearning.png";
 import Link from "next/link";
-
 
 export default function OurServices() {
   const cardData = [
-    { iconImg: icon1, title: "AI Generative Digital Marketing", description: "Digital marketing is the promotion of brands to connect with potential customers using the internet and other forms of digital communication." },
-    { iconImg: icon2, title: "UI/UX & Wireframe Design", description: "A wireframe is a simple diagram that represents the skeleton of a website or an application's user interface (UI) and core functionality." },
-    { iconImg: icon3, title: "Micro SaaS App Development", description: "Micro SaaS (Software as a Service) App Development involves creating small, focused web applications that solve a specific problem or meet a particular need." },
-    { iconImg: icon4, title: "Mobile Native & Cross Platform", description: "Mobile app development for both native and cross-platform solutions, ensuring compatibility across all devices." },
+    { iconImg: icon13, title: "AI & Machine learning", description: "AI (Artificial Intelligence) and ML (Machine Learning) enable businesses to automate tasks, analyze data, and make smarter decisions, improving efficiency and innovation. " },
     { iconImg: icon5, title: "AWS/Azure Cloud", description: "Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software." },
+    { iconImg: icon12, title: "Web Development", description: "A well-designed website enhances credibility, attracts more visitors, and boosts conversions for your business." },
+    { iconImg: icon4, title: "Mobile Native & Cross Platform", description: "Transforming ideas into seamless experiences, our mobile app development crafts intuitive solutions that redefine user engagement and drive technological innovation." },
+    { iconImg: icon11, title: "Blockchain", description: "Blockchain is a decentralized digital ledger that securely records transactions across multiple computers. It ensures data integrity, prevents tampering, and enables secure peer-to-peer transactions without intermediaries." },
     { iconImg: icon6, title: "DevSecOps", description: "Integrating efficient CI/CD DevOps services into your development pipeline to improve productivity, quality, and speed across the software lifecycle." },
   ];
 

@@ -132,36 +132,37 @@ const clientsImg = [
 {/* <div className="screen-size my-10  grid grid-cols-2 min-w-[575px];grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-10"> */}
 export const Technologies = () => {
   return (
-    <section className="center flex-col mt-14 mb-5 sm:my-20 ">
+    <section className="screen-size center flex-col mt-14 mb-5 sm:my-20 ">
        <h2 className="title text-center sm:mb-6">
         <span className="text-primary">Our </span> Technologies
       </h2>
-      <div className="screen-size my-10 flex flex-wrap justify-center gap-7 sm:gap-10">
+      <div className="my-10 flex flex-wrap justify-between gap-7 sm:gap-10 ">
         {clientsImg.map((client) => (
           <div
             key={client.id}
             className="group flex flex-col items-center w-[18%] min-w-[200px] sm:min-w-[250px] max-w-[200px] "
           >
             {/* Image Wrapper */}
-            <div className="relative w-[200px] h-[180px] flex items-center justify-center">
-              {/* Default Image */}
-              <Image
-                src={client.defaultSrc}
-                alt={client.alt}
-                width={150}
-                height={100}
-                className="absolute opacity-100 group-hover:opacity-0 transition-opacity duration-300 border border-primary rounded-full"
-              />
-              {/* Hover Image */}
-              <Image
-                src={client.hoverSrc}
-                alt={client.alt}
-                width={150}
-                height={100}
-                className="object-contain rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-xl"
-                style={{ boxShadow: "3px 0px 2px 3px #DCDCDC" }}
-              />
-            </div>
+            <div className="relative w-[200px] h-[180px] flex items-center justify-center group">
+  {/* Default Image */}
+  <Image
+    src={client.defaultSrc}
+    alt={client.alt}
+    width={150}
+    height={100}
+    className="absolute opacity-100 group-hover:opacity-0 transition-opacity duration-[1000ms] border border-primary rounded-full"
+  />
+  {/* Hover Image */}
+  <Image
+    src={client.hoverSrc}
+    alt={client.alt}
+    width={150}
+    height={100}
+    className="object-contain rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[1000ms] shadow-xl"
+    style={{ boxShadow: "3px 0px 2px 3px #DCDCDC" }}
+  />
+</div>
+
 
             {/* Title */}
             <h2 className="text-cente para px-3 ">{client.title}</h2>

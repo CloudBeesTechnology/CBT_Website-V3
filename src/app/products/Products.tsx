@@ -45,8 +45,8 @@ export default function ProductPage() {
   ];
 
   return (
-    <section className="screen-size flex flex-col space-y-12 my-14 md:space-y-4 p-2 w-full">
-        <h2 className="text_size_1 text-center text-primary">HR360E
+    <section className="screen-size flex flex-col space-y-12 my-14 md:space-y-4 p-3 w-full ">
+        <h2 className="title text-center text-primary">HR360E
       </h2>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} isEven={feature.id % 2 === 0} />
@@ -55,29 +55,29 @@ export default function ProductPage() {
       {featuresPoints.map((feature) => {
         const isEven = feature.id % 2 === 0;
         return (
-          <div
-            key={feature.id}
-            className={`center flex-col md:flex-row md:text-left sm:p-2 ${
-              isEven ? "md:flex-row-reverse" : ""
-            }`}
-          >  
-          
-            <div className="w-full md:w-1/2 center">
-              <Image src={feature.imageSrc} alt={feature.title} width={400} height={250} />
-            </div>
-            <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2">
-             <div className="w-[1000px]:w-[450px]">
-                 <h3 className="title leading-snug text-primary  mb-3 sm:mb-5">
-                {feature.title}
-              </h3>
-              <div className="text-gray max-w-md list-disc list-inside para ">
-                {feature.points.map((point, index) => (
-                  <p key={index} className="flex gap-5 items-center"><span className="text-primary"><AiFillCaretRight/></span> {point}</p>
-                ))}
-              </div>
-              </div>
-            </div>
-          </div>
+             <div
+                     key={feature.id}
+                     className={`flex justify-between items-center flex-col md:flex-row md:text-left sm:p-2 ${
+                       isEven ? "md:flex-row-reverse" : ""
+                     }`}
+                   >   
+                     <div className="w-full md:w-[600px] center ">
+                       <Image src={feature.imageSrc} alt={feature.title} width={550}/>
+                     </div>
+                     <div className="  flex flex-col  max-sm:mt-7 sm:mx-2 ">
+                      <div className="w-[1000px]:w-[450px]">
+                          <h3 className="sub_title leading-snug text-primary mb-3 sm:mb-5">
+                         {feature.title}
+                       </h3>
+                       <div className="text-gray  list-disc list-inside para w-full">
+                         {feature.points.map((point, index) => (
+                           <p key={index} className="flex gap-5 ">
+                             <span className="text-primary pt-1"><AiFillCaretRight/></span> {point}</p>
+                         ))}
+                       </div>
+                       </div>
+                     </div>
+                   </div>
         );
       })}
     </section>

@@ -6,7 +6,7 @@ const CeoQuotesCard: React.FC = () => {
           <span className="text-primary">CEO </span>
           <span className="text-dark_gray">Quotes</span>
         </h2>
-        <div className="flex flex-col text-gray para">
+        <div className="flex flex-col text-white para">
           <i>
             Meet our vibrant team of young innovators, shaping digital solutions
           </i>

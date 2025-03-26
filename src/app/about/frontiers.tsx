@@ -42,11 +42,11 @@ const Frontiers: React.FC<FrontiersProps> = ({ employees }) => {
             />
             <div className="flex flex-col items-center text-center px-4 py-4 w-full">
               <h3 className="text-gray para_head ">{employee.name}</h3>
-              <p className="text-dark_gray para font-medium  pt-3 ">
+              <p className="text-dark_gray para font-medium  pt-1 ">
                 {employee.position}
               </p>
-              <p className="text-dark_gray text-center sub_para w-full sm:w-82 ">
-                {"Skill : " + employee.skills.join(", ")}
+              <p className="text-dark_gray text-center sub_para w-full sm:w-82  pt-1">
+              <span className="font-medium">Skill : </span>{ employee.skills.join(", ")}
               </p>
             </div>
           </div>

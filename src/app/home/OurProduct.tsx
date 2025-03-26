@@ -44,7 +44,7 @@ export default function OurProduct() {
   ];
 
   return (
-    <section className="screen-size flex flex-col space-y-12 md:space-y-4 mt-14 p-2 w-full ">
+    <section className=" screen-size flex flex-col space-y-12 md:space-y-4 mt-14 p-3 w-full ">
         <h2 className="title text-center ">
         <span className="text-primary">Explore Our </span> Products
       </h2>
@@ -57,20 +57,19 @@ export default function OurProduct() {
         return (
           <div
             key={feature.id}
-            className={`center flex-col md:flex-row md:text-left sm:p-2 ${
+            className={`flex justify-between items-center flex-col md:flex-row md:text-left sm:p-2 ${
               isEven ? "md:flex-row-reverse" : ""
             }`}
-          >  
-          
-            <div className="w-full md:w-1/2 center ">
-              <Image src={feature.imageSrc} alt={feature.title} width={400} height={250} />
+          >   
+            <div className="w-full md:w-[600px] center ">
+              <Image src={feature.imageSrc} alt={feature.title} width={550}/>
             </div>
-            <div className="w-full md:w-1/2 flex flex-col items-center max-sm:mt-7 sm:mx-2 ">
+            <div className="  flex flex-col  max-sm:mt-7 sm:mx-2 ">
              <div className="w-[1000px]:w-[450px]">
                  <h3 className="sub_title leading-snug text-primary mb-3 sm:mb-5">
                 {feature.title}
               </h3>
-              <div className="text-gray max-w-md list-disc list-inside para ">
+              <div className="text-gray  list-disc list-inside para w-full">
                 {feature.points.map((point, index) => (
                   <p key={index} className="flex gap-5 ">
                     <span className="text-primary pt-1"><AiFillCaretRight/></span> {point}</p>
