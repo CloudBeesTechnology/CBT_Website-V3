@@ -33,7 +33,8 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Banner aboutBannerText={aboutBannerText} rotate={rotate} />
+      {/* <Banner aboutBannerText={aboutBannerText} rotate={rotate} 
+      /> */}
 
       <div className="flex flex-col lg:flex-row justify-around items-center p-6 rounded-lg screen-size">
         <div className="w-full lg:w-1/2 flex lg:justify-start sm:justify-center">

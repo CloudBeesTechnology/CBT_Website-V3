@@ -45,7 +45,7 @@ interface BannerProps {
 
 export const Banner: React.FC<BannerProps> = ({ children }) => {
   return (
-    <div className="relative w-full h-[80vh] lg:h-[60vh]">
+    <div className="relative w-full h-[80vh] lg:h-[60vh] ">
       {/* Background Image */}
       <div className="relative w-full h-full">
         <Image
@@ -56,7 +56,7 @@ export const Banner: React.FC<BannerProps> = ({ children }) => {
           className="absolute inset-0"
         />
       </div>
-      <div className="absolute bg-blend-overlay animate-move top-0 h-full w-full">
+      {/* <div className="absolute bg-blend-overlay animate-move top-0 h-full w-full border">
         <Image
           src={BubbleImg}
           alt="CBT Banner Image"
@@ -64,9 +64,9 @@ export const Banner: React.FC<BannerProps> = ({ children }) => {
           height={50}
           className="animate-spin-custom shadow-md blur-[50px] overflow-hidden"
         />
-      </div>
+      </div> */}
       {/* Render Children Here */}
-      <div className="relative z-10">
+      <div className="relative z-10  ">
         {children}
       </div>
     </div>
