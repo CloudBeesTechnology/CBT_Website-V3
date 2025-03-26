@@ -4,6 +4,7 @@ import anniversary02 from "../../assets/GallerySection/anniversaryImg/anniversar
 import anniversary03 from "../../assets/GallerySection/anniversaryImg/anniversary03.png";
 import anniversary04 from "../../assets/GallerySection/anniversaryImg/anniversary04.png";
 import anniversary05 from "../../assets/GallerySection/anniversaryImg/anniversary05.png";
+import anniversary06 from "../../assets/GallerySection/anniversaryImg/anniversary06.png";
 const Anniversary: React.FC = () => {
   return (
     <main>
@@ -20,20 +21,20 @@ const Anniversary: React.FC = () => {
       <div className="center">
         <div className=" max-w-7xl  overflow-hidden">
           
-          <section className="grid grid-cols-1 md:grid-cols-2  p-2 screen-size">
+          <section className="grid grid-cols-1 md:grid-cols-2 p-2 screen-size">
             {/* Left Column with multiple images stacked */}
             <article className="col-span-1 grid grid-rows-1 h-full">
-              <figure className="relative row-span-1 md:border-b-1 md:border-r-1 md:border-primary">
+              <figure className="relative row-span-1 md:border-b-1 md:border-r-1  md:border-primary">
                 <Image
-                  src={anniversary01}
+                  src={anniversary02}
                   alt="anniversary01"
                   className="w-full h-full"
                 />
               </figure>
               <figure className="relative row-span-1 md:border-b-1 md:border-r-1 md:border-primary">
                 <Image
-                  src={anniversary03}
-                  alt="anniversary03"
+                  src={anniversary06}
+                  alt="anniversary06"
                   className="w-full h-full "
                 />
               </figure>
@@ -43,14 +44,14 @@ const Anniversary: React.FC = () => {
             <article className="col-span-1 grid grid-rows-1 h-full">
               <figure className="relative row-span-1 md:border-b-1  md:border-primary">
                 <Image
-                  src={anniversary02}
+                  src={anniversary01}
                   alt="anniversary02"
                   className="w-full h-full"
                 />
               </figure>
               <figure className="relative row-span-1 md:border-b-1  md:border-primary">
                 <Image
-                  src={anniversary05}
+                  src={anniversary03}
                   alt="anniversary05"
                   className="w-full h-full "
                 />

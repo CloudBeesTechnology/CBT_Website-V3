@@ -38,7 +38,7 @@ const Gallery: React.FC = () => {
         <Anniversary />
         <PongalCeleb />
         <WomensDayCeleb />
-        <KnowledgeSharing />
+        {/* <KnowledgeSharing /> */}
       </div>
     </main>
   );
