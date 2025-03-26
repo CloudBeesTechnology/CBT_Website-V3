@@ -14,13 +14,7 @@ import SecOpsInfoSecPdf from "../../assets/blog/blogPDF/SecOps vs InfoSec.pdf";
 import cloudPdf from "../../assets/blog/blogPDF/cloud and devops.pdf";
 import reactPdf from "../../assets/blog/blogPDF/react.pdf";
 
-// import jiraPdf from "../../../public/blogPDF/Jira.pdf";
-// import testingPdf from "../../../public/blogPDF/Testing.pdf";
-// import cyberSecurityPdf from "../../../public/blogPDF/cyberSecurity.pdf";
-// import voiceSearchPdf from "../../../public/blogPDF/voiceSearch.pdf";
-// import SecOpsInfoSecPdf from "../../../public/blogPDF/SecOps vs InfoSec.pdf";
-// import cloudPdf from "../../../public/blogPDF/cloud and devops.pdf";
-// import reactPdf from "../../../public/blogPDF/react.pdf";
+
 
 export const BlogCardDetails = [
   {
