@@ -1,5 +1,5 @@
 import Image from "next/image";
-import group from "../../assets/HomeSection/group/group.png";
+import group from "../../assets/HomeSection/group/lifeAtCbt.png";
 
 export const LifeCBT = () => {
   return (

@@ -53,7 +53,7 @@ export const Footer = () => {
                 location: "Pondicherry",
                 address: [
                   "#1, III Main road,",
-                  "Kavery Nagar,",
+                  "Chellam Papu Nagar,",
                   "Reddiyarpalayam,",
                   "Puducherry - 605010.",
                 ],
