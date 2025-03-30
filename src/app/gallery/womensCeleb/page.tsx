@@ -41,12 +41,14 @@ const WomensDayCeleb: React.FC = () => {
   const [showCarousel, setShowCarousel] = useState<boolean>(false);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % carousalImage.length);
+    setCurrentIndex((prev) =>
+      prev === carousalImage.length - 1 ? 0 : prev + 1
+    );
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? carousalImage.length - 1 : prevIndex - 1
+    setCurrentIndex((prev) =>
+      prev === 0 ? carousalImage.length - 1 : prev - 1
     );
   };
 

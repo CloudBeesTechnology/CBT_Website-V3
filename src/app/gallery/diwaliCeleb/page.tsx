@@ -9,6 +9,10 @@ import diwaliCeleb01 from "../../../assets/GallerySection/diwaliCelebImg/diwaliC
 import diwaliCeleb02 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb02.png";
 import diwaliCeleb03 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb03.png";
 import diwaliCeleb04 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb04.png";
+import diwaliCeleb05 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb05.png";
+import diwaliCeleb06 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb06.png";
+import diwaliCeleb07 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb07.png";
+import diwaliCeleb08 from "../../../assets/GallerySection/diwaliCelebImg/diwaliCeleb08.png";
 import { useState } from "react";
 import Carousel from "../carousel";
 
@@ -35,28 +39,36 @@ const carousalImage: ImageData[] = [
     imageUrl: diwaliCeleb04,
   },
 
-  // {
-  //   id: 13,
-  //   imageUrl: lifeOfCBT13,
-  // },
-  // {
-  //   id: 14,
-  //   imageUrl: lifeOfCBT14,
-  // },
+  {
+    id: 5,
+    imageUrl: diwaliCeleb05,
+  },
+  {
+    id: 6,
+    imageUrl: diwaliCeleb06,
+  },
+  {
+    id: 7,
+    imageUrl: diwaliCeleb07,
+  },
+  {
+    id: 8,
+    imageUrl: diwaliCeleb08,
+  },
 ];
 const DiwaliCeleb: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [showCarousel, setShowCarousel] = useState<boolean>(false);
 
   const handleNext = () => {
-    setCurrentIndex(
-      (prevIndex) => ((prevIndex + 1) % carousalImage.length) 
+    setCurrentIndex((prev) =>
+      prev === carousalImage.length - 1 ? 0 : prev + 1
     );
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? carousalImage.length - 1 : prevIndex - 1
+    setCurrentIndex((prev) =>
+      prev === 0 ? carousalImage.length - 1 : prev - 1
     );
   };
 
@@ -65,9 +77,9 @@ const DiwaliCeleb: React.FC = () => {
     setShowCarousel(true);
   };
   return (
-    <main>
+    <main className="my-10">
       <header>
-        <h3 className="banner_title text-dark_gray center p-6 sm:p-8 lg:p-10 gap-2 ">
+        <h3 className="banner_title text-dark_gray center pb-6  sm:p-8 lg:pb-10 gap-2 ">
           <span className="text-dark_gray text-2xl sm:text-3xl md:text-4xl">
             Diwali
           </span>
@@ -86,7 +98,7 @@ const DiwaliCeleb: React.FC = () => {
               handlePrev={handlePrev}
             />
           )}
-          <section className="grid grid-cols-2 screen-size p-2">
+          <section className="grid grid-cols-2 screen-size ">
             {/* Left Column with multiple images stacked */}
             <article className="col-span-1 grid grid-rows-1   h-full ">
               <figure
@@ -130,6 +142,52 @@ const DiwaliCeleb: React.FC = () => {
                 <Image
                   src={diwaliCeleb04}
                   alt="diwaliCeleb04"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+          </section>
+          <section className="grid grid-cols-2 screen-size ">
+            <article className="col-span-1 grid grid-rows-1 h-full">
+              <figure
+                className="relative row-span-1 md:border-b-1 md:border-t-1 md:border-r-1 md:border-primary"
+                onClick={() => handleImageClick(4)}
+              >
+                <Image
+                  src={diwaliCeleb05}
+                  alt="diwaliCeleb05"
+                  className="w-full h-full "
+                />
+              </figure>
+              <figure
+                className="relative row-span-1 md:border-r-1  md:border-primary"
+                onClick={() => handleImageClick(5)}
+              >
+                <Image
+                  src={diwaliCeleb06}
+                  alt="diwaliCeleb06"
+                  className="w-full h-full "
+                />
+              </figure>
+            </article>
+            <article className="col-span-1 grid grid-rows-1 h-full">
+              <figure
+                className="relative row-span-1 md:border-b-1 md:border-t-1  md:border-primary"
+                onClick={() => handleImageClick(6)}
+              >
+                <Image
+                  src={diwaliCeleb07}
+                  alt="diwaliCeleb07"
+                  className="w-full h-full "
+                />
+              </figure>
+              <figure
+                className="relative row-span-1"
+                onClick={() => handleImageClick(7)}
+              >
+                <Image
+                  src={diwaliCeleb08}
+                  alt="diwaliCeleb08"
                   className="w-full h-full "
                 />
               </figure>

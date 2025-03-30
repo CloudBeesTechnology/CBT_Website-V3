@@ -21,30 +21,34 @@ const Carousel: React.FC<CarouselProps> = ({
   handlePrev,
 }) => {
   return (
-    <div className="screen-size relative">
-      {/* Image Carousel */}
-      <div className="flex relative justify-center max-h-[700px]">
+    <div className="screen-size relative overflow-hidden">
+      <div className="flex relative justify-center max-h-[700px] ">
         <button
           onClick={handlePrev}
-          className="absolute left-10 top-[48%] text-medium_lite_gray  md:text-4xl text-2xl  bg-dark_gray rounded-full cursor-pointer"
+          className="absolute left-10 top-[48%] text-medium_lite_gray md:text-4xl text-3xl  bg-dark_gray rounded-full cursor-pointer z-10"
         >
-          {/* Prev */}
           <FaCircleChevronLeft />
         </button>
 
-        <div className="top-0 transition-all duration-500 ease-in-out fade-in opacity-100">
-          <Image
-            src={carousalImage[currentIndex]?.imageUrl}
-            alt={`${carousalImage[currentIndex]?.id}`}
-            className="w-full h-full"
-          />
+        <div
+          className="flex transition-transform duration-700"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {carousalImage.map((img, index) => (
+            <div key={img.id} className="w-full h-full flex-shrink-0 center">
+              <Image
+                src={img.imageUrl}
+                alt={`Slide ${index + 1}`}
+                className="w-auto md:h-full h-auto"
+              />
+            </div>
+          ))}
         </div>
 
         <button
           onClick={handleNext}
-          className="absolute right-10 top-[48%] text-medium_lite_gray md:text-4xl text-2xl bg-dark_gray rounded-full cursor-pointer"
+          className="absolute right-10 top-[48%] text-medium_lite_gray md:text-4xl text-3xl bg-dark_gray rounded-full cursor-pointer z-10"
         >
-          {/* Next */}
           <FaCircleChevronRight />
         </button>
       </div>
@@ -53,3 +57,4 @@ const Carousel: React.FC<CarouselProps> = ({
 };
 
 export default Carousel;
+

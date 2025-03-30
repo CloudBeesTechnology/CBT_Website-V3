@@ -84,14 +84,14 @@ const LifeOfCBT: React.FC = () => {
   const [showCarousel, setShowCarousel] = useState<boolean>(false);
 
   const handleNext = () => {
-    setCurrentIndex(
-      (prevIndex) => ((prevIndex + 1) % carousalImage.length) 
+    setCurrentIndex((prev) =>
+      prev === carousalImage.length - 1 ? 0 : prev + 1
     );
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? carousalImage.length - 1 : prevIndex - 1
+    setCurrentIndex((prev) =>
+      prev === 0 ? carousalImage.length - 1 : prev - 1
     );
   };
 
@@ -101,9 +101,9 @@ const LifeOfCBT: React.FC = () => {
   };
 
   return (
-    <main>
+    <main className="my-10">
       <header>
-        <h3 className="banner_title text-dark_gray text-center p-6 sm:p-8 lg:p-10 gap-2">
+        <h3 className="banner_title text-dark_gray text-center pb-6 sm:p-8 lg:pb-10 gap-2">
           <span className="text-dark_gray text-2xl sm:text-3xl md:text-4xl">
             Life{" "}
           </span>
