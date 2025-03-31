@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import { FaCircleChevronRight } from "react-icons/fa6";
-import { FaCircleChevronLeft } from "react-icons/fa6";
+import { TiChevronLeft } from "react-icons/ti";
+import { TiChevronRight } from "react-icons/ti";
 
 interface ImageData {
   id: number;
@@ -25,9 +25,9 @@ const Carousel: React.FC<CarouselProps> = ({
       <div className="flex relative justify-center max-h-[700px] ">
         <button
           onClick={handlePrev}
-          className="absolute left-10 top-[48%] text-medium_lite_gray md:text-4xl text-3xl  bg-dark_gray rounded-full cursor-pointer z-10"
+          className="absolute md:p-2 left-3 top-[48%] text-center text-dark_gray md:text-4xl text-3xl  bg-medium_lite_gray rounded-full cursor-pointer z-10"
         >
-          <FaCircleChevronLeft />
+          <TiChevronLeft className="" />
         </button>
 
         <div
@@ -47,9 +47,9 @@ const Carousel: React.FC<CarouselProps> = ({
 
         <button
           onClick={handleNext}
-          className="absolute right-10 top-[48%] text-medium_lite_gray md:text-4xl text-3xl bg-dark_gray rounded-full cursor-pointer z-10"
+          className="absolute md:p-2  right-3 top-[48%] text-dark_gray  md:text-4xl text-3xl bg-medium_lite_gray rounded-full cursor-pointer z-10"
         >
-          <FaCircleChevronRight />
+          <TiChevronRight />
         </button>
       </div>
     </div>
@@ -57,4 +57,3 @@ const Carousel: React.FC<CarouselProps> = ({
 };
 
 export default Carousel;
-
