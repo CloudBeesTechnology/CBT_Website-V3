@@ -30,7 +30,6 @@ export const Banner: React.FC<BannerProps> = ({ children }) => {
           className="animate-spin-custom shadow-md blur-[50px] overflow-hidden"
         />
       </div>
-      {/* Render Children Here */}
       <div className="relative z-10">
         {children}
       </div>
