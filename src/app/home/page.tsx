@@ -23,22 +23,22 @@ const Home: React.FC = () => {
 
   const homeBannerText = (
     <div className=" mb-16 center flex-col w-full sm:max-w-[70%] px-2">
-    <div className="flex flex-wrap justify-center items-start space-x-4 sm:space-x-4  text-center">
+    <div className="flex flex-wrap justify-center items-start space-x-4   text-center">
         {/* Empowering */}
         <div className={`banner_title ${animationTriggered ? 'fall-animation' : ''}`}>
-        <span className="text-primary animate-bounce banner_letter">E</span>
+        <span className="text-primary inline-block animate-bounce banner_letter">E</span>
         <span className="text-white">mpowering</span>
       </div>
 
       {/* Digital */}
       <div className={`banner_title ${animationTriggered ? 'fall-animation' : ''}`}>
-        <span className="text-primary animate-bounce banner_letter">D</span>
+        <span className="text-primary inline-block animate-bounce  banner_letter">D</span>
         <span className="text-white">igital</span>
       </div>
 
       {/* Transformation */}
       <div className={`banner_title ${animationTriggered ? 'fall-animation' : ''}`}>
-        <span className="text-primary animate-bounce banner_letter">T</span>
+        <span className="text-primary inline-block animate-bounce  banner_letter">T</span>
         <span className="text-white">ransformation</span>
       </div>
     </div>
@@ -54,6 +54,7 @@ const Home: React.FC = () => {
   return (
     <>
       {/* Passing Banner content to the Banner component */}
+      
       <Banner>
         <div className="absolute  bg-blend-overlay flex justify-center sm:justify-evenly items-center h-[80vh] lg:h-[60vh] max-[890px]:flex-col md:justify-evenly w-full">
           {/* Logo */}
@@ -74,6 +75,7 @@ const Home: React.FC = () => {
           {homeBannerText}
         </div>
       </Banner>
+      
       <OurProduct />
       <ProdLink />
       <OurServices />

@@ -21,7 +21,7 @@ const Gallery: React.FC = () => {
   const GalleryTitleText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white banner_title text-center">
+        <span className="text-white banner_title text-center tracking-wide">
           Capturing Moments, Creating Memories
         </span>
       </div>
@@ -31,17 +31,16 @@ const Gallery: React.FC = () => {
   return (
     <main>
       <Banner>
-        <div className="absolute bg-blend-overlay flex items-center justify-center h-[80vh] lg:h-[60vh] text-white">
+        <div className="absolute bg-blend-overlay flex items-center justify-center px-2 h-[80vh] lg:h-[60vh] text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-5">
-              <h2 className="title">{GalleryTitleText}</h2>
+            <div className="flex flex-col items-center pb-24 space-y-5">
+              <h2 className="title max-w-4xl">{GalleryTitleText}</h2>
               <div
-                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                className={` max-w-[950px] w-full para_head text-white font-light italic flex transition-all duration-[1000ms] ease-out text-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
                   }`}
               >
                 {[
-                  "Each piece on display tells a unique story, inviting you to immerse yourself in the",
-                  "beauty of life's most precious encounters.",
+                  "Each piece on display tells a unique story, inviting you to immerse yourself in the beauty of life's most precious encounters.",
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i

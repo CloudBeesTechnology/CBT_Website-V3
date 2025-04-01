@@ -30,10 +30,10 @@ const Contact: React.FC = () => {
 
     emailjs
       .send(
-        "service_gkpcilp", 
-        "template_txjmk19", 
+        "service_3kauhuu", 
+        "template_qs2oohl", 
         formData,
-        "-lpJrL3KrZkzrrePy" 
+        "w-ACd3odlDnB7jJwS" 
       )
       .then(
         (response) => {

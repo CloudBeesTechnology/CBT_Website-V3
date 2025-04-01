@@ -23,8 +23,8 @@ const About: React.FC = () => {
       <div className="flex justify-center items-start space-x-10">
         {/* Empowering */}
         <div className="flex items-center space-y-1">
-          <span className="text-white banner_title text-center">
-            Unveiling CBT a Narrative in Progress
+          <span className="text-white banner_title text-center tracking-wide">
+            Unveiling CBT A Narrative In Progress
           </span>
         </div>
       </div>
@@ -34,12 +34,12 @@ const About: React.FC = () => {
   return (
     <>
       <Banner>
-        <div className="absolute bg-blend-overlay flex items-center justify-center h-[80vh] lg:h-[60vh]  text-white">
+        <div className="absolute bg-blend-overlay flex items-center justify-center h-[80vh] lg:h-[60vh] px-2 text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-5">
+            <div className="flex flex-col items-center justify-center pb-24 space-y-5">
               <h2 className="title">{aboutBannerText}</h2>
               <h3
-                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out ${rotate
+                className={` para_head text-white text-center font-light italic transition-all duration-[1000ms] ease-out ${rotate
                   ? "rotate-0 scale-100 opacity-100"
                   : "rotate-[18deg] scale-50 opacity-0"
                   }`}
@@ -90,7 +90,7 @@ const About: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row w-full justify-between items-center space-y-6 lg:space-y-0">
           <div className="w-full lg:w-1/2 flex flex-col justify-center  lg:p-6 text-center space-y-4">
-            <h6 className="para_head text-gray">
+            <h6 className="para_head font-medium text-gray">
               CloudBees Tech brings your ideas to life.
             </h6>
             <p className="para text-gray">

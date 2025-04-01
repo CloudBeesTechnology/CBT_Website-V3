@@ -1,9 +1,9 @@
 "use client"
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
-import logo1 from "../../assets/HomeSection/ContentImages/HRMS.png";
-import logo2 from "../../assets/HomeSection/ContentImages/home-2.png";
-import logo3 from "../../assets/HomeSection/ContentImages/FLEET MANAGEMENT.png";
+import image1 from "../../assets/HomeSection/ContentImages/HRMS.png";
+import image2 from "../../assets/HomeSection/ContentImages/home-2.png";
+import image3 from "../../assets/HomeSection/ContentImages/FLEET MANAGEMENT.png";
 import { AiFillCaretRight } from "react-icons/ai";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function OurProduct() {
       title: "HRMS",
       description:
         "The HRMS Portal and Employee Login System is a robust, secure, and highly customizable solution designed to automate and optimize various HR processes, making them more efficient and accessible.",
-      imageSrc: logo1,
+      imageSrc: image1,
     }
   ];
 
@@ -28,7 +28,7 @@ export default function OurProduct() {
         "Secure cloud storage and backup",
         "Real-time tracking of ingredients and menu item availability",
       ],
-      imageSrc: logo2,
+      imageSrc: image2,
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function OurProduct() {
         "Cash & Digital Payments Easy payout management",
         "Ensure passenger safety",
       ],
-      imageSrc: logo3,
+      imageSrc: image3,
     },
   ];
 

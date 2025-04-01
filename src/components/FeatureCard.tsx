@@ -16,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, imageSrc,
         <Image src={imageSrc} alt="Image not found" width={550} />
       </div>
       <div className="w-full  sm:px-2 flex  flex-col items-center text-center max-sm:mt-7 sm:mx-2 ">
-      <div className="gap-2 sm:gap-5 center max-lg:flex-col mb-3">
+      <div className="gap-2 sm:gap-10 center max-lg:flex-col mb-3">
   {clientLogo && <Image src={clientLogo} alt="Image not found" className="max-w-[200px] " />}
   {title && <h3 className="sub_title text-dark_gray ">
     <span className="text-primary">{title.split(" ")[0]}</span> {title.split(" ").slice(1).join(" ")}

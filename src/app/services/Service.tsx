@@ -14,6 +14,7 @@ import icon12 from "../../assets/ServiceSection/web-develop.jpg";
 import icon13 from "../../assets/ServiceSection/MachineLearning.png";
 
 export default function Service() {
+  
   const cardData = [
     { iconImg: icon13, title: "AI & Machine learning", description: "AI (Artificial Intelligence) and ML (Machine Learning) enable businesses to automate tasks, analyze data, and make smarter decisions, improving efficiency and innovation. " },
     { iconImg: icon5, title: "AWS/Azure Cloud", description: "Cloud computing is the delivery of different services through the Internet, including data storage, servers, databases, networking, and software." },
@@ -29,6 +30,7 @@ export default function Service() {
     { iconImg: icon10, title: "Software Testing", description: "Our Quality Team assess the effectiveness of software programs for all of our client's needs by working both manually and on different levels with automated tools delivering flawless products." },
     { iconImg: icon7, title: "AI Powered Digital Publishing", description: "The power of artificial intelligence (AI) technologies to automate and optimize various aspects of the digital publishing process." },
   ];
+
   return (
     <div className="screen-size  center flex-col text-center sm:px-6 py-12">
       <h2 className="title text-center mb-6">
@@ -38,7 +40,7 @@ export default function Service() {
       Unlock the full potential of your business with CloudBees Tech. Our expert team evaluates your business, processes, and technology to provide tailored recommendations that enhance your competitive edge. Whether you need Business Specific Application Development, CMS & e-commerce Applications, Mobile Applications, Business.
       Applications, or Blockchain Applications, our niche experts deliver unparalleled customer satisfaction to drive your business forward.      
       </p>  
-      <div className="grid content-center mt-10 p-2 place-items-center w-full space-y-10 grid-cols-1 min-[880px]:grid-cols-2 xl:grid-cols-3 gap-10">
+      <div className="grid content-center mt-20 p-2 place-items-center w-full space-y-10 grid-cols-1 min-[880px]:grid-cols-2 xl:grid-cols-3 gap-10">
         {cardData.map((card, index) => (
           <InfoCard key={index} iconImg={card.iconImg} title={card.title} description={card.description} />
         ))}

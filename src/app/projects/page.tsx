@@ -19,12 +19,11 @@ export default function OurProjects() {
 
   const projectBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
-      <div className="flex flex-col items-center space-y-1">
-        <span className="text-white banner_title">
-          We have design experiences for over 30+ projects
-        </span>
-
-      </div>
+      <h3 className="text-white banner_title tracking-wide">
+        <span>We Have Design</span><br/>
+        <span >Experiences For Over  
+        30+  Projects</span>
+      </h3>
     </div>
   );
 
@@ -32,12 +31,12 @@ export default function OurProjects() {
     <>
       <Banner>
         <div className="absolute bg-blend-overlay flex items-center justify-center min-w-full h-[80vh] lg:h-[60vh] text-white">
-          <div className="flex flex-col lg:flex-row justify-evenly items-center w-full px-4 md:px-8 min-w-full min-h-full gap-4">
+          <div className="flex pb-24 flex-col lg:flex-row justify-evenly items-center w-full px-2 md:px-8 min-w-full min-h-full gap-4">
             {/* Text Section */}
-            <div className="flex flex-col items-center justify-center space-y-8 max-w-4xl md:w-2xl text-center flex-grow">
-              <h2 className="title">{projectBannerText}</h2>
+            <div className="flex flex-col items-center justify-center space-y-8 text-center flex-grow ">
+              <h2 className="title w-full max-w-4xl">{projectBannerText}</h2>
               <div
-                className={`ml-4 text-base sm:text-lg md:text-xl lg:text-[22px] font-medium text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"}`}
+                className={`para_head max-w-[950px] font-light text-white italic transition-all duration-[1000ms] ease-out flex w-full flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"}`}
               >
                 {["At CloudBees Tech, we take pride in our diverse portfolio of projects spanning various industries and sectors. Our team's expertise and dedication have led to successful outcomes and satisfied clients"].map((text, index) => (
                   <p key={index} className={`block transition-all duration-[1000ms] ease-out ${rotate ? "scale-100 opacity-100 delay-300" : "scale-50 opacity-0"}`}>

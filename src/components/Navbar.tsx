@@ -1,5 +1,4 @@
 'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -35,8 +34,8 @@ export const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden xl:flex space-x-8">
         <li><Link href="/" className={pathname === '/' ? 'text-primary' : 'hover:text-primary'}>Home</Link></li>
-        <li><Link href="/services" className={pathname === '/services' ? 'text-primary' : 'hover:text-primary'}>Service</Link></li>
-        <li><Link href="/projects" className={pathname === '/projects' ? 'text-primary' : 'hover:text-primary'}>Project</Link></li>
+        <li><Link href="/services" className={pathname === '/services' ? 'text-primary' : 'hover:text-primary'}>Services</Link></li>
+        <li><Link href="/projects" className={pathname === '/projects' ? 'text-primary' : 'hover:text-primary'}>Projects</Link></li>
         <li><Link href="/careers" className={pathname === '/careers' ? 'text-primary' : 'hover:text-primary'}>Careers</Link></li>
         <li><Link href="/products" className={pathname === '/products' ? 'text-primary' : 'hover:text-primary'}>Products</Link></li>
         <li><Link href="/about" className={pathname === '/about' ? 'text-primary' : 'hover:text-primary'}>Who we are</Link></li>
