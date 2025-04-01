@@ -110,7 +110,7 @@ export const Footer = () => {
         </section>
 
         <section className="flex flex-col max-sm:text-center gap-5 mb-5 font-light text-sm">
-          <p className="para font-medium">
+          <p className="para ">
             © 2019 - 2025 CloudBees Tech Private Limited. All rights reserved.
           </p>
           <div className="center gap-5">
@@ -119,20 +119,23 @@ export const Footer = () => {
                 icon: <FaFacebookF />,
                 href: "https://www.facebook.com/people/CloudBees-Tech/61556253873919/?sk=friends_likes",
               },
+
               {
                 icon: <FaInstagram />,
                 href: "https://www.instagram.com/cloudbeestechnology/?hl=en",
               },
+
               {
                 icon: <FaLinkedinIn />,
                 href: "https://www.linkedin.com/in/cloudbees-tech/",
               },
+              
               {
                 icon: <FaTwitter />,
                 href: "https://twitter.com/CBeesTechnology",
               },
             ].map(({ icon, href }, index) => (
-              <Link key={index} href={href} className="text-[24px] font-semibold hover:text-primary" target="_blank" rel="noopener noreferrer">
+              <Link key={index} href={href} className="text-[28px] pt-1 font-semibold hover:text-primary" target="_blank" rel="noopener noreferrer">
                 {icon}
               </Link>
             ))}

@@ -4,7 +4,7 @@
 :root {
   /* 'Poppins' */
   font-family: 'Poppins', system-ui, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 400;
   user-select: none;
   padding: 0;
@@ -16,11 +16,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 @theme {
   --color-gray: #202020;
   --color-dark_gray: #404040;
   --color-blue_gray: #313F48;
   --color-lite_gray: #F1F1F1;
+  --color-medium_lite_gray: #F0F0F0;
   --color-ash_gray: #909090;
   --color-primary: #FABA0B;
   --color-white: white;
@@ -51,24 +54,28 @@
   }
 
   .banner_title{
-    @apply text-[34px] sm:text-[54px] font-semibold px-1
+    @apply text-[28px] sm:text-[42px] font-semibold px-1 leading-[1.2]
+  }
+  .banner_letter{
+    @apply text-[34px] sm:text-[54px] font-semibold 
   }
   .title{
-    @apply text-[32px] sm:text-4xl font-semibold
+    @apply text-[32px] sm:text-4xl font-semibold 
   }
   .sub_title{
-    @apply  text-[30px] sm:text-[34px] font-semibold
+    @apply  text-[30px] sm:text-[34px] font-semibold 
   } 
+
   .para_head{
-    @apply sm:text-2xl text-xl px-1
+    @apply sm:text-[20px] text-[18px] px-1
   }
 
   .para {
-    @apply sm:text-xl text-lg
+    @apply sm:text-xl text-lg 
   }
 
   .sub_para {
-    @apply sm:text-lg text-base
+    @apply sm:text-lg text-base 
   }
 }
 
@@ -238,3 +245,5 @@
 .animate-bounce-custom-shadow {
   animation: bounceCustomShadow 20s ease-in-out infinite;
 }
+
+

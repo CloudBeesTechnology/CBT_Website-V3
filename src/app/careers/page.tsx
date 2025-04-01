@@ -17,8 +17,8 @@ export default function CarrerMain() {
   const carrerBannerText: React.ReactNode = (
     <div className="flex justify-center items-center space-x-10">
       <div className="flex flex-col items-center space-y-1">
-        <span className="text-white banner_title text-center">
-          Join our tech community
+        <span className="text-white banner_title text-center tracking-wide">
+          Join Our Tech Community
         </span>
       </div>
     </div>
@@ -27,12 +27,12 @@ export default function CarrerMain() {
   return (
     <div>
       <Banner >
-        <div className="absolute bg-blend-overlay flex items-center justify-center h-[80vh] lg:h-[60vh] text-white">
+        <div className="absolute bg-blend-overlay flex items-center justify-center px-2 h-[80vh] lg:h-[60vh] text-white">
           <div className="flex justify-evenly w-full ">
-            <div className="flex flex-col items-center justify-center space-y-5">
+            <div className="flex flex-col pb-24 items-center justify-center space-y-5">
               <h2 className="title">{carrerBannerText}</h2>
               <div
-                className={`ml-4 para_head text-white italic leading-relaxed transition-all duration-[1000ms] ease-out flex flex-col items-center ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
+                className={`para_head text-white italic text-center font-light transition-all duration-[1000ms] ease-out  ${rotate ? "scale-100 opacity-100" : "scale-50 opacity-0"
                   }`}
               >
                 {[
