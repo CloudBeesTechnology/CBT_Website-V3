@@ -10,7 +10,7 @@ interface BannerProps {
 
 export const Banner: React.FC<BannerProps> = ({ children }) => {
   return (
-    <div className="relative w-full h-[80vh] lg:h-[60vh] ">
+    <div className="relative w-full h-[80vh] lg:h-[60vh] overflow-hidden ">
       {/* Background Image */}
       <div className="relative w-full h-full">
         <Image
@@ -40,7 +40,7 @@ export const Banner: React.FC<BannerProps> = ({ children }) => {
 
 export const SecondBanner: React.FC<BannerProps> = ({ children }) => {
   return (
-    <div className="relative w-full h-[60vh] ">
+    <div className="relative w-full h-[80vh] lg:h-[60vh] overflow-hidden ">
       {/* Background Image */}
       <div className="relative w-full h-full">
         <Image
