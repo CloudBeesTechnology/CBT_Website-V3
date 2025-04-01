@@ -73,7 +73,6 @@ const Blogs: React.FC = () => {
             </div>
           </div>
         </div>
-
       </Banner>
 
       <section className="flex flex-col items-center text-center gap-4 px-4 md:px-10 md:gap-6 mt-14">

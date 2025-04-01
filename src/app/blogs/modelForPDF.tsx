@@ -12,7 +12,8 @@ const ModelForPDF: React.FC<propsData> = ({ currentPdf, closeModal }) => {
         <div className="bg-white w-[90%] max-w-[1000px]  rounded-2xl  flex justify-between relative p-1 gap-1">
           <div className="w-full h-[700px] rounded-xl overflow-hidden ">
             <iframe
-              src={currentPdf}
+              // src={currentPdf}
+              src={`${currentPdf}#toolbar=0&navpanes=0&scrollbar=0`}
               className="w-full h-full"
               title="PDF Viewer"
             />

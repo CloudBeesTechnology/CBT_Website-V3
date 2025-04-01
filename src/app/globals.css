@@ -23,6 +23,7 @@
   --color-dark_gray: #404040;
   --color-blue_gray: #313F48;
   --color-lite_gray: #F1F1F1;
+  --color-medium_lite_gray: #F0F0F0;
   --color-ash_gray: #909090;
   --color-primary: #FABA0B;
   --color-white: white;
@@ -244,3 +245,5 @@
 .animate-bounce-custom-shadow {
   animation: bounceCustomShadow 20s ease-in-out infinite;
 }
+
+

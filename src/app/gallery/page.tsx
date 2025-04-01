@@ -1,12 +1,8 @@
 "use client";
 import { Banner } from "@/components/Banner";
 import React, { useEffect, useState } from "react";
-import LifeOfCBT from "./lifeOfCBT";
-import DiwaliCeleb from "./diwaliCeleb";
-import Anniversary from "./anniversary";
-import PongalCeleb from "./pongalCeleb";
-import WomensDayCeleb from "./womensDayCeleb";
-import KnowledgeSharing from "./knowledgeSharing";
+
+import GalleryThumnail from "./galleryThumnail";
 
 const Gallery: React.FC = () => {
   const [rotate, setRotate] = useState<boolean>(false);
@@ -44,10 +40,11 @@ const Gallery: React.FC = () => {
                 ].map((text, index) => (
                   <h3 key={index}>
                     <i
-                      className={`block transition-all duration-[1000ms] ease-out ${rotate
+                      className={`block transition-all duration-[1000ms] ease-out ${
+                        rotate
                           ? "scale-100 opacity-100 delay-300"
                           : "scale-50 opacity-0"
-                        }`}
+                      }`}
                     >
                       {text}
                     </i>
@@ -58,14 +55,8 @@ const Gallery: React.FC = () => {
           </div>
         </div>
       </Banner>
-      <div className="my-10">
-
-        <LifeOfCBT />
-        <DiwaliCeleb />
-        <Anniversary />
-        <PongalCeleb />
-        <WomensDayCeleb />
-        {/* <KnowledgeSharing /> */}
+      <div className="my-20">
+        <GalleryThumnail />
       </div>
     </main>
   );
