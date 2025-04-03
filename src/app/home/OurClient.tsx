@@ -22,6 +22,7 @@ const clientsImg =[
     {id:9 , src: client9, alt:"Client 9"},
     {id:10 , src: client10, alt:"Client 10"},
 ]
+
 export const OurClient = () => {
   return (
     <section>
@@ -35,9 +36,9 @@ export const OurClient = () => {
                 <Image
                 src={client.src}
                 alt={client.alt}
-                width={200}
+                // width={200}
                 // height={100}
-                className="object-contain"
+                className="object-contain max-w-[200px] "
               />
             </div>
          ))}
