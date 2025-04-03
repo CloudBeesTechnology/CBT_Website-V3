@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import CBTPolygonLogo from "../../assets/HomeSection/Banner/svg/CBT_LOGO.svg";
+import CBTPolygonLogo from "../../../public/assets/HomeSection/Banner/svg/CBT_LOGO.svg";
 import Progress from "./Progress";
 import { LifeCBT } from "./LifeAtCbt";
 import { OurClient } from "./OurClient";

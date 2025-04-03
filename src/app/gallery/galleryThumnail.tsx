@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image"; // Import Image component from Next.js
-import lifeOfCBT from "../../assets/GallerySection/Thumnail/lifeOfCBT.png";
-import diwaliCeleb from "../../assets/GallerySection/Thumnail/diwaliCeleb.png";
-import anniversary from "../../assets/GallerySection/Thumnail/anniversary.png";
-import pongalCeleb from "../../assets/GallerySection/Thumnail/pongalCeleb.png";
-import womensCeleb from "../../assets/GallerySection/Thumnail/womensCeleb.png";
+import lifeOfCBT from "../../../public/assets/GallerySection/Thumnail/lifeOfCBT.png";
+import diwaliCeleb from "../../../public/assets/GallerySection/Thumnail/diwaliCeleb.png";
+import anniversary from "../../../public/assets/GallerySection/Thumnail/anniversary.png";
+import pongalCeleb from "../../../public/assets/GallerySection/Thumnail/pongalCeleb.png";
+import womensCeleb from "../../../public/assets/GallerySection/Thumnail/womensCeleb.png";
 import { useRouter } from "next/navigation";
 
 interface ImageData {

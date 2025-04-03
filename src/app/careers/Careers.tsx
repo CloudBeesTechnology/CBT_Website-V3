@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import CareerArrow from "../../assets/CarrersSection/mdi_arrow-up-bold.svg";
-import CareerImg from "../../assets/CarrersSection/hexagon-lines-QguI1dQX0c 1.png";
+import CareerArrow from "../../../public/assets/CarrersSection/mdi_arrow-up-bold.svg";
+import CareerImg from "../../../public/assets/CarrersSection/hexagon-lines-QguI1dQX0c 1.png";
 
 export default function Careers() {
   return (

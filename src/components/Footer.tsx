@@ -8,10 +8,10 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import logo from "../assets/logo/cloudbeestech_logo.svg";
-import img1 from "../assets//footer/cbt map.png";
-import img2 from "../assets/footer/cbt chennai map .png";
-import img3 from "../assets/footer/cbt usa map.png";
+import logo from "../../public/assets/logo/cloudbeestech_logo.svg";
+import img1 from "../../public/assets//footer/cbt map.png";
+import img2 from "../../public/assets/footer/cbt chennai map .png";
+import img3 from "../../public/assets/footer/cbt usa map.png";
 
 export const Footer = () => {
 

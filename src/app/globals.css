@@ -88,12 +88,12 @@
 }
 
 .bg_image {
-  background-image: url(../assets/HomeSection/Banner/Images/Vector.svg);
+  background-image: url(../../public/assets/HomeSection/Banner/Images/Vector.svg);
   @apply bg-cover bg-no-repeat 
 }
 
 .carrer_bg {
-  background-image: url(../assets/CarrersSection/hexagon-lines-QguI1dQX0c\ 1.png);
+  background-image: url(../../public/assets/CarrersSection/hexagon-lines-QguI1dQX0c\ 1.png);
   @apply bg-cover bg-no-repeat bg-center
 }
 

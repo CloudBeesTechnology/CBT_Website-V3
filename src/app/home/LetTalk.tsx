@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import animation from "../../assets/HomeSection/Gif/cube-loader-bcbluzFFSr 1.png";
+import animation from "../../../public/assets/HomeSection/Gif/cube-loader-bcbluzFFSr 1.png";
 
 export const LetTalk = () => {
   return (

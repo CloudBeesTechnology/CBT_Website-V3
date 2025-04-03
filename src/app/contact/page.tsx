@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import emailjs from "emailjs-com";
 // import study from "../../assets/ContactUs/ContactUsImg/study.png";
-import cloudMessage from "../../assets/ContactUs/ContactIcons/contact.png";
-import avatar from "../../assets/ContactUs/ContactIcons/avatar.svg";
-import emailIcon from "../../assets/ContactUs/ContactIcons/email.svg";
+import cloudMessage from "../../../public/assets/ContactUs/ContactIcons/contact.png";
+import avatar from "../../../public/assets/ContactUs/ContactIcons/avatar.svg";
+import emailIcon from "../../../public/assets/ContactUs/ContactIcons/email.svg";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({

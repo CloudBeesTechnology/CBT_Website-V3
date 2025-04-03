@@ -1,5 +1,5 @@
 import { SecondBanner } from "@/components/Banner";
-import ServiceLogo from "../../assets/ServiceSection/animation/Service.gif"
+import ServiceLogo from "../../../public/assets/ServiceSection/animation/Service.gif"
 import Service from "./Service";
 import { LetTalk } from "../home/LetTalk";
 import Image from "next/image";

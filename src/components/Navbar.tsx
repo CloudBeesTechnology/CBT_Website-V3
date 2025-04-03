@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import CbtLogo from "../assets/HomeSection/CbtLogo/cbtLogo.png";
-import NavMenu from "../assets/NavSection/images/NavMenu.png";
+import CbtLogo from "../../public/assets/HomeSection/CbtLogo/cbtLogo.png";
+import NavMenu from "../../public/assets/NavSection/images/NavMenu.png";
 import { SideBar } from './Sidebar';
 
 export const Navbar = () => {

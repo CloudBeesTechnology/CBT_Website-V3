@@ -1,17 +1,17 @@
 import InfoCard from "@/components/InfoCard";
-import icon1 from "../../assets/ServiceSection/digital-marketing.png";
-import icon2 from "../../assets/ServiceSection/UI-UX.png";
-import icon3 from "../../assets/ServiceSection/micro-saas.png";
-import icon4 from "../../assets/ServiceSection/native-cross.png";
-import icon5 from "../../assets/ServiceSection/aws-cloud.png";
-import icon6 from "../../assets/ServiceSection/devSecOps.png";
-import icon7 from "../../assets/ServiceSection/ai-react.png";
-import icon8 from "../../assets/ServiceSection/it-support.png";
-import icon9 from "../../assets/ServiceSection/cyber-security.png";
-import icon10 from "../../assets/ServiceSection/software-testing.png";
-import icon11 from "../../assets/ServiceSection/blockChain.png";
-import icon12 from "../../assets/ServiceSection/web-develop.jpg";
-import icon13 from "../../assets/ServiceSection/MachineLearning.png";
+import icon1 from "../../../public/assets/ServiceSection/digital-marketing.png";
+import icon2 from "../../../public/assets/ServiceSection/UI-UX.png";
+import icon3 from "../../../public/assets/ServiceSection/micro-saas.png";
+import icon4 from "../../../public/assets/ServiceSection/native-cross.png";
+import icon5 from "../../../public/assets/ServiceSection/aws-cloud.png";
+import icon6 from "../../../public/assets/ServiceSection/devSecOps.png";
+import icon7 from "../../../public/assets/ServiceSection/ai-react.png";
+import icon8 from "../../../public/assets/ServiceSection/it-support.png";
+import icon9 from "../../../public/assets/ServiceSection/cyber-security.png";
+import icon10 from "../../../public/assets/ServiceSection/software-testing.png";
+import icon11 from "../../../public/assets/ServiceSection/blockChain.png";
+import icon12 from "../../../public/assets/ServiceSection/web-develop.jpg";
+import icon13 from "../../../public/assets/ServiceSection/MachineLearning.png";
 
 export default function Service() {
   

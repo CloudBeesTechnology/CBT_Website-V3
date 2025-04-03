@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import aboutUs from "../../assets/AboutSection/HeaderImages/aboutUs.png";
-import ourMission from "../../assets/AboutSection/HeaderImages/ourMission.png";
+import aboutUs from "../../../public/assets/AboutSection/HeaderImages/aboutUs.png";
+import ourMission from "../../../public/assets/AboutSection/HeaderImages/ourMission.png";
 import { Banner } from "@/components/Banner";
 import Frontiers from "./frontiers";
 import { employees } from "./employeesData";

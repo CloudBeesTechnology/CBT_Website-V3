@@ -1,18 +1,18 @@
-import automation from "../../assets/blog/blogImg/automation.png";
-import cloud from "../../assets/blog/blogImg/cloud.png";
-import cybersecurity from "../../assets/blog/blogImg/cybersecurity.png";
-import jira from "../../assets/blog/blogImg/jira.png";
-import secOps from "../../assets/blog/blogImg/secOps.png";
-import voiceSearch from "../../assets/blog/blogImg/voiceSearch.png";
-import webExperiances from "../../assets/blog/blogImg/webExperiances.png";
+import automation from "../../../public/assets/blog/blogImg/automation.png";
+import cloud from "../../../public/assets/blog/blogImg/cloud.png";
+import cybersecurity from "../../../public/assets/blog/blogImg/cybersecurity.png";
+import jira from "../../../public/assets/blog/blogImg/jira.png";
+import secOps from "../../../public/assets/blog/blogImg/secOps.png";
+import voiceSearch from "../../../public/assets/blog/blogImg/voiceSearch.png";
+import webExperiances from "../../../public/assets/blog/blogImg/webExperiances.png";
 
-import jiraPdf from "../../assets/blog/blogPDF/Jira.pdf";
-import testingPdf from "../../assets/blog/blogPDF/Testing.pdf";
-import cyberSecurityPdf from "../../assets/blog/blogPDF/cyberSecurity.pdf";
-import voiceSearchPdf from "../../assets/blog/blogPDF/voiceSearch.pdf";
-import SecOpsInfoSecPdf from "../../assets/blog/blogPDF/SecOps vs InfoSec.pdf";
-import cloudPdf from "../../assets/blog/blogPDF/cloud and devops.pdf";
-import reactPdf from "../../assets/blog/blogPDF/react.pdf";
+import jiraPdf from "../../../public/assets/blog/blogPDF/Jira.pdf";
+import testingPdf from "../../../public/assets/blog/blogPDF/Testing.pdf";
+import cyberSecurityPdf from "../../../public/assets/blog/blogPDF/cyberSecurity.pdf";
+import voiceSearchPdf from "../../../public/assets/blog/blogPDF/voiceSearch.pdf";
+import SecOpsInfoSecPdf from "../../../public/assets/blog/blogPDF/SecOps vs InfoSec.pdf";
+import cloudPdf from "../../../public/assets/blog/blogPDF/cloud and devops.pdf";
+import reactPdf from "../../../public/assets/blog/blogPDF/react.pdf";
 
 
 

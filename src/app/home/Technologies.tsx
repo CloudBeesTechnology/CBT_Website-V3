@@ -1,54 +1,54 @@
 import Image from "next/image";
-import client1 from "../../assets/HomeSection/AppIcons/shiftbl.svg";
-import client1Hover from "../../assets/HomeSection/AppIcons/shiftcl.svg";
-import client2 from "../../assets/HomeSection/AppIcons/javabl.svg";
-import client2Hover from "../../assets/HomeSection/AppIcons/javacl.svg";
-import client3 from "../../assets/HomeSection/AppIcons/kotlinbl.svg";
-import client3Hover from "../../assets/HomeSection/AppIcons/kotlincl.svg";
-import client4 from "../../assets/HomeSection/AppIcons/awsbl.svg";
-import client4Hover from "../../assets/HomeSection/AppIcons/awscl.svg";
-import client5 from "../../assets/HomeSection/AppIcons/flutterbl.svg";
-import client5Hover from "../../assets/HomeSection/AppIcons/fluttercl.svg";
-import client6 from "../../assets/HomeSection/AppIcons/reactbl.svg";
-import client6Hover from "../../assets/HomeSection/AppIcons/reactcl.svg";
-import client7 from "../../assets/HomeSection/AppIcons/angularbl.svg";
-import client7Hover from "../../assets/HomeSection/AppIcons/angularcl.svg";
-import client8 from "../../assets/HomeSection/AppIcons/amazonbl.svg";
-import client8Hover from "../../assets/HomeSection/AppIcons/amazoncl.svg";
-import client9 from "../../assets/HomeSection/AppIcons/firebasebl.svg";
-import client9Hover from "../../assets/HomeSection/AppIcons/firebasecl.svg";
-import client10 from "../../assets/HomeSection/AppIcons/githubbl.svg";
-import client10Hover from "../../assets/HomeSection/AppIcons/githubcl.svg";
-import client11 from "../../assets/HomeSection/AppIcons/jsbl.svg";
-import client11Hover from "../../assets/HomeSection/AppIcons/jscl.svg";
-import client12 from "../../assets/HomeSection/AppIcons/larabl.svg";
-import client12Hover from "../../assets/HomeSection/AppIcons/laracl.svg";
-import client13 from "../../assets/HomeSection/AppIcons/kotlinbl.svg";
-import client13Hover from "../../assets/HomeSection/AppIcons/kotlincl.svg";
-import client14 from "../../assets/HomeSection/AppIcons/dbbl.svg";
-import client14Hover from "../../assets/HomeSection/AppIcons/dbcl.svg";
-import client15 from "../../assets/HomeSection/AppIcons/bootstrapbl.svg";
-import client15Hover from "../../assets/HomeSection/AppIcons/bootstrapcl.svg";
-import client16 from "../../assets/HomeSection/AppIcons/mysqlbl.svg";
-import client16Hover from "../../assets/HomeSection/AppIcons/mysqlcl.svg";
-import client17 from "../../assets/HomeSection/AppIcons/nodejsbl.svg";
-import client17Hover from "../../assets/HomeSection/AppIcons/nodejscl.svg";
-import client18 from "../../assets/HomeSection/AppIcons/objbl.svg";
-import client18Hover from "../../assets/HomeSection/AppIcons/objcl.svg";
-import client19 from "../../assets/HomeSection/AppIcons/phpbl.svg";
-import client19Hover from "../../assets/HomeSection/AppIcons/phpcl.svg";
-import client20 from "../../assets/HomeSection/AppIcons/postsqlbl.svg";
-import client20Hover from "../../assets/HomeSection/AppIcons/postsqlcl.svg";
-import client21 from "../../assets/HomeSection/AppIcons/saasbl.svg";
-import client21Hover from "../../assets/HomeSection/AppIcons/saascl.svg";
-import client22 from "../../assets/HomeSection/AppIcons/tailwindbl.svg";
-import client22Hover from "../../assets/HomeSection/AppIcons/tailwindcl.svg";
-import client23 from "../../assets/HomeSection/AppIcons/tsbl.svg";
-import client23Hover from "../../assets/HomeSection/AppIcons/tscl.svg";
-import client24 from "../../assets/HomeSection/AppIcons/unitybl.svg";
-import client24Hover from "../../assets/HomeSection/AppIcons/unitycl.svg";
-import client25 from "../../assets/HomeSection/AppIcons/xamarinbl.svg";
-import client25Hover from "../../assets/HomeSection/AppIcons/xamarincl.svg";
+import client1 from "../../../public/assets/HomeSection/AppIcons/shiftbl.svg";
+import client1Hover from "../../../public/assets/HomeSection/AppIcons/shiftcl.svg";
+import client2 from "../../../public/assets/HomeSection/AppIcons/javabl.svg";
+import client2Hover from "../../../public/assets/HomeSection/AppIcons/javacl.svg";
+import client3 from "../../../public/assets/HomeSection/AppIcons/kotlinbl.svg";
+import client3Hover from "../../../public/assets/HomeSection/AppIcons/kotlincl.svg";
+import client4 from "../../../public/assets/HomeSection/AppIcons/awsbl.svg";
+import client4Hover from "../../../public/assets/HomeSection/AppIcons/awscl.svg";
+import client5 from "../../../public/assets/HomeSection/AppIcons/flutterbl.svg";
+import client5Hover from "../../../public/assets/HomeSection/AppIcons/fluttercl.svg";
+import client6 from "../../../public/assets/HomeSection/AppIcons/reactbl.svg";
+import client6Hover from "../../../public/assets/HomeSection/AppIcons/reactcl.svg";
+import client7 from "../../../public/assets/HomeSection/AppIcons/angularbl.svg";
+import client7Hover from "../../../public/assets/HomeSection/AppIcons/angularcl.svg";
+import client8 from "../../../public/assets/HomeSection/AppIcons/amazonbl.svg";
+import client8Hover from "../../../public/assets/HomeSection/AppIcons/amazoncl.svg";
+import client9 from "../../../public/assets/HomeSection/AppIcons/firebasebl.svg";
+import client9Hover from "../../../public/assets/HomeSection/AppIcons/firebasecl.svg";
+import client10 from "../../../public/assets/HomeSection/AppIcons/githubbl.svg";
+import client10Hover from "../../../public/assets/HomeSection/AppIcons/githubcl.svg";
+import client11 from "../../../public/assets/HomeSection/AppIcons/jsbl.svg";
+import client11Hover from "../../../public/assets/HomeSection/AppIcons/jscl.svg";
+import client12 from "../../../public/assets/HomeSection/AppIcons/larabl.svg";
+import client12Hover from "../../../public/assets/HomeSection/AppIcons/laracl.svg";
+import client13 from "../../../public/assets/HomeSection/AppIcons/kotlinbl.svg";
+import client13Hover from "../../../public/assets/HomeSection/AppIcons/kotlincl.svg";
+import client14 from "../../../public/assets/HomeSection/AppIcons/dbbl.svg";
+import client14Hover from "../../../public/assets/HomeSection/AppIcons/dbcl.svg";
+import client15 from "../../../public/assets/HomeSection/AppIcons/bootstrapbl.svg";
+import client15Hover from "../../../public/assets/HomeSection/AppIcons/bootstrapcl.svg";
+import client16 from "../../../public/assets/HomeSection/AppIcons/mysqlbl.svg";
+import client16Hover from "../../../public/assets/HomeSection/AppIcons/mysqlcl.svg";
+import client17 from "../../../public/assets/HomeSection/AppIcons/nodejsbl.svg";
+import client17Hover from "../../../public/assets/HomeSection/AppIcons/nodejscl.svg";
+import client18 from "../../../public/assets/HomeSection/AppIcons/objbl.svg";
+import client18Hover from "../../../public/assets/HomeSection/AppIcons/objcl.svg";
+import client19 from "../../../public/assets/HomeSection/AppIcons/phpbl.svg";
+import client19Hover from "../../../public/assets/HomeSection/AppIcons/phpcl.svg";
+import client20 from "../../../public/assets/HomeSection/AppIcons/postsqlbl.svg";
+import client20Hover from "../../../public/assets/HomeSection/AppIcons/postsqlcl.svg";
+import client21 from "../../../public/assets/HomeSection/AppIcons/saasbl.svg";
+import client21Hover from "../../../public/assets/HomeSection/AppIcons/saascl.svg";
+import client22 from "../../../public/assets/HomeSection/AppIcons/tailwindbl.svg";
+import client22Hover from "../../../public/assets/HomeSection/AppIcons/tailwindcl.svg";
+import client23 from "../../../public/assets/HomeSection/AppIcons/tsbl.svg";
+import client23Hover from "../../../public/assets/HomeSection/AppIcons/tscl.svg";
+import client24 from "../../../public/assets/HomeSection/AppIcons/unitybl.svg";
+import client24Hover from "../../../public/assets/HomeSection/AppIcons/unitycl.svg";
+import client25 from "../../../public/assets/HomeSection/AppIcons/xamarinbl.svg";
+import client25Hover from "../../../public/assets/HomeSection/AppIcons/xamarincl.svg";
 
 const clientsImg = [
   { id: 1, defaultSrc: client1, hoverSrc: client1Hover, alt: "Client 1", title:"Swift" },
@@ -78,36 +78,6 @@ const clientsImg = [
   { id: 25, defaultSrc: client25, hoverSrc: client25Hover, alt: "Client 25", title:"Xamarin"},
 ];
 
-// export const Technologies = () => {
-//   const [hoveredId, setHoveredId] = useState<number | null>(null);
-
-//   return (
-//     <section>
-//       <section className="center  my-10">
-//         <div className="screen-size my-10 center grid grid-cols-2 md:grid-cols-3 gap-6 border">
-//           {clientsImg.map((client) => (
-//             <div
-//               key={client.id}
-//               className="flex flex-col  justify-center "
-//               onMouseEnter={() => setHoveredId(client.id)}
-//               onMouseLeave={() => setHoveredId(null)}
-//             >
-//               <Image
-//                 src={hoveredId === client.id ? client.hoverSrc : client.defaultSrc}
-//                 alt={client.alt}
-//                 width={150}
-//                 height={100}
-//                 className="object-cover w-full  max-w-[150px] border border-primary rounded-full "
-//               />
-//               <h2 className="text-center text_size_2 p-3">{client.title}</h2>
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-//     </section>
-//   );
-// };
-{/* <div className="screen-size my-10  grid grid-cols-2 min-w-[575px];grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-10"> */}
 export const Technologies = () => {
   return (
     <section className="screen-size center flex-col mt-14 mb-5 sm:my-20 ">

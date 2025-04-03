@@ -1,27 +1,27 @@
 import FeatureCard from "@/components/FeatureCard";
-import img1 from "../../assets/project/AWE_WEBSITE.png";
-import img2 from "../../assets/project/HR_PORTAL.png";
-import img3 from "../../assets/project/EMP_PORTAL.png";
-import img4 from "../../assets/project/lepondy (1).png";
-import img5 from "../../assets/project/POS.png";
-import img6 from "../../assets/project/E_FISHING.png";
-import img7 from "../../assets/project/ALADDIN.png";
-import img8 from "../../assets/project/DOPOTLUCK.png";
-import img9 from "../../assets/project/DOHOME_FOOD.png";
-import img10 from "../../assets/project/SPRING.png";
-import img11 from "../../assets/project/B2V.png";
-import img12 from "../../assets/project/SENTHUR.png";
+import img1 from "../../../public/assets/project/AWE_WEBSITE.png";
+import img2 from "../../../public/assets/project/HR_PORTAL.png";
+import img3 from "../../../public/assets/project/EMP_PORTAL.png";
+import img4 from "../../../public/assets/project/lepondy (1).png";
+import img5 from "../../../public/assets/project/POS.png";
+import img6 from "../../../public/assets/project/E_FISHING.png";
+import img7 from "../../../public/assets/project/ALADDIN.png";
+import img8 from "../../../public/assets/project/DOPOTLUCK.png";
+import img9 from "../../../public/assets/project/DOHOME_FOOD.png";
+import img10 from "../../../public/assets/project/SPRING.png";
+import img11 from "../../../public/assets/project/B2V.png";
+import img12 from "../../../public/assets/project/SENTHUR.png";
 
-import client1 from "../../assets/HomeSection/ClientLogos/le.png";
-import client2 from "../../assets/HomeSection/ClientLogos/clLogo-10.png";
-import client3 from "../../assets/HomeSection/ClientLogos/e-Fiching-color.png";
-import client4 from "../../assets/HomeSection/ClientLogos/DoHome-color.png";
-import client5 from "../../assets/HomeSection/ClientLogos/niche.png";
-import client6 from "../../assets/HomeSection/ClientLogos/svg.png";
-import client7 from "../../assets/HomeSection/ClientLogos/clLogo-7.png";
-import client8 from "../../assets/HomeSection/ClientLogos/sn-color.png";
-import client9 from "../../assets/HomeSection/ClientLogos/B2V 1 1.png";
-import client10 from "../../assets/HomeSection/ClientLogos/do-color.png";
+import client1 from "../../../public/assets/HomeSection/ClientLogos/le.png";
+import client2 from "../../../public/assets/HomeSection/ClientLogos/clLogo-10.png";
+import client3 from "../../../public/assets/HomeSection/ClientLogos/e-Fiching-color.png";
+import client4 from "../../../public/assets/HomeSection/ClientLogos/DoHome-color.png";
+import client5 from "../../../public/assets/HomeSection/ClientLogos/niche.png";
+import client6 from "../../../public/assets/HomeSection/ClientLogos/svg.png";
+import client7 from "../../../public/assets/HomeSection/ClientLogos/clLogo-7.png";
+import client8 from "../../../public/assets/HomeSection/ClientLogos/sn-color.png";
+import client9 from "../../../public/assets/HomeSection/ClientLogos/B2V 1 1.png";
+import client10 from "../../../public/assets/HomeSection/ClientLogos/do-color.png";
 
 export default function Project() {
   const features = [

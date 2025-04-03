@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
-import underline from "../../assets/AboutSection/HeaderImages/Line Design.svg";
+import underline from "../../../public/assets/AboutSection/HeaderImages/Line Design.svg";
 
 type Employee = {
   imageUrl: string | StaticImageData;
