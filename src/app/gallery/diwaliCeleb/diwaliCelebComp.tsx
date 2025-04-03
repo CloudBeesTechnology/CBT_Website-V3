@@ -11,6 +11,8 @@ import diwaliCeleb08 from "../../../assets/GallerySection/diwaliCelebImg/diwaliC
 import { useEffect } from "react";
 import Carousel from "../carousel";
 import { useGalleryContext } from "../hooksForGallery/galleryProvider";
+import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
 
 interface ImageData {
   id: number;
@@ -71,14 +73,26 @@ const DiwaliCelebComp: React.FC = () => {
   return (
     <main className="my-10">
       <header>
-        <h3 className="banner_title text-dark_gray center pb-6  sm:p-8 lg:pb-10 gap-2 ">
-          <span className="text-dark_gray text-2xl sm:text-3xl md:text-4xl">
-            Diwali
-          </span>
-          <span className="text-primary text-2xl sm:text-3xl md:text-4xl">
-            Celebration
-          </span>
-        </h3>
+        <div className="p-4 sm:p-6 lg:p-8 w-full flex items-center justify-between my-3 sm:my-5 px-4 sm:px-12 relative">
+          <Link
+            href="/gallery"
+            className="text-lg sm:text-xl text-dark_gray z-10"
+            aria-label="Go back to gallery"
+          >
+            <FaArrowLeft />
+          </Link>
+
+          <div className="absolute left-0 right-0 flex justify-center">
+            <h3 className="banner_title text-dark_gray text-center p-6 sm:p-8 lg:p-10 gap-2">
+              <span className="text-dark_gray text-2xl sm:text-3xl md:text-4xl">
+                Diwali
+              </span>
+              <span className="text-primary text-2xl sm:text-3xl md:text-4xl">
+                Celebration
+              </span>
+            </h3>
+          </div>
+        </div>
       </header>
       <div className="center">
         <div className=" max-w-7xl overflow-hidden">

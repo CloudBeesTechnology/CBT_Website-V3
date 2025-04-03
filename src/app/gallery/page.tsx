@@ -55,7 +55,7 @@ const Gallery: React.FC = () => {
           </div>
         </div>
       </Banner>
-      <div className="my-20">
+      <div className="my-0 sm:my-20">
         <GalleryThumnail />
       </div>
     </main>
