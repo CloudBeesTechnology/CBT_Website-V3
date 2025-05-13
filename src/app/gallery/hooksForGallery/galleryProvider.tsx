@@ -41,6 +41,7 @@ export const GalleryProvider = ({ children }: { children: ReactNode }) => {
   const handleImageClick = (index: number) => {
     setCurrentIndex(index);
     setShowCarousel(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

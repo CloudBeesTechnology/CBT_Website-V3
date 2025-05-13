@@ -4,7 +4,6 @@ import Aravind from "../../../public/assets/AboutSection/Frontiers/aravind.png";
 import Arthi from "../../../public/assets/AboutSection/Frontiers/arthi.png";
 import Balachandar from "../../../public/assets/AboutSection/Frontiers/balachandar.png";
 import Ezhil from "../../../public/assets/AboutSection/Frontiers/ezhil.png";
-import Fardzana from "../../../public/assets/AboutSection/Frontiers/fardzana.png";
 import Gowri from "../../../public/assets/AboutSection/Frontiers/gowri.png";
 import Hari from "../../../public/assets/AboutSection/Frontiers/hari.png";
 import Hema from "../../../public/assets/AboutSection/Frontiers/hema.png";
@@ -13,10 +12,10 @@ import Karthikeyan from "../../../public/assets/AboutSection/Frontiers/karthikey
 import Padmapriya from "../../../public/assets/AboutSection/Frontiers/padmapriya.png";
 import Saravanan from "../../../public/assets/AboutSection/Frontiers/saravanan.png";
 import Sriram from "../../../public/assets/AboutSection/Frontiers/sriram.png";
-import Thiru from "../../../public/assets/AboutSection/Frontiers/thiru.png";
 import Vedha from "../../../public/assets/AboutSection/Frontiers/vedha.png";
 import Vinoth from "../../../public/assets/AboutSection/Frontiers/vinoth.png";
 import Vishnu from "../../../public/assets/AboutSection/Frontiers/vishnu.png";
+
 
 export const employees = [
   {
@@ -58,12 +57,7 @@ export const employees = [
       "Security & Compliance.",
     ],
   },
-  {
-    imageUrl: Thiru,
-    name: "THIRU",
-    position: "Lead Mobile Consultant",
-    skills: ["RESTful APIs and Web Services", "Programming language skills."],
-  },
+  
   {
     imageUrl: Arthi,
     name: "ARTHI",
@@ -99,12 +93,6 @@ export const employees = [
       "Strategic Thinking",
       "Regulatory Compliance.",
     ],
-  },
-  {
-    imageUrl: Fardzana,
-    name: "FARDZANA BEGUM",
-    position: "Web Developer",
-    skills: ["JavaScript", "React", "Bootstrap", "Tailwind", "Testing."],
   },
   {
     imageUrl: Karthikeyan,
@@ -221,3 +209,22 @@ export const employees = [
     ],
   },
 ];
+
+
+// import Fardzana from "../../../public/assets/AboutSection/Frontiers/fardzana.png";
+// import Thiru from "../../../public/assets/AboutSection/Frontiers/thiru.png";
+// {
+  //   imageUrl: Fardzana,
+  //   name: "FARDZANA BEGUM",
+  //   position: "Web Developer",
+  //   skills: ["JavaScript", "React", "Bootstrap", "Tailwind", "Testing."],
+  // },
+  // {
+  //   imageUrl: Thiru,
+  //   name: "THIRU",
+  //   position: "Lead Mobile Consultant",
+  //   skills: ["RESTful APIs and Web Services", "Programming language skills."],
+  // },
+
+  
+  

@@ -5,6 +5,7 @@ import diwaliCeleb from "../../../public/assets/GallerySection/Thumnail/diwaliCe
 import anniversary from "../../../public/assets/GallerySection/Thumnail/anniversary.png";
 import pongalCeleb from "../../../public/assets/GallerySection/Thumnail/pongalCeleb.png";
 import womensCeleb from "../../../public/assets/GallerySection/Thumnail/womensCeleb.png";
+import birthCeleb from "../../../public/assets/GallerySection/Thumnail/birthCeleb 1.jpg";
 import { useRouter } from "next/navigation";
 
 interface ImageData {
@@ -49,6 +50,13 @@ const imageArray: ImageData[] = [
     routeUrl: "gallery/womensCeleb",
     imageUrl: womensCeleb,
     firstName: "Women’s Day",
+    lastName: " Celebration",
+  },
+  {
+    id: 6,
+    routeUrl: "gallery/birthCeleb",
+    imageUrl: birthCeleb,
+    firstName: "Birthday",
     lastName: " Celebration",
   },
 ];

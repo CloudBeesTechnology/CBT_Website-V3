@@ -4,7 +4,9 @@ import aboutUs from "../../../public/assets/AboutSection/HeaderImages/aboutUs.pn
 import ourMission from "../../../public/assets/AboutSection/HeaderImages/ourMission.png";
 import { Banner } from "@/components/Banner";
 import Frontiers from "./frontiers";
+import Interns from "./interns"
 import { employees } from "./employeesData";
+import { interns } from "./internsData";
 import { useEffect, useState } from "react";
 import CeoQuotesCard from "./CeoQuotesCard";
 
@@ -115,6 +117,7 @@ const About: React.FC = () => {
       </div>
       <CeoQuotesCard />
       <Frontiers employees={employees} />
+      <Interns interns={interns}/>
     </>
   );
 };
