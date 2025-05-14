@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import BubbleImg from "../assets/HomeSection/Banner/Images/Bubble.png";
-import bannerImg from "../assets/HomeSection/Banner/Images/Vector.svg";
+import BubbleImg from "../../public/assets/HomeSection/Banner/Images/Bubble.png";
+import bannerImg from "../../public/assets/HomeSection/Banner/Images/Vector.svg";
 import React from "react";
-
+// ../../../public/
 interface BannerProps {
   children: React.ReactNode;
 }

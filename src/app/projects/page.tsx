@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Banner } from "@/components/Banner";
-import projectLogo from "../../assets/ProjectSection/svg/docSvgNew.svg"
+import projectLogo from "../../../public/assets/ProjectSection/svg/docSvgNew.svg"
 import Project from "./Project";
 import Image from "next/image";
 

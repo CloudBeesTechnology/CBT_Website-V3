@@ -1,10 +1,10 @@
 import InfoCard from "@/components/InfoCard";
-import icon4 from "../../assets/ServiceSection/native-cross.png";
-import icon5 from "../../assets/ServiceSection/aws-cloud.png";
-import icon6 from "../../assets/ServiceSection/devSecOps.png";
-import icon11 from "../../assets/ServiceSection/blockChain.png";
-import icon12 from "../../assets/ServiceSection/web-develop.jpg";
-import icon13 from "../../assets/ServiceSection/MachineLearning.png";
+import icon4 from "../../../public/assets/ServiceSection/native-cross.png";
+import icon5 from "../../../public/assets/ServiceSection/aws-cloud.png";
+import icon6 from "../../../public/assets/ServiceSection/devSecOps.png";
+import icon11 from "../../../public/assets/ServiceSection/blockChain.png";
+import icon12 from "../../../public/assets/ServiceSection/web-develop.jpg";
+import icon13 from "../../../public/assets/ServiceSection/MachineLearning.png";
 import Link from "next/link";
 
 export default function OurServices() {

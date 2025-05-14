@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
-import underline from "../../assets/AboutSection/HeaderImages/Line Design.svg";
+import underline from "../../../public/assets/AboutSection/HeaderImages/Line Design.svg";
 
 type Employee = {
   imageUrl: string | StaticImageData;
@@ -16,7 +16,7 @@ type FrontiersProps = {
 
 const Frontiers: React.FC<FrontiersProps> = ({ employees }) => {
   return (
-    <div className="flex flex-col items-center w-full mx-auto p-6 mb-20">
+    <div className="flex flex-col items-center w-full mx-auto p-6">
       <div className="text-center mb-10 ">
         <h2 className="title">Frontiers</h2>
         <Image
@@ -27,11 +27,11 @@ const Frontiers: React.FC<FrontiersProps> = ({ employees }) => {
       </div>
 
       {/* Responsive Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full justify-items-center">
         {employees.map((employee, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-full px-4 py-6 "
+            className="flex flex-col items-center w-full px-4 py-6  "
           >
             <Image
               src={employee.imageUrl}

@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
-import aboutUs from "../../assets/AboutSection/HeaderImages/aboutUs.png";
-import ourMission from "../../assets/AboutSection/HeaderImages/ourMission.png";
+import aboutUs from "../../../public/assets/AboutSection/HeaderImages/aboutUs.png";
+import ourMission from "../../../public/assets/AboutSection/HeaderImages/ourMission.png";
 import { Banner } from "@/components/Banner";
 import Frontiers from "./frontiers";
+import Interns from "./interns"
 import { employees } from "./employeesData";
+import { interns } from "./internsData";
 import { useEffect, useState } from "react";
 import CeoQuotesCard from "./CeoQuotesCard";
 
@@ -115,6 +117,7 @@ const About: React.FC = () => {
       </div>
       <CeoQuotesCard />
       <Frontiers employees={employees} />
+      <Interns interns={interns}/>
     </>
   );
 };

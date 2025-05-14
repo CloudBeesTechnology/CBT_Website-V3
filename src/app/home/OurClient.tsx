@@ -1,14 +1,14 @@
 import Image from "next/image";
-import client1 from "../../assets/HomeSection/ClientLogos/le.png";
-import client2 from "../../assets/HomeSection/ClientLogos/clLogo-10.png";
-import client3 from "../../assets/HomeSection/ClientLogos/e_fishing.png";
-import client4 from "../../assets/HomeSection/ClientLogos/clLogo-4.png";
-import client5 from "../../assets/HomeSection/ClientLogos/niche.png";
-import client6 from "../../assets/HomeSection/ClientLogos/clLogo-3.png";
-import client7 from "../../assets/HomeSection/ClientLogos/clLogo-7.png";
-import client8 from "../../assets/HomeSection/ClientLogos/clLogo-6.png";
-import client9 from "../../assets/HomeSection/ClientLogos/clLogo-8.png";
-import client10 from "../../assets/HomeSection/ClientLogos/svg.png";
+import client1 from "../../../public/assets/HomeSection/ClientLogos/le.png";
+import client2 from "../../../public/assets/HomeSection/ClientLogos/clLogo-10.png";
+import client3 from "../../../public/assets/HomeSection/ClientLogos/e_fishing.png";
+import client4 from "../../../public/assets/HomeSection/ClientLogos/clLogo-4.png";
+import client5 from "../../../public/assets/HomeSection/ClientLogos/niche.png";
+import client6 from "../../../public/assets/HomeSection/ClientLogos/clLogo-3.png";
+import client7 from "../../../public/assets/HomeSection/ClientLogos/clLogo-7.png";
+import client8 from "../../../public/assets/HomeSection/ClientLogos/clLogo-6.png";
+import client9 from "../../../public/assets/HomeSection/ClientLogos/clLogo-8.png";
+import client10 from "../../../public/assets/HomeSection/ClientLogos/svg.png";
 
 const clientsImg =[
     {id:1 , src: client1, alt:"Client 1"},
@@ -22,6 +22,7 @@ const clientsImg =[
     {id:9 , src: client9, alt:"Client 9"},
     {id:10 , src: client10, alt:"Client 10"},
 ]
+
 export const OurClient = () => {
   return (
     <section>
@@ -35,9 +36,9 @@ export const OurClient = () => {
                 <Image
                 src={client.src}
                 alt={client.alt}
-                width={200}
+                // width={200}
                 // height={100}
-                className="object-contain"
+                className="object-contain max-w-[200px] "
               />
             </div>
          ))}

@@ -1,10 +1,10 @@
 import Image from "next/image";
 import FeatureCard from "@/components/FeatureCard";
-import image1 from "../../assets/HomeSection/ContentImages/HRMS.png";
-import image2 from "../../assets/HomeSection/ContentImages/home-2.png";
-import image3 from "../../assets/HomeSection/ContentImages/FLEET MANAGEMENT.png";
-import logo1 from "../../assets/HomeSection/ClientLogos/Hr_360e_logo.png";
-import image4 from "../../assets/HomeSection/ClientLogos/css device.png";
+import image1 from "../../../public/assets/HomeSection/ContentImages/HRMS.png";
+import image2 from "../../../public/assets/HomeSection/ContentImages/home-2.png";
+import image3 from "../../../public/assets/HomeSection/ContentImages/FLEET MANAGEMENT.png";
+import logo1 from "../../../public/assets/HomeSection/ClientLogos/Hr_360e_logo.png";
+import image4 from "../../../public/assets/HomeSection/ClientLogos/css device.png";
 import { AiFillCaretRight } from "react-icons/ai";
 
 export default function ProductPage() {
