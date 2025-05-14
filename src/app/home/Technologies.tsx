@@ -78,43 +78,13 @@ const clientsImg = [
   { id: 25, defaultSrc: client25, hoverSrc: client25Hover, alt: "Client 25", title:"Xamarin"},
 ];
 
-// export const Technologies = () => {
-//   const [hoveredId, setHoveredId] = useState<number | null>(null);
-
-//   return (
-//     <section>
-//       <section className="center  my-10">
-//         <div className="screen-size my-10 center grid grid-cols-2 md:grid-cols-3 gap-6 border">
-//           {clientsImg.map((client) => (
-//             <div
-//               key={client.id}
-//               className="flex flex-col  justify-center "
-//               onMouseEnter={() => setHoveredId(client.id)}
-//               onMouseLeave={() => setHoveredId(null)}
-//             >
-//               <Image
-//                 src={hoveredId === client.id ? client.hoverSrc : client.defaultSrc}
-//                 alt={client.alt}
-//                 width={150}
-//                 height={100}
-//                 className="object-cover w-full  max-w-[150px] border border-primary rounded-full "
-//               />
-//               <h2 className="text-center text_size_2 p-3">{client.title}</h2>
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-//     </section>
-//   );
-// };
-{/* <div className="screen-size my-10  grid grid-cols-2 min-w-[575px];grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex-wrap gap-10"> */}
 export const Technologies = () => {
   return (
     <section className="screen-size center flex-col mt-14 mb-5 sm:my-20 ">
        <h2 className="title text-center sm:mb-6">
         <span className="text-primary">Our </span> Technologies
       </h2>
-      <div className="my-10 flex flex-wrap justify-between gap-7 sm:gap-10 ">
+      <div className="my-10 flex flex-wrap justify-center sm:justify-between gap-7 sm:gap-10 ">
         {clientsImg.map((client) => (
           <div
             key={client.id}

@@ -14,7 +14,7 @@ export const LetTalk = () => {
          className=" max-sm:w-[220px] animate-spin" />
 
         {/* Content Box */}
-        <div className="absolute top-20 left-1/2 w-full max-sm:w-full md:w-2xl transform -translate-x-1/2 text-center max-w-2xl ">
+        <div className="absolute sm:top-20 left-1/2 w-full max-sm:w-full md:w-2xl transform -translate-x-1/2 text-center max-w-2xl ">
           
           <h2 className="text-2xl sm:text-[32px] font-semibold leading-snug text-gray mb-5 sm:mb-10">
             <span className="text-primary">Ready</span> to craft digital
