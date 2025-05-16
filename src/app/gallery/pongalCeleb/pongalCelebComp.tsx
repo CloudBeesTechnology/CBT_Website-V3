@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import pongalCeleb01 from "../../../assets/GallerySection/pongalCelebImg/pongalCeleb01.png";
-import pongalCeleb02 from "../../../assets/GallerySection/pongalCelebImg/pongalCeleb02.png";
-import pongalCeleb03 from "../../../assets/GallerySection/pongalCelebImg/pongalCeleb03.png";
-import pongalCeleb04 from "../../../assets/GallerySection/pongalCelebImg/pongalCeleb04.png";
-import pongalCeleb05 from "../../../assets/GallerySection/pongalCelebImg/pongalCeleb05.png";
+import pongalCeleb01 from "../../../../public/assets/GallerySection/pongalCelebImg/pongalCeleb01.png";
+import pongalCeleb02 from "../../../../public/assets/GallerySection/pongalCelebImg/pongalCeleb02.png";
+import pongalCeleb03 from "../../../../public/assets/GallerySection/pongalCelebImg/pongalCeleb03.png";
+import pongalCeleb04 from "../../../../public/assets/GallerySection/pongalCelebImg/pongalCeleb04.png";
+import pongalCeleb05 from "../../../../public/assets/GallerySection/pongalCelebImg/pongalCeleb05.png";
 import { useEffect, useState } from "react";
 import Carousel from "../carousel";
 import { useGalleryContext } from "../hooksForGallery/galleryProvider";

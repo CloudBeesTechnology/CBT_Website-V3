@@ -43,7 +43,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards, openModal }) => {
 
                 <p className="center gap-1 text-dark_gray mt-auto ">
                   <span
-                    className="border-b-1 border-transparent hover:border-primary cursor-pointer transition-colors duration-300 hover:text-primary"
+                    className="border-b-1 flex items-end gap-1 border-transparent hover:border-primary cursor-pointer transition-colors duration-300 hover:text-primary"
                     
                     onClick={() =>{
                       // console.log(val.pdf);
@@ -51,8 +51,8 @@ const BlogCard: React.FC<BlogCardProps> = ({ cards, openModal }) => {
                     } }
                   >
                     Read More
+                  <BsArrowRight  onClick={() => openModal(val.pdf)} className="ml-1 cursor-pointer transition-colors duration-300" />
                   </span>
-                  <BsArrowRight  onClick={() => openModal(val.pdf)} className="ml-1 cursor-pointer transition-colors duration-300 hover:text-primary " />
                 </p>
               </div>
             </div>

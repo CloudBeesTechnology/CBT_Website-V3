@@ -7,6 +7,7 @@ import pongalCeleb from "../../../public/assets/GallerySection/Thumnail/pongalCe
 import womensCeleb from "../../../public/assets/GallerySection/Thumnail/womensCeleb.png";
 import birthCeleb from "../../../public/assets/GallerySection/Thumnail/birthCeleb 1.jpg";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 interface ImageData {
   id: number;
@@ -62,6 +63,14 @@ const imageArray: ImageData[] = [
 ];
 
 const GalleryThumnail: React.FC = () => {
+    useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, []);
   const router = useRouter(); // Initialize router
 
   const handleClick = (route: string) => {

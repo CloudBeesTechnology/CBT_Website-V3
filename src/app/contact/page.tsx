@@ -1,13 +1,22 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser"
 // import study from "../../assets/ContactUs/ContactUsImg/study.png";
 import cloudMessage from "../../../public/assets/ContactUs/ContactIcons/contact.png";
 import avatar from "../../../public/assets/ContactUs/ContactIcons/avatar.svg";
 import emailIcon from "../../../public/assets/ContactUs/ContactIcons/email.svg";
 
 const Contact: React.FC = () => {
+    useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,6 +46,8 @@ const Contact: React.FC = () => {
       )
       .then(
         (response) => {
+          // console.log(response);
+          
           setStatus("Success! Your message has been sent.");
           setFormData({
             name: "",

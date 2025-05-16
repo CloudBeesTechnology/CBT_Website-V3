@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import womensDay01 from "../../../assets/GallerySection/womenDayImg/womensDay01.png";
-import womensDay02 from "../../../assets/GallerySection/womenDayImg/womensDay02.png";
-import womensDay03 from "../../../assets/GallerySection/womenDayImg/womensDay03.png";
-import womensDay04 from "../../../assets/GallerySection/womenDayImg/womensDay04.png";
-import womensDay05 from "../../../assets/GallerySection/womenDayImg/womensDay05.png";
-import womensDay06 from "../../../assets/GallerySection/womenDayImg/womensDay06.png";
+import womensDay01 from "../../../../public/assets/GallerySection/womenDayImg/womensDay01.png";
+import womensDay02 from "../../../../public/assets/GallerySection/womenDayImg/womensDay02.png";
+import womensDay03 from "../../../../public/assets/GallerySection/womenDayImg/womensDay03.png";
+import womensDay04 from "../../../../public/assets/GallerySection/womenDayImg/womensDay04.png";
+import womensDay05 from "../../../../public/assets/GallerySection/womenDayImg/womensDay05.png";
+import womensDay06 from "../../../../public/assets/GallerySection/womenDayImg/womensDay06.png";
 import { useEffect, useState } from "react";
 import Carousel from "../carousel";
 import { useGalleryContext } from "../hooksForGallery/galleryProvider";

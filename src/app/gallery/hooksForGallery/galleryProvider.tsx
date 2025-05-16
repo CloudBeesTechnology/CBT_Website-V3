@@ -21,6 +21,7 @@ interface GalleryContextType {
 const GalleryContext = createContext<GalleryContextType | undefined>(undefined);
 
 export const GalleryProvider = ({ children }: { children: ReactNode }) => {
+  
   //   const [galleryRequests, setGalleryRequests] = useState<string[]>(["Sriram"]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [showCarousel, setShowCarousel] = useState<boolean>(false);
